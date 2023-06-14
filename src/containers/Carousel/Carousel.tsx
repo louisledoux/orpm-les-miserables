@@ -1,20 +1,25 @@
 'use client';
 
-import { Carousel as ReactCarousel } from 'react-responsive-carousel';
+import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import CarouselItem, { CarouselItemProps } from '@/components/CarouselItem/CarouselItem';
 
 interface CarouselProps {
   items: CarouselItemProps[],
 }
 
-function Carousel({ items }: CarouselProps) {
+function CarouselContainer({ items }: CarouselProps) {
   return (
-    <ReactCarousel className="h-carousel">
+    <Carousel
+      className="h-carousel"
+      showArrows
+      showThumbs={false}
+    >
       {items.map(({ imageSrc, alt, style }, index) => (
         <CarouselItem key={`${alt}-index`} imageSrc={imageSrc} alt={alt} style={style} />
       ))}
-    </ReactCarousel>
+    </Carousel>
   );
 }
 
-export default Carousel;
+export default CarouselContainer;
