@@ -12,6 +12,16 @@ module.exports = {
         primary: '#EBAF2B',
         secondary: '#1E2F36',
       },
+      screens: {
+        desktop: '1024px',
+        mobile: '480px',
+      },
+      maxWidth: {
+        content: '1440px',
+      },
+      height: {
+        carousel: '700px',
+      },
     },
   },
   plugins: [],

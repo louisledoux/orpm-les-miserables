@@ -13,12 +13,13 @@ function Header({
   socialMediasIcons,
 }: HeaderProps) {
   return (
-    <div className="flex w-full justify-end gap-2 py-2">
+    <div className="flex max-w-content mx-auto justify-end gap-2 py-3 px-2">
       {socialMediasIcons.map((icon) => (
         <Icon
           key={icon}
           icon={['fab', `${icon}`]}
           type="secondary"
+          size="large"
         />
       ))}
     </div>

@@ -5,14 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="302f018d-25a0-43f8-b4cd-79a496f8c178" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/homepage-carousel/image1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/instagram.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/CarouselItem/CarouselItem.stories.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/CarouselItem/CarouselItem.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/NavItem/NavItem.stories.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/NavItem/NavItem.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/Carousel/Carousel.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/Nav/Nav.stories.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/Nav/Nav.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.storybook/preview.ts" beforeDir="false" afterPath="$PROJECT_DIR$/.storybook/preview.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/FontAwesome.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/FontAwesome.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Icon/Icon.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Icon/Icon.stories.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Icon/Icon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Icon/Icon.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Header/Header.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Header/Header.stories.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/containers/Header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Header/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,6 +86,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/assets/homepage-carousel" />
       <recent name="$PROJECT_DIR$/src/containers" />
     </key>
   </component>
@@ -116,7 +130,7 @@
       <workItem from="1686737286023" duration="3268000" />
       <workItem from="1686744881016" duration="1310000" />
       <workItem from="1686746204975" duration="98000" />
-      <workItem from="1686746317011" duration="5107000" />
+      <workItem from="1686746317011" duration="17840000" />
     </task>
     <servers />
   </component>

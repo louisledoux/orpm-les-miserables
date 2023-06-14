@@ -22,8 +22,8 @@ const iconVariants = cva('icon', {
      */
     size: {
       small: ['text-sm'],
-      medium: ['text-base'],
-      large: ['text-xl'],
+      medium: ['text-xl'],
+      large: ['text-2xl'],
     },
   },
   compoundVariants: [
