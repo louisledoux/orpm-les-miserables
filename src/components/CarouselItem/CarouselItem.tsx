@@ -7,16 +7,12 @@ export interface CarouselItemProps {
   style?: React.CSSProperties,
 }
 
-function CarouselItem({ imageSrc, alt, style }: CarouselItemProps) {
+function CarouselItem({ imageSrc, alt, style = {} }: CarouselItemProps) {
   return (
     <div className="h-carousel">
       <Image style={style} className="w-full h-carousel object-cover" src={imageSrc} alt={alt} />
     </div>
   );
 }
-
-CarouselItem.defaultProps = {
-  style: {},
-};
 
 export default CarouselItem;
