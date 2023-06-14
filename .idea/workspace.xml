@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="302f018d-25a0-43f8-b4cd-79a496f8c178" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CarouselItem/CarouselItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CarouselItem/CarouselItem.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Carousel/Carousel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Carousel/Carousel.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.github/workflows/check-PR.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,16 +24,20 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
+                    <option name="branchName" value="ci/github-actions" />
+                    <option name="lastUsedInstant" value="1686777505" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="main" />
+                    <option name="lastUsedInstant" value="1686777482" />
+                  </RecentBranch>
+                  <RecentBranch>
                     <option name="branchName" value="fix/carousel" />
                     <option name="lastUsedInstant" value="1686777075" />
                   </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="feat/homepage" />
                     <option name="lastUsedInstant" value="1686746635" />
-                  </RecentBranch>
-                  <RecentBranch>
-                    <option name="branchName" value="main" />
-                    <option name="lastUsedInstant" value="1686746634" />
                   </RecentBranch>
                 </list>
               </option>
@@ -118,7 +119,7 @@
       <workItem from="1686744881016" duration="1310000" />
       <workItem from="1686746204975" duration="98000" />
       <workItem from="1686746317011" duration="17840000" />
-      <workItem from="1686777121770" duration="173000" />
+      <workItem from="1686777121770" duration="662000" />
     </task>
     <servers />
   </component>
