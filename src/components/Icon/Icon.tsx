@@ -23,12 +23,15 @@ const iconVariants = cva('icon', {
     size: {
       small: ['text-sm'],
       medium: ['text-base'],
-      large: ['text-lg'],
+      large: ['text-xl'],
     },
   },
+  compoundVariants: [
+    { type: ['primary', 'secondary'], className: 'block p-1 rounded-full' },
+  ],
   defaultVariants: {
     type: 'primary',
-    size: 'medium',
+    size: 'large',
   },
 });
 type IconVariantProps = VariantProps<typeof iconVariants>;

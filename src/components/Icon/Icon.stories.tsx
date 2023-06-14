@@ -11,7 +11,7 @@ type Story = StoryObj<typeof Icon>
 
 export const Primary: Story = {
   args: {
-    icon: ['fab', 'facebook'],
+    icon: ['fab', 'square-instagram'],
   },
 };
 
@@ -24,7 +24,8 @@ export const Secondary: Story = {
 
 export const WithLink: Story = {
   args: {
-    icon: ['fab', 'facebook'],
-    link: 'https://facebook.com',
+    icon: ['fab', 'square-instagram'],
+    link: 'https://instagram.com',
+    type: 'secondary',
   },
 };
