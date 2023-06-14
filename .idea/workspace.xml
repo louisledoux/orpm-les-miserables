@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="302f018d-25a0-43f8-b4cd-79a496f8c178" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.github/workflows/check-PR.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/Carousel/Carousel.stories.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Carousel/Carousel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Carousel/Carousel.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +26,10 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
+                    <option name="branchName" value="feat/homepage" />
+                    <option name="lastUsedInstant" value="1686778237" />
+                  </RecentBranch>
+                  <RecentBranch>
                     <option name="branchName" value="ci/github-actions" />
                     <option name="lastUsedInstant" value="1686777505" />
                   </RecentBranch>
@@ -34,10 +40,6 @@
                   <RecentBranch>
                     <option name="branchName" value="fix/carousel" />
                     <option name="lastUsedInstant" value="1686777075" />
-                  </RecentBranch>
-                  <RecentBranch>
-                    <option name="branchName" value="feat/homepage" />
-                    <option name="lastUsedInstant" value="1686746635" />
                   </RecentBranch>
                 </list>
               </option>

@@ -14,6 +14,7 @@ function CarouselContainer({ items }: CarouselProps) {
       className="h-carousel"
       showArrows
       showThumbs={false}
+      showStatus={false}
     >
       {items.map(({ imageSrc, alt, style }, index) => (
         <CarouselItem key={`${alt}-index`} imageSrc={imageSrc} alt={alt} style={style} />
