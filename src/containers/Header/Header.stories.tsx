@@ -1,4 +1,4 @@
-import Header from '@/containers/Header/Header';
+import Header, { SocialMediasEnum } from '@/containers/Header/Header';
 import { Meta, StoryObj } from '@storybook/react';
 
 const meta: Meta<typeof Header> = {
@@ -9,5 +9,7 @@ export default meta;
 type Story = StoryObj<typeof Header>;
 
 export const Primary: Story = {
-  render: () => <Header />,
+  args: {
+    socialMediasIcons: [SocialMediasEnum.FACEBOOK, SocialMediasEnum.INSTAGRAM],
+  },
 };

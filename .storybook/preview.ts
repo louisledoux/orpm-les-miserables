@@ -1,10 +1,8 @@
 import type { Preview } from '@storybook/react';
 import '../src/app/globals.css';
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { fas } from '@fortawesome/free-solid-svg-icons';
-import { fab } from '@fortawesome/free-brands-svg-icons';
+import { Oswald } from 'next/font/google';
 
-library.add(fas, fab);
+const oswald = Oswald({ subsets: ['latin'] });
 
 const preview: Preview = {
   parameters: {
@@ -16,6 +14,13 @@ const preview: Preview = {
       },
     },
   },
+  decorators: [
+    (Story) => {
+      document.documentElement.style.font = oswald.style.fontFamily;
+      document.body.style.font = oswald.style.fontFamily;
+      return Story();
+    },
+  ],
 };
 
 export default preview;

@@ -5,42 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="302f018d-25a0-43f8-b4cd-79a496f8c178" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.eslintignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.storybook/main.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.storybook/preview.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/FontAwesome.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Icon/Icon.stories.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Icon/Icon.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/Header/Header.stories.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/Header/Header.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stories/Button.stories.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stories/Button.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stories/Header.stories.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stories/Header.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stories/Introduction.mdx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stories/Page.stories.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stories/Page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stories/assets/code-brackets.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stories/assets/colors.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stories/assets/comments.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stories/assets/direction.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stories/assets/flow.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stories/assets/plugin.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stories/assets/repo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stories/assets/stackalt.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stories/button.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stories/header.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stories/page.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/homepage-carousel/image1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/instagram.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/CarouselItem/CarouselItem.stories.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/CarouselItem/CarouselItem.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/NavItem/NavItem.stories.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/NavItem/NavItem.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/Carousel/Carousel.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/Nav/Nav.stories.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/Nav/Nav.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.storybook/preview.ts" beforeDir="false" afterPath="$PROJECT_DIR$/.storybook/preview.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Icon/Icon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Icon/Icon.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Header/Header.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +35,31 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitToolBoxStore">
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="feat/homepage" />
+                    <option name="lastUsedInstant" value="1686746635" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="main" />
+                    <option name="lastUsedInstant" value="1686746634" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -58,24 +68,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.standard": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "settings.javascript.linters.eslint",
-    "ts.external.directory.path": "/Users/louisledoux/Documents/Repositories/orpm-les-miserables/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.linters.eslint&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/louisledoux/Documents/Repositories/orpm-les-miserables/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/assets/homepage-carousel" />
       <recent name="$PROJECT_DIR$/src/containers" />
     </key>
   </component>
@@ -119,6 +130,7 @@
       <workItem from="1686737286023" duration="3268000" />
       <workItem from="1686744881016" duration="1310000" />
       <workItem from="1686746204975" duration="98000" />
+      <workItem from="1686746317011" duration="17840000" />
     </task>
     <servers />
   </component>
