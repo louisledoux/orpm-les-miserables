@@ -21,6 +21,7 @@ module.exports = {
       },
       height: {
         carousel: '700px',
+        mainImg: '700px'
       },
     },
   },
