@@ -49,7 +49,7 @@ function Title({ children, level, className = '' }: TitleProps) {
     case 1:
     default:
       return (
-        <h1 className={`${commonClassNames} text-h1 text-center m-pageTitle`}>
+        <h1 className="text-h1 text-center m-pageTitle text-secondary">
           {children}
         </h1>
       );
