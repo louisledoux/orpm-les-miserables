@@ -1,16 +1,11 @@
+'use client';
+
+import React, { useState, useEffect } from 'react';
 import NavItem from '@/components/NavItem/NavItem';
 import logo from '@/assets/logo.svg';
 import Image from 'next/image';
 import Link from 'next/link';
-
-export enum RoutesPathEnum {
-  HOMEPAGE = '/',
-  MISERABLES = '/les-miserables',
-  ORCHESTRE = '/orchestre',
-  TROUPE = '/la-troupe',
-  AGENDA = '/agenda',
-  BILLETTERIE = '/billetterie'
-}
+import RoutesPathEnum from '@/routes/Routes.enum';
 
 type NavListType = {
   text: string,
@@ -27,14 +22,29 @@ const navList: NavListType[] = [
 ];
 
 function Nav() {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      setIsScrolled(scrollTop > 0);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <nav className="bg-secondary">
+    <nav className={`bg-secondary ${isScrolled ? 'fixed top-0 w-full' : ''}`}>
       <div className="max-w-content mx-auto flex flex-row justify-between items-center">
         <Link href={RoutesPathEnum.HOMEPAGE}>
           <Image className="mx-6" alt="Logo de l'ORPM" src={logo} height={50} />
         </Link>
-        {navList.map(({ text }) => (
-          <NavItem key={text} text={text} />
+        {navList.map(({ text, url }) => (
+          <NavItem key={text} text={text} url={url} />
         ))}
       </div>
     </nav>

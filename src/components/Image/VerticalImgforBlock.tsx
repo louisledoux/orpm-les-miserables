@@ -7,12 +7,12 @@ interface VerticalImgforBlockProps {
   style?: React.CSSProperties;
 }
 
-const VerticalImgforBlock: React.FC<VerticalImgforBlockProps> = ({ src, alt, style }) => {
+function VerticalImgforBlock({ src, alt, style }: VerticalImgforBlockProps) {
   return (
-    <div className='max-w-inBlock'>
-      <Image src={src} alt={alt} style={style} className='object-cover'/>
+    <div className="max-w-inBlock">
+      <Image src={src} alt={alt} style={style} className="object-cover" />
     </div>
   );
-};
+}
 
 export default VerticalImgforBlock;

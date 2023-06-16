@@ -26,17 +26,17 @@ module.exports = {
       },
       margin: {
         titleH1Only: '60px 0px 120px',
-        title:  '0px 0px 60px',
+        title: '0px 0px 60px',
         paragraph: '0px 0px 30px',
         classicBlock: '0px 0px 120px',
       },
       padding: {
         classicBlock: '0px 120px',
-        blockText: '60px 40px'
+        blockText: '60px 40px',
       },
       fontSize: {
 
-      }
+      },
     },
   },
   plugins: [],

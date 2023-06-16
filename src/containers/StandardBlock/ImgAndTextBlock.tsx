@@ -12,14 +12,16 @@ interface ImgAndTextBlockProps {
     text2: string;
     text3: string;
   }
-  
-  const ImgAndTextBlock: React.FC<ImgAndTextBlockProps> = ({ imgSrc, imgAlt, imgStyle, title, text1, text2, text3 }) => {
-    return (
-      <div className='flex justify-between m-classicBlock p-classicBlock'>
-        <VerticalImgforBlock src={imgSrc} alt={imgAlt} style={imgStyle} />
-        <BlockText title={title} text1={text1} text2={text2} text3={text3}/>
-      </div>
-    );
-  };
-  
-  export default ImgAndTextBlock;
+
+function ImgAndTextBlock({
+  imgSrc, imgAlt, imgStyle, title, text1, text2, text3,
+}: ImgAndTextBlockProps) {
+  return (
+    <div className="flex justify-between m-classicBlock p-classicBlock">
+      <VerticalImgforBlock src={imgSrc} alt={imgAlt} style={imgStyle} />
+      <BlockText title={title} text1={text1} text2={text2} text3={text3} />
+    </div>
+  );
+}
+
+export default ImgAndTextBlock;

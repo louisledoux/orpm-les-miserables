@@ -1,14 +1,14 @@
 import MainImgContainer from '@/containers/Main-Img/main-img';
-import { MainImgProps } from '@/components/MainImgItem/MainImgItem'
-import dessinorchestre from '@/assets/orchestre-page/mainorchestre.png'
+import { MainImgProps } from '@/components/MainImgItem/MainImgItem';
+import dessinorchestre from '@/assets/orchestre-page/mainorchestre.png';
 import Typography from '@/components/Typography/Typography';
 import ImgAndTextBlock from '@/containers/StandardBlock/ImgAndTextBlock';
-import imageOrchestre1 from '@/assets/orchestre-page/imagetest.jpg'
+import imageOrchestre1 from '@/assets/orchestre-page/imagetest.jpg';
 
 const items: MainImgProps[] = [
   {
     imageSrc: dessinorchestre,
-    alt: `Joueur de trompette ORPM`,
+    alt: 'Joueur de trompette ORPM',
     style: { objectPosition: '50% 45%' },
   },
 ];
@@ -17,12 +17,12 @@ export default function Home() {
   return (
     <>
       <MainImgContainer items={items} />
-      <div className='m-classicBlock'>
+      <div className="m-classicBlock">
         <Typography.Title level={1}>
           L'orchestre
         </Typography.Title>
         <ImgAndTextBlock
-          imgSrc= {imageOrchestre1}
+          imgSrc={imageOrchestre1}
           imgAlt="Orchestre ORPM"
           imgStyle={{ width: '100%', height: '100%' }}
           title="A propos"
