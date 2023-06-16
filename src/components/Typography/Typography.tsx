@@ -30,26 +30,26 @@ function Title({ children, level, className = '' }: TitleProps) {
       );
     case 4:
       return (
-        <h4 className={`${commonClassNames} text-2xl`}>
+        <h4 className={`${commonClassNames} text-h4`}>
           {children}
         </h4>
       );
     case 3:
       return (
-        <h3 className={`${commonClassNames} text-3xl`}>
+        <h3 className={`${commonClassNames} text-h3`}>
           {children}
         </h3>
       );
     case 2:
       return (
-        <h2 className={`${commonClassNames} text-5xl text-center`}>
+        <h2 className={`${commonClassNames} text-h2 text-center`}>
           {children}
         </h2>
       );
     case 1:
     default:
       return (
-        <h1 className={`${commonClassNames} text-6xl text-center m-pageTitle`}>
+        <h1 className={`${commonClassNames} text-h1 text-center m-pageTitle`}>
           {children}
         </h1>
       );

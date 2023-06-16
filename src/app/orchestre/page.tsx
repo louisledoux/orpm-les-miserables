@@ -6,6 +6,8 @@ import Section from '@/containers/Section/Section';
 import { SectionImageType, SectionPageType } from '@/types/Section.type';
 import Image from 'next/image';
 import React from 'react';
+import Button, { ButtonProps } from '@/containers/Button/Button';
+import RoutesPathEnum from '@/routes/Routes.enum';
 
 const orchestreSectionImage: SectionImageType = {
   image: orchestreImage,
@@ -36,6 +38,13 @@ const directionMusicaleSectionPages: SectionPageType[] = [{
   reverse: true,
 }];
 
+const discoverOrchestreBtn: ButtonProps = {
+  title: 'Découvrir',
+  url: RoutesPathEnum.HOMEPAGE,
+  bgColor: 'bg-yellowSection',
+  titleColor: 'text-secondary',
+};
+
 export default function OrchestrePage() {
   return (
     <>
@@ -57,6 +66,21 @@ export default function OrchestrePage() {
           image={directionMusicaleSectionImage}
           reverse
         />
+        <div className="bg-greySection p-sectionPage">
+          <Typography.Title level={2} className="m-sectionTitle">
+            La musique, directement chez vous
+          </Typography.Title>
+          <Typography.Paragraph className="text-white text-center text-vingtDeux m-paragraph">
+            Écoutez-nous avant même de venir à nos représentations,
+            et découvrez nos précédents spectacles !
+          </Typography.Paragraph>
+          <Button
+            url={discoverOrchestreBtn.url}
+            title={discoverOrchestreBtn.title}
+            bgColor={discoverOrchestreBtn.bgColor}
+            titleColor={discoverOrchestreBtn.titleColor}
+          />
+        </div>
       </div>
     </>
   );

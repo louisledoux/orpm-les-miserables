@@ -11,7 +11,11 @@ module.exports = {
       colors: {
         primary: '#EBAF2B',
         secondary: '#1E2F36',
-        yellowSection: 'rgba(235, 175, 43, 0.8)',
+      },
+      backgroundColor: {
+        fadeYellowSection: 'rgba(235, 175, 43, 0.8)',
+        greySection: '#1E2F36',
+        yellowSection: '#EBAF2B',
       },
       screens: {
         desktop: '1024px',
@@ -34,9 +38,14 @@ module.exports = {
       padding: {
         section: '0px 120px',
         sectionPage: '60px 40px',
+        button: '20px 35px',
       },
       fontSize: {
-
+        vingtDeux: ['22px', '30px'],
+        h1: ['70px', '85px'],
+        h2: ['50px', '60px'],
+        h3: ['35px', '40px'],
+        h4: ['30px', '35px'],
       },
     },
   },
