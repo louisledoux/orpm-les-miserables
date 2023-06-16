@@ -6,7 +6,7 @@ interface MainImgContainerProps {
 
 function MainImgContainer({ items }: MainImgContainerProps) {
   return (
-    <div className="flex max-w-content mx-auto justify-center">
+    <div className="flex justify-center">
       {items.map(({ imageSrc, alt, style }, index) => (
         <MainImgItem key={`${alt}-${index}`} imageSrc={imageSrc} alt={alt} style={style} />
       ))}
