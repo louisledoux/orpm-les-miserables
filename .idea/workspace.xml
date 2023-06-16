@@ -5,22 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="302f018d-25a0-43f8-b4cd-79a496f8c178" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/news-section/newsImage.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/news-section/newsPages.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/Section/Section.stories.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/Section/Section.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/types/Section.type.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/orchestre/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/orchestre/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Image/VerticalImgforBlock.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MainImgItem/MainImgItem.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Text/BlockText.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Typography/Typography.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Typography/Typography.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Main-Img/main-img.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Nav/Nav.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Nav/Nav.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/StandardBlock/ImgAndTextBlock.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Section/Section.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Section/Section.stories.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
