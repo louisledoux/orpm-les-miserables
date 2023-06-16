@@ -24,12 +24,12 @@ const navList: NavListType[] = [
 function Nav() {
   const [isScrolled, setIsScrolled] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollTop = window.scrollY;
-      setIsScrolled(scrollTop > 0);
-    };
+  const handleScroll = () => {
+    const scrollTop = window.scrollY;
+    setIsScrolled(scrollTop > 0);
+  };
 
+  useEffect(() => {
     window.addEventListener('scroll', handleScroll);
 
     return () => {
@@ -38,7 +38,7 @@ function Nav() {
   }, []);
 
   return (
-    <nav className={`bg-secondary ${isScrolled ? 'fixed top-0 w-full' : ''}`}>
+    <nav className={`bg-secondary z-10 ${isScrolled ? 'fixed top-0 w-full' : ''}`}>
       <div className="max-w-content mx-auto flex flex-row justify-between items-center">
         <Link href={RoutesPathEnum.HOMEPAGE}>
           <Image className="mx-6" alt="Logo de l'ORPM" src={logo} height={50} />

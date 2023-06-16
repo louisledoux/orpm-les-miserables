@@ -18,21 +18,21 @@ module.exports = {
       },
       maxWidth: {
         content: '1440px',
-        inBlock: '47%',
+        inSection: '47%',
       },
       height: {
         carousel: '700px',
-        mainImg: '500px',
+        headerImage: '500px',
       },
       margin: {
-        titleH1Only: '60px 0px 120px',
-        title: '0px 0px 60px',
+        pageTitle: '60px 0px 120px',
+        sectionTitle: '0px 0px 60px',
         paragraph: '0px 0px 30px',
-        classicBlock: '0px 0px 120px',
+        section: '0px 0px 120px',
       },
       padding: {
-        classicBlock: '0px 120px',
-        blockText: '60px 40px',
+        section: '0px 120px',
+        sectionPage: '60px 40px',
       },
       fontSize: {
 

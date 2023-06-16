@@ -1,7 +1,9 @@
 import React, { memo } from 'react';
 
 interface Props {
-  children: React.ReactNode
+  children: React.ReactNode,
+  // eslint-disable-next-line react/no-unused-prop-types
+  className?: string,
 }
 
 function Typography({ children }: Props) {
@@ -16,8 +18,8 @@ interface TitleProps extends Props {
    */
   level: number,
 }
-function Title({ children, level }: TitleProps) {
-  const commonClassNames: string = 'text-primary font-semibold';
+function Title({ children, level, className = '' }: TitleProps) {
+  const commonClassNames: string = `text-primary font-semibold ${className}`;
 
   switch (level) {
     case 5:
@@ -47,7 +49,7 @@ function Title({ children, level }: TitleProps) {
     case 1:
     default:
       return (
-        <h1 className={`${commonClassNames} text-6xl text-center m-titleH1Only`}>
+        <h1 className={`${commonClassNames} text-6xl text-center m-pageTitle`}>
           {children}
         </h1>
       );
@@ -55,9 +57,9 @@ function Title({ children, level }: TitleProps) {
 }
 Typography.Title = Title;
 
-function Paragraph({ children }: Props) {
+function Paragraph({ children, className = '' }: Props) {
   return (
-    <p className="font-light text-base">{children}</p>
+    <p className={`font-light text-base ${className}`}>{children}</p>
   );
 }
 Typography.Paragraph = Paragraph;
