@@ -11,6 +11,7 @@ module.exports = {
       colors: {
         primary: '#EBAF2B',
         secondary: '#1E2F36',
+        yellowSection: 'rgba(235, 175, 43, 0.8)',
       },
       screens: {
         desktop: '1024px',

@@ -1,6 +1,7 @@
 import orchestreHeroImage from '@/assets/orchestre-page/mainorchestre.png';
 import Typography from '@/components/Typography/Typography';
 import orchestreImage from '@/assets/orchestre-page/imagetest.jpg';
+import hubert from '@/assets/orchestre-page/hubert.jpg';
 import Section from '@/containers/Section/Section';
 import { SectionImageType, SectionPageType } from '@/types/Section.type';
 import Image from 'next/image';
@@ -11,6 +12,11 @@ const orchestreSectionImage: SectionImageType = {
   alt: 'Orchestre ORPM',
   style: { width: '100%', height: '100%' },
 };
+const directionMusicaleSectionImage: SectionImageType = {
+  image: hubert,
+  alt: 'Hubert Gressier ORPM',
+  style: { width: '100%', height: '100%' },
+};
 
 const orchestreSectionPages: SectionPageType[] = [{
   title: 'À propos',
@@ -19,6 +25,15 @@ const orchestreSectionPages: SectionPageType[] = [{
     'Les avantages à avoir un orchestre en live dans les comédies musicales sont nombreux. Notre vocation est de rendre la musique plus riche et plus expressive, de l\'ajuster en fonction des scènes, des mouvements ou des émotions des acteurs.',
     'Les instruments aident également à créer une atmosphère plus riche et plus immersive pour le public, ce contribue à améliorer l\'expérience des spectateurs. La présence sur scène d\'un orchestre en live ajoute une touche unique à la pièce par son interprétation personnelle et la qualité de ses arrangements.',
   ],
+}];
+const directionMusicaleSectionPages: SectionPageType[] = [{
+  title: 'Hubert Gressier \n Chef d\'orchestre',
+  paragraphs: [
+    "Après de nombreuses années passées à étudier le saxophone, l'écriture et d'autres disciplines musicales dans des conservatoires, j'ai poursuivi une formation universitaire en musicologie en parallèle. Depuis mon enfance, la musique est pour moi une véritable passion et une source infinie de plaisir.",
+    "Diriger l'Orchestre Régional du Pévèle Mélantois depuis plus de 3 décennies m'a offert l'opportunité incroyable de vivre de nombreuses rencontres musicales et culturelles enrichissantes, tout en réalisant des projets ambitieux qui ont toujours été accueillis avec enthousiasme par le public.",
+    "Chaque année, je suis heureux de voir de jeunes musiciens rejoindre nos pupitres et apporter une nouvelle énergie et une fraîcheur bienvenues. Au fil du temps, la direction d'orchestre est devenue une priorité pour moi, et cela a finalement pris le pas sur ma pratique de l'instrument. Le plaisir de me retrouver face aux musiciens de l'orchestre est toujours intact même après toutes ces années.",
+  ],
+  reverse: true,
 }];
 
 export default function OrchestrePage() {
@@ -37,6 +52,11 @@ export default function OrchestrePage() {
           L&apos;orchestre
         </Typography.Title>
         <Section pages={orchestreSectionPages} image={orchestreSectionImage} />
+        <Section
+          pages={directionMusicaleSectionPages}
+          image={directionMusicaleSectionImage}
+          reverse
+        />
       </div>
     </>
   );
