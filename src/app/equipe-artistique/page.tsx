@@ -69,8 +69,8 @@ export default function EquipeArtistiquePage() {
       <div className="h-headerImage w-full">
         <Image
           src={mainequipeArtistique}
-          alt="Joueur de trompette ORPM"
-          style={{ objectPosition: '50% 45%' }}
+          alt="Pianiste ORPM"
+          style={{ objectPosition: '50% 35%' }}
           className="w-full h-full object-cover"
         />
       </div>
