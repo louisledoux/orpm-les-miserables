@@ -1,6 +1,6 @@
 import orchestreHeroImage from '@/assets/orchestre-page/mainorchestre.png';
 import Typography from '@/components/Typography/Typography';
-import orchestreImage from '@/assets/orchestre-page/imagetest.jpg';
+import orchestreImage from '@/assets/orchestre-page/aproposorchestre.jpg';
 import hubert from '@/assets/orchestre-page/hubert.jpg';
 import Section from '@/containers/Section/Section';
 import { SectionImageType, SectionPageType } from '@/types/Section.type';
@@ -8,16 +8,26 @@ import Image from 'next/image';
 import React from 'react';
 import Button, { ButtonProps } from '@/containers/Button/Button';
 import RoutesPathEnum from '@/routes/Routes.enum';
+import Carousel from '@/containers/Carousel/Carousel';
+import { CarouselItemProps } from '@/components/CarouselItem/CarouselItem';
+import carousel1 from '@/assets/orchestre-page/carouselorchestre1.jpg';
+import carousel2 from '@/assets/orchestre-page/carouselorchestre2.jpg';
+import carousel3 from '@/assets/orchestre-page/carouselorchestre3.jpg';
+import carousel4 from '@/assets/orchestre-page/carouselorchestre4.jpg';
+import carousel5 from '@/assets/orchestre-page/carouselorchestre5.jpg';
+import carousel6 from '@/assets/orchestre-page/carouselorchestre6.jpg';
+import carousel7 from '@/assets/orchestre-page/orchestrecarousel7.jpg';
+import carousel8 from '@/assets/orchestre-page/orchestrecarousel8.jpeg';
 
 const orchestreSectionImage: SectionImageType = {
   image: orchestreImage,
   alt: 'Orchestre ORPM',
-  style: { width: '100%', height: '100%' },
+  style: { width: '100%', height: '100%', borderRadius: '2px' },
 };
 const directionMusicaleSectionImage: SectionImageType = {
   image: hubert,
   alt: 'Hubert Gressier ORPM',
-  style: { width: '100%', height: '100%' },
+  style: { width: '100%', height: '100%', borderRadius: '2px' },
 };
 
 const orchestreSectionPages: SectionPageType[] = [{
@@ -45,6 +55,49 @@ const discoverOrchestreBtn: ButtonProps = {
   titleColor: 'text-secondary',
 };
 
+const items: CarouselItemProps[] = [
+  {
+    imageSrc: carousel1,
+    alt: 'Cornistes de l\'ORPM',
+    style: { objectPosition: 'center' },
+  },
+  {
+    imageSrc: carousel2,
+    alt: 'Clarinettistes et Cuivres de l\'ORPM',
+    style: { objectPosition: 'center' },
+  },
+  {
+    imageSrc: carousel3,
+    alt: 'L\'Orchestre de l\'ORPM en concert',
+    style: { objectPosition: 'center' },
+  },
+  {
+    imageSrc: carousel4,
+    alt: 'Musiciennes de l\'ORPM - Clarinettiste et Cornistes',
+    style: { objectPosition: 'center' },
+  },
+  {
+    imageSrc: carousel5,
+    alt: 'Les flûtistes de l\'ORPM',
+    style: { objectPosition: 'center' },
+  },
+  {
+    imageSrc: carousel6,
+    alt: 'Basson et saxophones l\'ORPM',
+    style: { objectPosition: 'center' },
+  },
+  {
+    imageSrc: carousel7,
+    alt: 'Les bassonistes de l\'ORPM',
+    style: { objectPosition: 'center' },
+  },
+  {
+    imageSrc: carousel8,
+    alt: 'Répétitions de l\'ORPM',
+    style: { objectPosition: 'center' },
+  },
+];
+
 export default function OrchestrePage() {
   return (
     <>
@@ -61,12 +114,7 @@ export default function OrchestrePage() {
           L&apos;orchestre
         </Typography.Title>
         <Section pages={orchestreSectionPages} image={orchestreSectionImage} />
-        <Section
-          pages={directionMusicaleSectionPages}
-          image={directionMusicaleSectionImage}
-          reverse
-        />
-        <div className="bg-greySection p-sectionPage">
+        <div className="bg-greySection p-sectionPage m-section">
           <Typography.Title level={2} className="m-sectionTitle">
             La musique, directement chez vous
           </Typography.Title>
@@ -80,6 +128,14 @@ export default function OrchestrePage() {
             bgColor={discoverOrchestreBtn.bgColor}
             titleColor={discoverOrchestreBtn.titleColor}
           />
+        </div>
+        <Section
+          pages={directionMusicaleSectionPages}
+          image={directionMusicaleSectionImage}
+          reverse
+        />
+        <div className="p-section m-section">
+          <Carousel items={items} />
         </div>
       </div>
     </>
