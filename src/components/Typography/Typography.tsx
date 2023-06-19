@@ -19,7 +19,7 @@ interface TitleProps extends Props {
   level: number,
 }
 function Title({ children, level, className = '' }: TitleProps) {
-  const commonClassNames: string = `text-primary font-semibold ${className} whitespace-pre-line`;
+  const commonClassNames: string = `text-primary font-semibold whitespace-pre-line ${className}`;
 
   switch (level) {
     case 5:
@@ -49,7 +49,7 @@ function Title({ children, level, className = '' }: TitleProps) {
     case 1:
     default:
       return (
-        <h1 className="text-h1 text-center m-pageTitle text-secondary">
+        <h1 className={`${commonClassNames} text-6xl text-center m-pageTitle`}>
           {children}
         </h1>
       );

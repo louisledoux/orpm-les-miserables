@@ -23,8 +23,8 @@ function Section({
   pages, image, reverse,
 }: SectionProps) {
   return (
-    <div className={`flex justify-between m-section p-section ${reverse ? 'flex-row-reverse' : ''}`}>
-      <div className="max-w-inSection">
+    <div className={`flex justify-between m-section p-section items-center ${reverse ? 'flex-row-reverse' : ''}`}>
+      <div className="max-w-inSection w-full h-fit">
         <Image className="object-cover" src={image.image} alt={image.alt} style={image.style} />
       </div>
       {pages.map((page) => (
