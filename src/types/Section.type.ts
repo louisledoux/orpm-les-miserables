@@ -3,7 +3,8 @@ import React from 'react';
 
 export type SectionPageType = {
   title: string,
-  paragraphs: string[]
+  paragraphs: string[],
+  reverse?: boolean,
 }
 
 export type SectionImageType = {
