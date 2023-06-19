@@ -16,7 +16,7 @@ function CarouselContainer({ items }: CarouselProps) {
       showThumbs={false}
       showStatus={false}
     >
-      {items.map(({ imageSrc, alt, style }, index) => (
+      {items.map(({ imageSrc, alt, style }) => (
         <CarouselItem key={`${alt}-index`} imageSrc={imageSrc} alt={alt} style={style} />
       ))}
     </Carousel>

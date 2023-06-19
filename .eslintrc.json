@@ -2,7 +2,8 @@
   "extends": [
     "airbnb",
     "next/core-web-vitals",
-    "plugin:storybook/recommended"
+    "plugin:storybook/recommended",
+    "plugin:@typescript-eslint/recommended"
   ],
   "parser": "@typescript-eslint/parser",
   "plugins": [
@@ -46,6 +47,7 @@
     ],
     "no-shadow": "off",
     "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": ["error"],
     "react/react-in-jsx-scope": "off",
     "react/jsx-no-useless-fragment": "off",
     "react/require-default-props": "off",

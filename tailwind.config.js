@@ -10,12 +10,8 @@ module.exports = {
     extend: {
       colors: {
         primary: '#EBAF2B',
+        fadePrimary: 'rgba(235, 175, 43, 0.8)',
         secondary: '#1E2F36',
-      },
-      backgroundColor: {
-        fadeYellowSection: 'rgba(235, 175, 43, 0.8)',
-        greySection: '#1E2F36',
-        yellowSection: '#EBAF2B',
       },
       screens: {
         desktop: '1024px',
@@ -41,7 +37,7 @@ module.exports = {
         button: '20px 35px',
       },
       fontSize: {
-        vingtDeux: ['22px', '30px'],
+        22: ['22px', '30px'],
         h1: ['70px', '85px'],
         h2: ['50px', '60px'],
         h3: ['35px', '40px'],
