@@ -1,14 +1,8 @@
-import { SectionImageType, SectionPageType } from '@/types/Section.type';
 import hubert from '@/assets/orchestre-page/images/hubert.jpg';
 import eric from '@/assets/equipeArtistique-page/images/ericpauwels.jpg';
 import magali from '@/assets/equipeArtistique-page/images/magali.jpg';
 import celine from '@/assets/equipeArtistique-page/images/celine.jpg';
-
-type SectionData = {
-  key: string,
-  pages: SectionPageType[],
-  image: SectionImageType,
-}
+import { SectionData } from '@/types/Section.type';
 
 const equipeArtistiqueSections: SectionData[] = [
   {

@@ -12,3 +12,9 @@ export type SectionImageType = {
   alt: string,
   style?: React.CSSProperties,
 }
+
+export type SectionData = {
+  key: string,
+  pages: SectionPageType[],
+  image: SectionImageType,
+}

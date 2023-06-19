@@ -5,33 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="302f018d-25a0-43f8-b4cd-79a496f8c178" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/equipeArtistique-page/equipeArtistiqueSections.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/orchestre-page/orchestreCarouselData.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/orchestre-page/orchestreSections.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintignore" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/equipe-artistique/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/equipe-artistique/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/orchestre/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/orchestre/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/equipeArtistique-page/celine.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/equipeArtistique-page/images/celine.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/equipeArtistique-page/ericpauwels.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/equipeArtistique-page/images/ericpauwels.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/equipeArtistique-page/magali.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/equipeArtistique-page/images/magali.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/equipeArtistique-page/mainequipeArtistique.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/equipeArtistique-page/images/mainequipeArtistique.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/orchestre-page/aproposorchestre.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/orchestre-page/images/aproposorchestre.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/orchestre-page/carouselorchestre1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/orchestre-page/images/carouselorchestre1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/orchestre-page/carouselorchestre2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/orchestre-page/images/carouselorchestre2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/orchestre-page/carouselorchestre3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/orchestre-page/images/carouselorchestre3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/orchestre-page/carouselorchestre4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/orchestre-page/images/carouselorchestre4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/orchestre-page/carouselorchestre5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/orchestre-page/images/carouselorchestre5.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/orchestre-page/carouselorchestre6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/orchestre-page/images/carouselorchestre6.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/orchestre-page/hubert.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/orchestre-page/images/hubert.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/orchestre-page/mainorchestre.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/orchestre-page/images/mainorchestre.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/orchestre-page/orchestrecarousel7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/orchestre-page/images/orchestrecarousel7.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/orchestre-page/orchestrecarousel8.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/orchestre-page/images/orchestrecarousel8.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Typography/Typography.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Typography/Typography.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Button/Button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Button/Button.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Carousel/Carousel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Carousel/Carousel.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/equipeArtistique-page/equipeArtistiqueSections.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/equipeArtistique-page/equipeArtistiqueSections.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/Section.type.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/Section.type.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
