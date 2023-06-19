@@ -48,7 +48,7 @@ export default function OrchestrePage() {
           reverse
         />
         <div className="p-section m-section">
-          <Carousel items={orchestreCarouselData} />
+          <Carousel items={orchestreCarouselData} autoplay />
         </div>
       </div>
     </>

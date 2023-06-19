@@ -6,12 +6,14 @@ import CarouselItem, { CarouselItemProps } from '@/components/CarouselItem/Carou
 
 interface CarouselProps {
   items: CarouselItemProps[],
+  autoplay?: boolean,
 }
 
-function CarouselContainer({ items }: CarouselProps) {
+function CarouselContainer({ items, autoplay }: CarouselProps) {
   return (
     <Carousel
       className="h-carousel"
+      autoPlay={autoplay}
       showArrows
       showThumbs={false}
       showStatus={false}

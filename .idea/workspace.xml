@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="302f018d-25a0-43f8-b4cd-79a496f8c178" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/orchestre-page/orchestreSections.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintignore" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/orchestre/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/orchestre/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/equipeArtistique-page/equipeArtistiqueSections.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/equipeArtistique-page/equipeArtistiqueSections.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types/Section.type.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/Section.type.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Carousel/Carousel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Carousel/Carousel.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
