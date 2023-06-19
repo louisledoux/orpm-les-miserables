@@ -1,7 +1,9 @@
 import React, { memo } from 'react';
 
 interface Props {
-  children: React.ReactNode
+  children: React.ReactNode,
+  // eslint-disable-next-line react/no-unused-prop-types
+  className?: string,
 }
 
 function Typography({ children }: Props) {
@@ -16,8 +18,8 @@ interface TitleProps extends Props {
    */
   level: number,
 }
-function Title({ children, level }: TitleProps) {
-  const commonClassNames: string = 'text-primary font-semibold';
+function Title({ children, level, className = '' }: TitleProps) {
+  const commonClassNames: string = `text-primary font-semibold ${className} whitespace-pre-line`;
 
   switch (level) {
     case 5:
@@ -28,26 +30,26 @@ function Title({ children, level }: TitleProps) {
       );
     case 4:
       return (
-        <h4 className={`${commonClassNames} text-2xl`}>
+        <h4 className={`${commonClassNames} text-h4`}>
           {children}
         </h4>
       );
     case 3:
       return (
-        <h3 className={`${commonClassNames} text-3xl`}>
+        <h3 className={`${commonClassNames} text-h3`}>
           {children}
         </h3>
       );
     case 2:
       return (
-        <h2 className={`${commonClassNames} text-5xl`}>
+        <h2 className={`${commonClassNames} text-h2 text-center`}>
           {children}
         </h2>
       );
     case 1:
     default:
       return (
-        <h1 className={`${commonClassNames} text-6xl`}>
+        <h1 className="text-h1 text-center m-pageTitle text-secondary">
           {children}
         </h1>
       );
@@ -55,9 +57,9 @@ function Title({ children, level }: TitleProps) {
 }
 Typography.Title = Title;
 
-function Paragraph({ children }: Props) {
+function Paragraph({ children, className = '' }: Props) {
   return (
-    <p className="font-light text-base">{children}</p>
+    <p className={`font-light text-base ${className}`}>{children}</p>
   );
 }
 Typography.Paragraph = Paragraph;
