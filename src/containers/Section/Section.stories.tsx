@@ -22,6 +22,7 @@ export const Default: Story = {
     image: {
       image: newsImage,
       alt: 'Mon image',
+      style: { width: '100%', height: '100%' },
     },
   },
 };
