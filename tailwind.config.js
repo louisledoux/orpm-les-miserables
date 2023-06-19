@@ -42,7 +42,7 @@ module.exports = {
         h2: ['50px', '60px'],
         h3: ['35px', '40px'],
         h4: ['30px', '35px'],
-        textBase: ['18px', '22px'],
+        base: ['18px', '22px'],
       },
     },
   },
