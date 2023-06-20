@@ -1,11 +1,10 @@
-import Typography from '@/components/Typography/Typography';
 import RoutesPathEnum from '@/routes/Routes.enum';
 import Link from 'next/link';
 import React from 'react';
 
 export interface ButtonProps {
   title: string,
-  url: RoutesPathEnum,
+  url?: RoutesPathEnum,
   type?: 'primary' | 'secondary',
 }
 
@@ -37,10 +36,10 @@ function Button({
 
   return (
     <div className={`w-fit p-button mx-auto ${bgColor}`}>
-      <Link href={url} className="text-center">
-        <Typography.Title level={3} className={`${titleColor} uppercase hover:text-white ease-in-out duration-150"`}>
+      <Link href={url || ''} className="text-center">
+        <span className={`${titleColor} text-h3 font-semibold uppercase hover:text-white ease-in-out duration-150"`}>
           {title}
-        </Typography.Title>
+        </span>
       </Link>
     </div>
   );

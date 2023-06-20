@@ -3,7 +3,7 @@ import Typography from '@/components/Typography/Typography';
 import Section from '@/containers/Section/Section';
 import Image from 'next/image';
 import React from 'react';
-import Button from '@/containers/Button/Button';
+import Button from '@/components/Button/Button';
 import RoutesPathEnum from '@/routes/Routes.enum';
 import Carousel from '@/containers/Carousel/Carousel';
 import orchestreCarouselData from '@/assets/pages/orchestre/orchestreCarouselData';
