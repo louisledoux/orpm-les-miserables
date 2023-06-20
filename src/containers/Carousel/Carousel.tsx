@@ -6,17 +6,19 @@ import CarouselItem, { CarouselItemProps } from '@/components/CarouselItem/Carou
 
 interface CarouselProps {
   items: CarouselItemProps[],
+  autoplay?: boolean,
 }
 
-function CarouselContainer({ items }: CarouselProps) {
+function CarouselContainer({ items, autoplay }: CarouselProps) {
   return (
     <Carousel
       className="h-carousel"
+      autoPlay={autoplay}
       showArrows
       showThumbs={false}
       showStatus={false}
     >
-      {items.map(({ imageSrc, alt, style }, index) => (
+      {items.map(({ imageSrc, alt, style }) => (
         <CarouselItem key={`${alt}-index`} imageSrc={imageSrc} alt={alt} style={style} />
       ))}
     </Carousel>

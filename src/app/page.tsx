@@ -1,8 +1,8 @@
 import Carousel from '@/containers/Carousel/Carousel';
 import { CarouselItemProps } from '@/components/CarouselItem/CarouselItem';
-import image1 from '@/assets/homepage-carousel/image1.png';
+import image1 from '@/assets/pages/homepage/homepage-carousel/image1.png';
 import Section from '@/containers/Section/Section';
-import newsImage from '@/assets/news-section/newsImage.png';
+import newsImage from '@/assets/pages/homepage/news-section/newsImage.png';
 
 const items: CarouselItemProps[] = [
   {

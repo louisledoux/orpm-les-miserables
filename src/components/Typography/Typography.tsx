@@ -1,4 +1,4 @@
-import React, { memo } from 'react';
+import React from 'react';
 
 interface Props {
   children: React.ReactNode,
@@ -19,7 +19,7 @@ interface TitleProps extends Props {
   level: number,
 }
 function Title({ children, level, className = '' }: TitleProps) {
-  const commonClassNames: string = `text-primary font-semibold whitespace-pre-line ${className}`;
+  const commonClassNames = `text-primary font-semibold whitespace-pre-line ${className}`;
 
   switch (level) {
     case 5:

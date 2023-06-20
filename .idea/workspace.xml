@@ -6,11 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="302f018d-25a0-43f8-b4cd-79a496f8c178" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/equipe-artistique/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/equipe-artistique/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/orchestre/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/orchestre/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/pages/equipeArtistique/equipeArtistiqueSections.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/pages/equipeArtistique/equipeArtistiqueSections.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/pages/orchestre/orchestreCarouselData.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/pages/orchestre/orchestreCarouselData.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/pages/orchestre/orchestreSections.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/pages/orchestre/orchestreSections.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/CarouselItem/CarouselItem.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CarouselItem/CarouselItem.stories.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Typography/Typography.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Typography/Typography.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Carousel/Carousel.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Carousel/Carousel.stories.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/containers/Section/Section.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Section/Section.stories.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Section/Section.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Section/Section.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,12 +86,14 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/assets/pages/homepage" />
+      <recent name="$PROJECT_DIR$/src/assets/pages" />
+      <recent name="$PROJECT_DIR$/src/assets/equipeArtistique-page/images" />
+      <recent name="$PROJECT_DIR$/src/assets/orchestre-page/images" />
       <recent name="$PROJECT_DIR$/src/assets/news-section" />
-      <recent name="$PROJECT_DIR$/src/assets/homepage-carousel" />
-      <recent name="$PROJECT_DIR$/src/containers" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.storybook">
+  <component name="RunManager" selected="npm.dev">
     <configuration name="dev" type="js.build_tools.npm" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
