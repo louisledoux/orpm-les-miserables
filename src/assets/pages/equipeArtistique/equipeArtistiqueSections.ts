@@ -1,7 +1,7 @@
-import hubert from '@/assets/orchestre-page/images/hubert.jpg';
-import eric from '@/assets/equipeArtistique-page/images/ericpauwels.jpg';
-import magali from '@/assets/equipeArtistique-page/images/magali.jpg';
-import celine from '@/assets/equipeArtistique-page/images/celine.jpg';
+import hubert from '@/assets/pages/orchestre/images/hubert.jpg';
+import eric from '@/assets/pages/equipeArtistique/images/ericpauwels.jpg';
+import magali from '@/assets/pages/equipeArtistique/images/magali.jpg';
+import celine from '@/assets/pages/equipeArtistique/images/celine.jpg';
 import { SectionData } from '@/types/Section.type';
 
 const equipeArtistiqueSections: SectionData[] = [

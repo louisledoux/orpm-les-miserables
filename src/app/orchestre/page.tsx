@@ -1,4 +1,4 @@
-import orchestreHeroImage from '@/assets/orchestre-page/images/mainorchestre.png';
+import orchestreHeroImage from '@/assets/pages/orchestre/images/mainorchestre.png';
 import Typography from '@/components/Typography/Typography';
 import Section from '@/containers/Section/Section';
 import Image from 'next/image';
@@ -6,11 +6,11 @@ import React from 'react';
 import Button from '@/containers/Button/Button';
 import RoutesPathEnum from '@/routes/Routes.enum';
 import Carousel from '@/containers/Carousel/Carousel';
-import orchestreCarouselData from '@/assets/orchestre-page/orchestreCarouselData';
+import orchestreCarouselData from '@/assets/pages/orchestre/orchestreCarouselData';
 import {
   directionMusicaleSection,
   orchestreSection,
-} from '@/assets/orchestre-page/orchestreSections';
+} from '@/assets/pages/orchestre/orchestreSections';
 
 export default function OrchestrePage() {
   return (

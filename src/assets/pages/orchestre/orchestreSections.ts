@@ -1,6 +1,6 @@
 import { SectionData } from '@/types/Section.type';
-import orchestreImage from '@/assets/orchestre-page/images/aproposorchestre.jpg';
-import hubert from '@/assets/orchestre-page/images/hubert.jpg';
+import orchestreImage from '@/assets/pages/orchestre/images/aproposorchestre.jpg';
+import hubert from '@/assets/pages/orchestre/images/hubert.jpg';
 
 export const orchestreSection: SectionData = {
   key: 'Section Orchestre',

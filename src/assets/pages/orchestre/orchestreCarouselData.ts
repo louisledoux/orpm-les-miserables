@@ -1,12 +1,12 @@
 import { CarouselItemProps } from '@/components/CarouselItem/CarouselItem';
-import carousel1 from '@/assets/orchestre-page/images/carouselorchestre1.jpg';
-import carousel2 from '@/assets/orchestre-page/images/carouselorchestre2.jpg';
-import carousel3 from '@/assets/orchestre-page/images/carouselorchestre3.jpg';
-import carousel4 from '@/assets/orchestre-page/images/carouselorchestre4.jpg';
-import carousel5 from '@/assets/orchestre-page/images/carouselorchestre5.jpg';
-import carousel6 from '@/assets/orchestre-page/images/carouselorchestre6.jpg';
-import carousel7 from '@/assets/orchestre-page/images/orchestrecarousel7.jpg';
-import carousel8 from '@/assets/orchestre-page/images/orchestrecarousel8.jpeg';
+import carousel1 from '@/assets/pages/orchestre/images/carouselorchestre1.jpg';
+import carousel2 from '@/assets/pages/orchestre/images/carouselorchestre2.jpg';
+import carousel3 from '@/assets/pages/orchestre/images/carouselorchestre3.jpg';
+import carousel4 from '@/assets/pages/orchestre/images/carouselorchestre4.jpg';
+import carousel5 from '@/assets/pages/orchestre/images/carouselorchestre5.jpg';
+import carousel6 from '@/assets/pages/orchestre/images/carouselorchestre6.jpg';
+import carousel7 from '@/assets/pages/orchestre/images/orchestrecarousel7.jpg';
+import carousel8 from '@/assets/pages/orchestre/images/orchestrecarousel8.jpeg';
 
 const orchestreCarouselData: CarouselItemProps[] = [
   {
