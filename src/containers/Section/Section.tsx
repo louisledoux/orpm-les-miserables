@@ -32,7 +32,7 @@ function Section({
           key={page.title}
           className="flex flex-col justify-center max-w-inSection w-full p-sectionPage"
         >
-          <Title className="m-sectionTitle" level={2}>{page.title}</Title>
+          <Title className="m-sectionTitle text-center" level={2}>{page.title}</Title>
           {page.paragraphs.map((paragraph) => (
             <Paragraph
               className="m-paragraph text-justify"

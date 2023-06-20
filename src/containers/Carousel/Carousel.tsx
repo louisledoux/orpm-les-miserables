@@ -14,6 +14,8 @@ function CarouselContainer({ items, autoplay }: CarouselProps) {
     <Carousel
       className="h-carousel"
       autoPlay={autoplay}
+      infiniteLoop={autoplay}
+      interval={5000}
       showArrows
       showThumbs={false}
       showStatus={false}

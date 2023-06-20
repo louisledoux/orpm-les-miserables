@@ -24,11 +24,11 @@ export default function OrchestrePage() {
         />
       </div>
       <div className="m-section">
-        <Typography.Title level={1}>
+        <Typography.Title level={1} className="text-center">
           L&apos;orchestre
         </Typography.Title>
         <Section pages={orchestreSection.pages} image={orchestreSection.image} />
-        <div className="bg-secondary p-sectionPage m-section">
+        <div className="flex flex-col items-center bg-secondary p-sectionPage m-section">
           <Typography.Title level={2} className="m-sectionTitle">
             La musique, directement chez vous
           </Typography.Title>

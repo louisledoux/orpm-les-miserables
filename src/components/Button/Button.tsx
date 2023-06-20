@@ -3,8 +3,17 @@ import Link from 'next/link';
 import React from 'react';
 
 export interface ButtonProps {
+  /**
+   * The button text
+   */
   title: string,
+  /**
+   * Optional URL redirection
+   */
   url?: RoutesPathEnum,
+  /**
+   * Type of the button
+   */
   type?: 'primary' | 'secondary',
 }
 
@@ -35,13 +44,16 @@ function Button({
   const { bgColor, titleColor } = getButtonColors(type);
 
   return (
-    <div className={`w-fit p-button mx-auto ${bgColor}`}>
-      <Link href={url || ''} className="text-center">
-        <span className={`${titleColor} text-h3 font-semibold uppercase hover:text-white ease-in-out duration-150"`}>
-          {title}
-        </span>
-      </Link>
-    </div>
+    <Link
+      href={url || ''}
+      className={`w-fit p-button ${bgColor} ${titleColor} text-h3 font-semibold uppercase
+          hover:text-white ease-in-out duration-150`}
+      type="button"
+    >
+      <span>
+        {title}
+      </span>
+    </Link>
   );
 }
 
