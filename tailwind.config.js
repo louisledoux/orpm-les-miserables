@@ -45,6 +45,9 @@ module.exports = {
         h4: ['30px', '35px'],
         base: ['18px', '22px'],
       },
+      letterSpacing: {
+        '2%': '2%',
+      },
     },
   },
   plugins: [],
