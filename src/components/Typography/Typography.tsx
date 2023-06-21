@@ -52,7 +52,7 @@ function Title({ children, level, className = '' }: TitleProps) {
     case 1:
     default:
       return (
-        <h1 className={`${commonClassNames} ${amithenFont.className} font-medium text-secondary text-6xl m-pageTitle`}>
+        <h1 className={`${commonClassNames} ${amithenFont.className} font-medium text-secondary text-h1 m-pageTitle`}>
           {children}
         </h1>
       );
