@@ -30,8 +30,6 @@ function SectionClient({
   const [divHeight, setDivHeight] = useState<number>();
   const observedDiv: MutableRefObject<HTMLDivElement | null> = useRef(null);
 
-  console.log(divHeight);
-
   useEffect(() => {
     if (!observedDiv.current) return;
 
@@ -47,7 +45,7 @@ function SectionClient({
     return function cleanup() {
       resizeObserver.disconnect();
     };
-  }, [observedDiv]);
+  }, [divHeight, observedDiv]);
 
   return (
     <div className={`flex justify-between items-center ${reverse ? 'flex-row-reverse' : ''}`}>

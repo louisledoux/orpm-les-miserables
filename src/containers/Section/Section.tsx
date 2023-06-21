@@ -1,9 +1,6 @@
-import Typography from '@/components/Typography/Typography';
 import { SectionImageType, SectionPageType } from '@/types/Section.type';
 import CallToAction, { CallToActionProps } from '@/components/Section/CallToAction/CallToAction';
 import SectionClient from '@/components/Section/SectionClient/SectionClient';
-
-const { Title, Paragraph } = Typography;
 
 interface SectionProps {
   /**
