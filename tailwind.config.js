@@ -35,6 +35,7 @@ module.exports = {
         section: '0px 120px',
         sectionPage: '60px 40px',
         button: '20px 35px',
+        extra: '40px 75px',
       },
       fontSize: {
         22: ['22px', '30px'],

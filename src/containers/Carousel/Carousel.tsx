@@ -5,7 +5,14 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import CarouselItem, { CarouselItemProps } from '@/components/CarouselItem/CarouselItem';
 
 interface CarouselProps {
+  /**
+   * The carousel pictures
+   */
   items: CarouselItemProps[],
+  /**
+   * Optional autoplay
+   * Default to false
+   */
   autoplay?: boolean,
 }
 

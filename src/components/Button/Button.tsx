@@ -50,9 +50,7 @@ function Button({
           hover:text-white ease-in-out duration-150`}
       type="button"
     >
-      <span>
-        {title}
-      </span>
+      {title}
     </Link>
   );
 }

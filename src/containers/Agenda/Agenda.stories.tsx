@@ -8,4 +8,4 @@ const meta: Meta<typeof Agenda> = {
 export default meta;
 type Story = StoryObj<typeof Agenda>
 
-export const Default: Story = {};
+export const NoDate: Story = {};
