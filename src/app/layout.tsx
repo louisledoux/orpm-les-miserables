@@ -5,6 +5,7 @@ import React from 'react';
 import './globals.css';
 import Header, { SocialMediasEnum } from '@/containers/Header/Header';
 import Nav from '@/containers/Nav/Nav';
+import Footer from '@/containers/Footer/Footer';
 
 config.autoAddCss = false;
 
@@ -21,12 +22,11 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={oswald.className}>
+    <html lang="fr">
+      <body className={`${oswald.className} tracking-2%`}>
         <div className="w-full">
           <Header socialMediasIcons={
             [SocialMediasEnum.FACEBOOK,
-              SocialMediasEnum.FACEBOOK,
               SocialMediasEnum.INSTAGRAM,
             ]
           }
@@ -36,6 +36,7 @@ export default function RootLayout({
             {children}
           </main>
         </div>
+        <Footer />
       </body>
     </html>
   );
