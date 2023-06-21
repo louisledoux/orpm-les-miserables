@@ -36,7 +36,7 @@ function Section({
         {pages.map((page) => (
           <div
             key={page.title}
-            className="flex flex-col justify-center max-w-inSection w-full px-10"
+            className="flex flex-col justify-center max-w-inSection w-full p-sectionPage"
           >
             <Title className="m-sectionTitle text-center" level={2}>{page.title}</Title>
             {page.paragraphs.map((paragraph) => (
