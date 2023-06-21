@@ -24,7 +24,7 @@ export default function OrchestrePage() {
         />
       </div>
       <div className="m-section">
-        <Typography.Title level={1} className="text-center">
+        <Typography.Title level={1}>
           L&apos;orchestre
         </Typography.Title>
         <Section pages={orchestreSection.pages} image={orchestreSection.image} />

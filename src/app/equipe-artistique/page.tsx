@@ -17,7 +17,7 @@ export default function EquipeArtistiquePage() {
         />
       </div>
       <div className="m-section">
-        <Typography.Title level={1} className="text-center">
+        <Typography.Title level={1}>
           L&apos;équipe artistique
         </Typography.Title>
         <div className="m-section p-section text-center text-22 font-light">
