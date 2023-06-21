@@ -24,8 +24,8 @@ function Section({
 }: SectionProps) {
   return (
     <div className={`flex justify-between m-section p-section items-center ${reverse ? 'flex-row-reverse' : ''}`}>
-      <div className="max-w-inSection w-full h-fit">
-        <Image className="object-cover" src={image.image} alt={image.alt} style={image.style} />
+      <div className="max-w-inSection w-full h-full">
+        <Image className="object-cover h-full w-full rounded-sm" src={image.image} alt={image.alt} style={image.style} />
       </div>
       {pages.map((page) => (
         <div

@@ -15,7 +15,6 @@ export const orchestreSection: SectionData = {
   image: {
     image: orchestreImage,
     alt: 'Orchestre ORPM',
-    style: { width: '100%', height: '100%', borderRadius: '2px' },
   },
 };
 
@@ -33,6 +32,5 @@ export const directionMusicaleSection: SectionData = {
   image: {
     image: hubert,
     alt: 'Hubert Gressier ORPM',
-    style: { width: '100%', height: '100%', borderRadius: '2px' },
   },
 };
