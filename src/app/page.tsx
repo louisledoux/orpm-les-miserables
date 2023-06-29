@@ -2,7 +2,8 @@ import Carousel from '@/containers/Carousel/Carousel';
 import { CarouselItemProps } from '@/components/CarouselItem/CarouselItem';
 import image1 from '@/assets/pages/homepage/homepage-carousel/image1.png';
 import Section from '@/containers/Section/Section';
-import newsImage from '@/assets/pages/homepage/news-section/newsImage.png';
+import Agenda from '@/containers/Agenda/Agenda';
+import { newsSection, playSection } from '@/assets/pages/homepage/homepageSections';
 
 const items: CarouselItemProps[] = [
   {
@@ -20,19 +21,36 @@ export default function Home() {
       </div>
       <div className="m-section">
         <Section
-          pages={[{
-            title: 'En ce moment',
-            paragraphs: [
-              'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus diam ut sapien ornare, congue convallis quam auctor. In pharetra sed ex dapibus eleifend. Sed nec leo euismod nisi venenatis semper. Sed tempor ex eget bibendum auctor. Aliquam sagittis sem accumsan mi efficitur, non eleifend elit mattis.',
-              'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus diam ut sapien ornare, congue convallis quam auctor. In pharetra sed ex dapibus eleifend. Sed nec leo euismod nisi venenatis semper. Sed tempor ex eget bibendum auctor. Aliquam sagittis sem accumsan mi efficitur, non eleifend elit mattis.',
-              'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus diam ut sapien ornare, congue convallis quam auctor. In pharetra sed ex dapibus eleifend. Sed nec leo euismod nisi venenatis semper. Sed tempor ex eget bibendum aucto',
-            ],
-          }]}
-          image={{
-            image: newsImage,
-            alt: 'Mon image',
-            style: { width: '100%', height: '100%' },
+          pages={newsSection.pages}
+          image={newsSection.image}
+          extra={{
+            firstLink: {
+              text: 'Télécharger le dossier de presse',
+              url: '/',
+            },
+            secondLink: {
+              text: 'Découvrir',
+              url: '/',
+            },
           }}
+        />
+      </div>
+      <Agenda />
+      <div className="m-section">
+        <Section
+          pages={playSection.pages}
+          image={playSection.image}
+          extra={{
+            firstLink: {
+              text: 'Jouez et découvrez les Misérables autrement',
+              url: '/',
+            },
+            secondLink: {
+              text: 'Jouer',
+              url: '/',
+            },
+          }}
+          reverse
         />
       </div>
     </>

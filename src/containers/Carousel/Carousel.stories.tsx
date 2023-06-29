@@ -1,9 +1,10 @@
 import { Meta, StoryObj } from '@storybook/react';
 import Carousel from '@/containers/Carousel/Carousel';
-import image1 from '@/assets/pages/homepage/homepage-carousel/image1.png';
+import orchestreCarouselData from '@/assets/pages/orchestre/orchestreCarouselData';
 
 const meta: Meta<typeof Carousel> = {
   component: Carousel,
+  tags: ['autodocs'],
 };
 
 export default meta;
@@ -11,12 +12,6 @@ type Story = StoryObj<typeof Carousel>
 
 export const Default: Story = {
   args: {
-    items: [
-      {
-        imageSrc: image1,
-        alt: 'Cosette dans la rue',
-        style: { objectPosition: '80% 80%' },
-      },
-    ],
+    items: orchestreCarouselData,
   },
 };

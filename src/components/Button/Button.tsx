@@ -1,11 +1,19 @@
-import Typography from '@/components/Typography/Typography';
 import RoutesPathEnum from '@/routes/Routes.enum';
 import Link from 'next/link';
 import React from 'react';
 
 export interface ButtonProps {
+  /**
+   * The button text
+   */
   title: string,
-  url: RoutesPathEnum,
+  /**
+   * Optional URL redirection
+   */
+  url?: RoutesPathEnum,
+  /**
+   * Type of the button
+   */
   type?: 'primary' | 'secondary',
 }
 
@@ -36,13 +44,14 @@ function Button({
   const { bgColor, titleColor } = getButtonColors(type);
 
   return (
-    <div className={`w-fit p-button mx-auto ${bgColor}`}>
-      <Link href={url} className="text-center">
-        <Typography.Title level={3} className={`${titleColor} uppercase hover:text-white ease-in-out duration-150"`}>
-          {title}
-        </Typography.Title>
-      </Link>
-    </div>
+    <Link
+      href={url || ''}
+      className={`w-fit p-button ${bgColor} ${titleColor} text-h3 font-semibold uppercase
+          hover:text-white ease-in-out duration-150`}
+      type="button"
+    >
+      {title}
+    </Link>
   );
 }
 

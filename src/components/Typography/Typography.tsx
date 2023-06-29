@@ -1,4 +1,7 @@
 import React from 'react';
+import localFont from 'next/font/local';
+
+const amithenFont = localFont({ src: '../../assets/font/amithen.ttf' });
 
 interface Props {
   children: React.ReactNode,
@@ -19,37 +22,37 @@ interface TitleProps extends Props {
   level: number,
 }
 function Title({ children, level, className = '' }: TitleProps) {
-  const commonClassNames = `text-primary font-semibold whitespace-pre-line ${className}`;
+  const commonClassNames = `whitespace-pre-line ${className}`;
 
   switch (level) {
     case 5:
       return (
-        <h5 className={`${commonClassNames} text-xl`}>
+        <h5 className={`${commonClassNames} text-primary font-semibold text-xl`}>
           {children}
         </h5>
       );
     case 4:
       return (
-        <h4 className={`${commonClassNames} text-h4`}>
+        <h4 className={`${commonClassNames} text-primary font-semibold text-h4`}>
           {children}
         </h4>
       );
     case 3:
       return (
-        <h3 className={`${commonClassNames} text-h3`}>
+        <h3 className={`${commonClassNames} text-primary font-semibold text-h3`}>
           {children}
         </h3>
       );
     case 2:
       return (
-        <h2 className={`${commonClassNames} text-h2`}>
+        <h2 className={`${commonClassNames} ${amithenFont.className} text-primary text-h2`}>
           {children}
         </h2>
       );
     case 1:
     default:
       return (
-        <h1 className={`${commonClassNames} text-6xl text-center m-pageTitle`}>
+        <h1 className={`${commonClassNames} ${amithenFont.className} text-secondary text-center text-h1 m-pageTitle`}>
           {children}
         </h1>
       );
@@ -59,7 +62,7 @@ Typography.Title = Title;
 
 function Paragraph({ children, className = '' }: Props) {
   return (
-    <p className={`font-light text-base ${className}`}>{children}</p>
+    <p className={`whitespace-pre-line ${className}`}>{children}</p>
   );
 }
 Typography.Paragraph = Paragraph;
