@@ -45,14 +45,14 @@ function Title({ children, level, className = '' }: TitleProps) {
       );
     case 2:
       return (
-        <h2 className={`${commonClassNames} ${amithenFont.className} font-medium text-primary text-h2`}>
+        <h2 className={`${commonClassNames} ${amithenFont.className} text-primary text-h2`}>
           {children}
         </h2>
       );
     case 1:
     default:
       return (
-        <h1 className={`${commonClassNames} ${amithenFont.className} font-medium text-secondary text-center text-h1 m-pageTitle`}>
+        <h1 className={`${commonClassNames} ${amithenFont.className} text-secondary text-center text-h1 m-pageTitle`}>
           {children}
         </h1>
       );
