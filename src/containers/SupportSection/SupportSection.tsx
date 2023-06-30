@@ -20,7 +20,12 @@ function SupportSection() {
       </div>
       <div className="flex flex-col items-center mb-32">
         <Image className="-mt-64 mb-60px" height={512} src={supportUsImage} alt="Une flutiste derrière un pupitre" />
-        <Button title="Contribuer au projet" type="secondary" />
+        <Button
+          title="Contribuer au projet"
+          type="secondary"
+          url="https://www.helloasso.com/associations/orchestre-regional-du-pevele-melantois/collectes/aidez-nous-a-financer-les-costumes-de-notre-spectacle"
+          externalUrl
+        />
       </div>
     </>
   );
