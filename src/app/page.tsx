@@ -47,7 +47,7 @@ export default function Home() {
               url: '/',
             },
             secondLink: {
-              text: 'Jouer',
+              text: 'En cours de construction',
               url: '/',
             },
           }}
