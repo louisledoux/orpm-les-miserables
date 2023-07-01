@@ -18,26 +18,23 @@ module.exports = {
         mobile: '480px',
       },
       spacing: {
+        '30px': '30px',
+        '40px': '40px',
         '60px': '60px',
+        '120px': '120px',
         '512px': '512px',
       },
       maxWidth: {
         content: '1440px',
         inSection: '47%',
+        footer: '230px',
+        mentionslegales: '105px',
       },
       height: {
         carousel: '700px',
         headerImage: '500px',
       },
-      margin: {
-        pageTitle: '60px 0px 120px',
-        sectionTitle: '0px 0px 60px',
-        paragraph: '0px 0px 30px',
-        section: '0px 0px 120px',
-      },
       padding: {
-        section: '0px 120px',
-        sectionPage: '60px 40px',
         button: '20px 35px',
         extra: '40px 75px',
       },
