@@ -6,6 +6,7 @@ import logo from '@/assets/logo.svg';
 import Image from 'next/image';
 import Link from 'next/link';
 import RoutesPathEnum from '@/routes/Routes.enum';
+import { usePathname } from 'next/navigation';
 
 type NavListType = {
   text: string,
@@ -22,6 +23,7 @@ const navList: NavListType[] = [
 ];
 
 function Nav() {
+  const pathname = usePathname();
   const [isScrolled, setIsScrolled] = useState(false);
 
   const handleScroll = () => {
@@ -44,7 +46,7 @@ function Nav() {
           <Image className="mx-6" alt="Logo de l'ORPM" src={logo} height={50} />
         </Link>
         {navList.map(({ text, url }) => (
-          <NavItem key={text} text={text} url={url} />
+          <NavItem key={text} text={text} url={url} pathname={pathname} />
         ))}
       </div>
     </nav>
