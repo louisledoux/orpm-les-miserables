@@ -17,10 +17,10 @@ const items: CarouselItemProps[] = [
 export default function Home() {
   return (
     <>
-      <div className="m-section">
+      <div className="mb-120px">
         <Carousel items={items} />
       </div>
-      <div className="m-section">
+      <div className="mb-120px">
         <Section
           pages={newsSection.pages}
           image={newsSection.image}
@@ -37,7 +37,7 @@ export default function Home() {
         />
       </div>
       <Agenda />
-      <div className="m-section">
+      <div className="mb-120px">
         <Section
           pages={playSection.pages}
           image={playSection.image}

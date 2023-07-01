@@ -55,13 +55,13 @@ function SectionClient({
       {pages.map((page) => (
         <div
           key={page.title}
-          className="flex flex-col justify-center max-w-inSection w-full p-sectionPage"
+          className="flex flex-col justify-center max-w-inSection w-full py-60px px-40px"
           ref={observedDiv}
         >
-          <Title className="m-sectionTitle text-center" level={2}>{page.title}</Title>
+          <Title className="mb-60px text-center" level={2}>{page.title}</Title>
           {page.paragraphs.map((paragraph) => (
             <Paragraph
-              className="m-paragraph text-justify font-light text-base"
+              className="mb-30px text-justify font-light text-base"
               key={`${paragraph}-${page.title}`}
             >
               {paragraph}

@@ -5,7 +5,7 @@ enum RoutesPathEnum {
     COMEDIE_MUSICALE = '/comedie-musicale',
     ORCHESTRE = '/orchestre',
     EQUIPE_ARTISTIQUE = '/equipe-artistique',
-    PRECEDENTS_SPECTACLES = '/precedents/spectacles',
+    PRECEDENTS_SPECTACLES = '/precedents-spectacles',
     TROUPE = '/la-troupe',
 }
 

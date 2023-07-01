@@ -23,16 +23,16 @@ export default function OrchestrePage() {
           className="w-full h-full object-cover"
         />
       </div>
-      <div className="m-section">
+      <div className="mb-120px">
         <Typography.Title level={1}>
           L&apos;orchestre
         </Typography.Title>
         <Section pages={orchestreSection.pages} image={orchestreSection.image} />
-        <div className="flex flex-col items-center bg-secondary p-sectionPage m-section">
-          <Typography.Title level={2} className="m-sectionTitle">
+        <div className="flex flex-col items-center bg-secondary py-60px px-40px mb-120px">
+          <Typography.Title level={2} className="mb-60px">
             La musique, directement chez vous
           </Typography.Title>
-          <Typography.Paragraph className="text-white text-center text-22 m-paragraph">
+          <Typography.Paragraph className="text-white text-center text-22 mb-30px">
             Écoutez-nous avant même de venir à nos représentations,
             et découvrez nos précédents spectacles !
           </Typography.Paragraph>
@@ -47,7 +47,7 @@ export default function OrchestrePage() {
           image={directionMusicaleSection.image}
           reverse
         />
-        <div className="p-section m-section">
+        <div className="px-120px mb-120px">
           <Carousel items={orchestreCarouselData} autoplay />
         </div>
       </div>

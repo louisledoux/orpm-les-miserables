@@ -61,7 +61,7 @@ function Title({
     case 1:
     default:
       return (
-        <h1 className={`${commonClassNames} ${amithenFont.className} ${color === 'primary' ? 'text-secondary' : 'text-primary'} text-center text-h1 m-pageTitle`}>
+        <h1 className={`${commonClassNames} ${amithenFont.className} ${color === 'primary' ? 'text-secondary' : 'text-primary'} text-center text-h1 mt-60px mb-120px`}>
           {children}
         </h1>
       );
