@@ -28,15 +28,24 @@ export default function EquipeArtistiquePage() {
         <div className="p-section m-section">
           <Carousel items={precedentsSpectaclesCarouselData3} autoplay />
         </div>
-        <div className='p-section m-section text-center text-22 font-light'>
-        Au fil des années, nous avons eu l'immense privilège de partager notre passion avec un public de plus en plus large. En 2022, nous avons relevé un nouveau défi: Emmener notre public faire un voyage à travers le temps à l'époque de la ségrégation raciale dans la ville de Memphis, Etats-Unis. Avec plus de 2 heures de spectacle, nous avons exploré le Blues, la Soul et le Rock'n Roll en compagnie des personnages de Huey Calhoun et de Felicia Farrell. Ce nouveau projet a attiré un public nombreux et enthousiaste qui a confirmé notre place dans la production de comédies musicales dans la tradition de celles de Londres ou de Broadway.
+        <div className="p-section m-section text-center text-22 font-light">
+          Au fil des années, nous avons eu l&apos;immense privilège de partager notre passion
+          avec un public de plus en plus large. En 2022, nous avons relevé un nouveau défi:
+          Emmener notre public faire un voyage à travers le temps à l&apos;époque de la ségrégation
+          raciale dans la ville de Memphis, Etats-Unis. Avec plus de 2 heures de spectacle,
+          nous avons exploré le Blues, la Soul et le Rock&apos;n Roll en compagnie des personnages
+          de Huey Calhoun et de Felicia Farrell. Ce nouveau projet a attiré un public nombreux
+          et enthousiaste qui a confirmé notre place dans la production de comédies musicales
+          dans la tradition de celles de Londres ou de Broadway.
         </div>
         <iframe className="w-full m-section flex justify-center" height="700px" src="https://www.youtube.com/embed/exzzOJx751w" title="Memphis ORPM" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />
         <div className="p-section m-section">
           <Carousel items={precedentsSpectaclesCarouselData2} autoplay />
         </div>
-        <div className='p-section m-section text-center text-22 font-light'>
-          En 2018-2019, nous avons continué à émerveiller les spectateurs avec notre comédie musicale “FAME”, un spectacle qui a rassemblé 11000 personnes au Colisée de Roubaix et toute l'Euro-métropole.
+        <div className="p-section m-section text-center text-22 font-light">
+          En 2018-2019, nous avons continué à émerveiller les spectateurs avec notre comédie
+          musicale “FAME”,un spectacle qui a rassemblé 11000 personnes au Colisée de Roubaix
+          et toute l&apos;Euro-métropole.
         </div>
         <div className={`${amithenFont.className} m-section p-section text-center text-h2 text-primary bg-secondary py-60px`}>
           Nous sommes fiers de partager ces aventures,
@@ -45,8 +54,9 @@ export default function EquipeArtistiquePage() {
         <div className="p-section m-section">
           <Carousel items={precedentsSpectaclesCarouselData1} autoplay />
         </div>
-        <div className='p-section m-section text-center text-22 font-light'>
-          En 2015, nous avons présenté “Billy Elliot” sur les scènes du Théâtre Sébastopol et dans toute la région, offrant à plus de 8000 personnes une expérience inoubliable.
+        <div className="p-section m-section text-center text-22 font-light">
+          En 2015, nous avons présenté “Billy Elliot” sur les scènes du Théâtre Sébastopol et
+          dans toute la région, offrant à plus de 8000 personnes une expérience inoubliable.
         </div>
       </div>
     </>
