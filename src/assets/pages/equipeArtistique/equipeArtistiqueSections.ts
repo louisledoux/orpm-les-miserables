@@ -2,9 +2,9 @@ import hubert from '@/assets/pages/orchestre/images/hubert.jpg';
 import eric from '@/assets/pages/equipeArtistique/images/ericpauwels.jpg';
 import magali from '@/assets/pages/equipeArtistique/images/magali.jpg';
 import celine from '@/assets/pages/equipeArtistique/images/celine.jpg';
-import manon from '@/assets/pages/equipeArtistique/images/manon.jpg'
-import claire from '@/assets/pages/equipeArtistique/images/claire.png'
-import marie from '@/assets/pages/equipeArtistique/images/marie.jpg'
+import manon from '@/assets/pages/equipeArtistique/images/manon.jpg';
+import claire from '@/assets/pages/equipeArtistique/images/claire.png';
+import marie from '@/assets/pages/equipeArtistique/images/marie.jpg';
 import { SectionData } from '@/types/Section.type';
 
 const equipeArtistiqueSections: SectionData[] = [
@@ -96,7 +96,7 @@ const equipeArtistiqueSections: SectionData[] = [
       title: 'Claire Gressier\n Metteuse en scène',
       paragraphs: [
         "Comédienne hors pair, j'ai toujours eu une facilité naturelle pour la comédie, si si demandez à mes soeurs et mes parents... Dotée d'une imagination débordante (peut-être un peu trop d'ailleurs) et d'une créativité sans limite, j'adore inventer des histoires et des mondes imaginaires. Je peux aussi transformer n'importe quoi en une oeuvre d'art.",
-        "Mes différentes expériences de comédie musicale ont su montrer et démontrer ma grande valeur ajoutée dans ces projets...",
+        'Mes différentes expériences de comédie musicale ont su montrer et démontrer ma grande valeur ajoutée dans ces projets...',
         "Bref, je pense être la moitié complémentaire parfaite de Manon pour s'éclater sur la mise en scène des Misérables. Toujours en route avec un projet un peu fou, l'ORPM c'est comme une deuxième famille !",
         "C'est un nouveau défi à relever, un nouveau plaisir et surtout une nouvelle aventure musicale à partager. La comédie musicale Les Misérables est une oeuvre musicale iconique, avec des chansons emblématiques et des arrangements orchestraux incroyables.",
       ],
@@ -112,8 +112,8 @@ const equipeArtistiqueSections: SectionData[] = [
     pages: [{
       title: 'Marie Pioskowik\n Chorégraphe',
       paragraphs: [
-        "Danseuse aguerrie",
-        "Formée professionnellement à la danse sur Paris dans les années 2000, je poursuis ma carrière en enseignant la danse moderne et contemporaine dans différentes structures de la métropole lilloise.",
+        'Danseuse aguerrie',
+        'Formée professionnellement à la danse sur Paris dans les années 2000, je poursuis ma carrière en enseignant la danse moderne et contemporaine dans différentes structures de la métropole lilloise.',
         "Mon style allie la gestuelle moderne dans une dynamique jazz. Auquel j'y ajoute une pédagogie d'expérience de presque 20 ans auprès des enfants et adultes.",
         "Investie dans de nombreuses associations dans divers domaines, je découvre en 2020 l'ORPM, au travers de la comédie musicale «Memphis» La richesse et les valeurs du projet me plaisent instantanément. Mais c'est pour «Les Misérables» que je propose ma collaboration.",
       ],
