@@ -20,7 +20,7 @@ export const Button: Story = {
 export const Dropdown: Story = {
   args: {
     text: 'Agenda',
-    url: RoutesPathEnum.AGENDA,
+    url: '#',
     pathname: '#',
     dropdown: [
       { text: 'Toutes nos dates', url: '#' },
