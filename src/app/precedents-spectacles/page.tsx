@@ -25,7 +25,7 @@ export default function EquipeArtistiquePage() {
         <Typography.Title level={1}>
           Nos précédents spectacles
         </Typography.Title>
-        <div className="p-section m-section">
+        <div className="px-120px mb-60px">
           <Carousel items={precedentsSpectaclesCarouselData3} autoplay />
         </div>
         <div className="px-120px mb-60px text-center text-22 font-light">
