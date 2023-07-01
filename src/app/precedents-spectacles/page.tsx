@@ -44,7 +44,7 @@ export default function EquipeArtistiquePage() {
         </div>
         <div className="p-section m-section text-center text-22 font-light">
           En 2018-2019, nous avons continué à émerveiller les spectateurs avec notre comédie
-          musicale “FAME”,un spectacle qui a rassemblé 11000 personnes au Colisée de Roubaix
+          musicale “FAME”, un spectacle qui a rassemblé 11000 personnes au Colisée de Roubaix
           et toute l&apos;Euro-métropole.
         </div>
         <div className={`${amithenFont.className} m-section p-section text-center text-h2 text-primary bg-secondary py-60px`}>
