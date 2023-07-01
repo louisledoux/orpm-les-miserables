@@ -20,6 +20,8 @@ module.exports = {
       maxWidth: {
         content: '1440px',
         inSection: '47%',
+        footer: '230px',
+        mentionslegales: '105px'
       },
       height: {
         carousel: '700px',
@@ -30,12 +32,15 @@ module.exports = {
         sectionTitle: '0px 0px 60px',
         paragraph: '0px 0px 30px',
         section: '0px 0px 120px',
+        mobileSectionTitle: '0px 0px 30px'
       },
       padding: {
         section: '0px 120px',
         sectionPage: '60px 40px',
         button: '20px 35px',
         extra: '40px 75px',
+        footer: '60px 0',
+        mobileFooter: '30px 0'
       },
       fontSize: {
         22: ['22px', '30px'],

@@ -18,7 +18,7 @@ const footerLinks: FooterLink[] = [
   { text: 'La troupe', url: '/#' },
   { text: 'Nos précédents spectacles', url: '/#' },
   { text: 'L\'agenda', url: '/#' },
-  { text: 'Billeterie', url: '/#' },
+  { text: 'Billetterie', url: '/#' },
   { text: 'Nous soutenir', url: '/#' },
   { text: 'Nous contacter', url: '/#' },
   { text: 'Rejoindre l\'équipe', url: '/#' },
@@ -42,15 +42,15 @@ function divideLinksInColumns(links: FooterLink[]) {
 
 function Footer() {
   return (
-    <footer className="px-44 pt-16 bg-secondary text-white">
-      <div className="flex flex-row justify-between mb-20">
+    <footer className="lg:p-footer p-mobileFooter bg-secondary text-white">
+      <div className="flex flex-col lg:flex-row lg:justify-evenly items-center lg:m-sectionTitle m-mobileSectionTitle">
         {divideLinksInColumns(footerLinks).map((column, index) => (
           // eslint-disable-next-line react/no-array-index-key
-          <div key={`footer-column-${index}`} className="flex flex-col items-center gap-10">
+          <div key={`footer-column-${index}`} className="flex flex-col items-center lg:gap-7 gap-6 max-w-footer w-full mb-6 lg:mb-0 ">
             {column.map(({ text, url }) => (
               <Link
                 key={`footer-link-${text}`}
-                className="text-xl font-semibold hover:text-primary ease-in-out duration-150"
+                className="lg:text-lg text-base lg:font-medium font-base hover:text-primary ease-in-out duration-150"
                 href={url}
               >
                 {text}
@@ -59,9 +59,9 @@ function Footer() {
           </div>
         ))}
       </div>
-      <div className="flex flex-row justify-between pb-4 font-medium">
-        <Link className="hover:text-primary ease-in-out duration-150" href="/#">Mentions légales</Link>
-        <Link className="hover:text-primary ease-in-out duration-150" href="/#">Médias</Link>
+      <div className="flex flex-row justify-center font-base">
+        <Link className="hover:text-primary ease-in-out duration-150 mr-3.5 max-w-mentionslegales w-full text-left" href="/#">Mentions légales</Link>
+        <Link className="hover:text-primary ease-in-out duration-150 ml-3.5 max-w-mentionslegales w-full text-right" href="/#">Médias</Link>
       </div>
     </footer>
   );
