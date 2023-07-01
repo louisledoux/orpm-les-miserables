@@ -21,14 +21,14 @@ export default function EquipeArtistiquePage() {
           className="w-full h-full object-cover"
         />
       </div>
-      <div className="m-section">
+      <div className="mb-60px">
         <Typography.Title level={1}>
           Nos précédents spectacles
         </Typography.Title>
         <div className="p-section m-section">
           <Carousel items={precedentsSpectaclesCarouselData3} autoplay />
         </div>
-        <div className="p-section m-section text-center text-22 font-light">
+        <div className="px-120px mb-60px text-center text-22 font-light">
           Au fil des années, nous avons eu l&apos;immense privilège de partager notre passion
           avec un public de plus en plus large. En 2022, nous avons relevé un nouveau défi:
           Emmener notre public faire un voyage à travers le temps à l&apos;époque de la ségrégation
@@ -38,11 +38,11 @@ export default function EquipeArtistiquePage() {
           et enthousiaste qui a confirmé notre place dans la production de comédies musicales
           dans la tradition de celles de Londres ou de Broadway.
         </div>
-        <iframe className="w-full m-section flex justify-center" height="700px" src="https://www.youtube.com/embed/exzzOJx751w" title="Memphis ORPM" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />
-        <div className="p-section m-section">
+        <iframe className="w-full mb-60px flex justify-center" height="700px" src="https://www.youtube.com/embed/exzzOJx751w" title="Memphis ORPM" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />
+        <div className="px-120px mb-60px">
           <Carousel items={precedentsSpectaclesCarouselData2} autoplay />
         </div>
-        <div className="p-section m-section text-center text-22 font-light">
+        <div className="px-120px mb-60px text-center text-22 font-light">
           En 2018-2019, nous avons continué à émerveiller les spectateurs avec notre comédie
           musicale “FAME”, un spectacle qui a rassemblé 11000 personnes au Colisée de Roubaix
           et toute l&apos;Euro-métropole.
@@ -51,10 +51,10 @@ export default function EquipeArtistiquePage() {
           Nous sommes fiers de partager ces aventures,
           et nous sommes impatients de vous accueillir à nos représentations des Misérables !
         </div>
-        <div className="p-section m-section">
+        <div className="px-120px mb-60px">
           <Carousel items={precedentsSpectaclesCarouselData1} autoplay />
         </div>
-        <div className="p-section m-section text-center text-22 font-light">
+        <div className="px-120px mb-60px text-center text-22 font-light">
           En 2015, nous avons présenté “Billy Elliot” sur les scènes du Théâtre Sébastopol et
           dans toute la région, offrant à plus de 8000 personnes une expérience inoubliable.
         </div>
