@@ -42,8 +42,8 @@ function divideLinksInColumns(links: FooterLink[]) {
 
 function Footer() {
   return (
-    <footer className="lg:p-footer p-mobileFooter bg-secondary text-white">
-      <div className="flex flex-col lg:flex-row lg:justify-evenly items-center lg:m-sectionTitle m-mobileSectionTitle">
+    <footer className="lg:py-60px py-30px bg-secondary text-white">
+      <div className="flex flex-col lg:flex-row lg:justify-evenly items-center lg:mb-60px mb-30px">
         {divideLinksInColumns(footerLinks).map((column, index) => (
           // eslint-disable-next-line react/no-array-index-key
           <div key={`footer-column-${index}`} className="flex flex-col items-center lg:gap-7 gap-6 max-w-footer w-full mb-6 lg:mb-0 ">
@@ -60,8 +60,8 @@ function Footer() {
         ))}
       </div>
       <div className="flex flex-row justify-center font-base">
-        <Link className="hover:text-primary ease-in-out duration-150 mr-3.5 max-w-mentionslegales w-full text-left" href="/#">Mentions légales</Link>
-        <Link className="hover:text-primary ease-in-out duration-150 ml-3.5 max-w-mentionslegales w-full text-right" href="/#">Médias</Link>
+        <Link className="hover:text-primary ease-in-out duration-150 mr-3.5 max-w-105px w-full text-left" href="/#">Mentions légales</Link>
+        <Link className="hover:text-primary ease-in-out duration-150 ml-3.5 max-w-105px w-full text-right" href="/#">Médias</Link>
       </div>
     </footer>
   );
