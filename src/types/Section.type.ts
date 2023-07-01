@@ -2,9 +2,10 @@ import { StaticImageData } from 'next/image';
 import React from 'react';
 
 export type SectionPageType = {
-  title: string,
+  title?: string,
   paragraphs: string[],
   reverse?: boolean,
+  style? : React.CSSProperties,
 }
 
 export type SectionImageType = {

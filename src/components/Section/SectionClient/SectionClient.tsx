@@ -57,6 +57,7 @@ function SectionClient({
           key={page.title}
           className="flex flex-col justify-center max-w-inSection w-full py-60px px-40px"
           ref={observedDiv}
+          style={page.style}
         >
           <Title className="mb-60px text-center" level={2}>{page.title}</Title>
           {page.paragraphs.map((paragraph) => (

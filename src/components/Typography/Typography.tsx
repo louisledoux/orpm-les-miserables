@@ -71,7 +71,7 @@ Typography.Title = Title;
 
 function Paragraph({ children, className = '' }: Props) {
   return (
-    <p className={`whitespace-pre-line ${className}`}>{children}</p>
+    <p className={`whitespace-pre-line font-light text-base ${className}`}>{children}</p>
   );
 }
 Typography.Paragraph = Paragraph;
