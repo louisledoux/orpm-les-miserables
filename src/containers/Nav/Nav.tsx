@@ -1,25 +1,51 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import NavItem from '@/components/NavItem/NavItem';
 import logo from '@/assets/logo.svg';
 import Image from 'next/image';
 import Link from 'next/link';
 import RoutesPathEnum from '@/routes/Routes.enum';
 import { usePathname } from 'next/navigation';
+import { DropdownLinkType } from '@/components/NavDropdown/NavDropdown';
 
 type NavListType = {
   text: string,
-  url: RoutesPathEnum,
+  url: RoutesPathEnum | string,
+  externalLink?: boolean,
+  dropdown?: DropdownLinkType[],
 }
 
 const navList: NavListType[] = [
   { text: 'Accueil', url: RoutesPathEnum.HOMEPAGE },
-  { text: 'Les Misérables', url: RoutesPathEnum.MISERABLES },
-  { text: 'L\'orchestre', url: RoutesPathEnum.ORCHESTRE },
+  {
+    text: 'Les Misérables',
+    url: '#',
+    dropdown: [
+      { text: 'L\'histoire', url: RoutesPathEnum.HISTOIRE },
+      { text: 'Les personnages', url: RoutesPathEnum.PERSONNAGES },
+      { text: 'La comédie musicale', url: RoutesPathEnum.COMEDIE_MUSICALE },
+    ],
+  },
+  {
+    text: 'L\'orchestre',
+    url: '#',
+    dropdown: [
+      { text: 'L\'orchestre', url: RoutesPathEnum.ORCHESTRE },
+      { text: 'L\'équipe artistique', url: RoutesPathEnum.EQUIPE_ARTISTIQUE },
+      { text: 'Nos précédents spectacles', url: RoutesPathEnum.PRECEDENTS_SPECTACLES },
+    ],
+  },
   { text: 'La troupe', url: RoutesPathEnum.TROUPE },
-  { text: 'Agenda', url: RoutesPathEnum.AGENDA },
-  { text: 'Billetterie', url: RoutesPathEnum.BILLETTERIE },
+  {
+    text: 'Agenda',
+    url: '#',
+    dropdown: [
+      { text: 'Toutes nos dates', url: '/#agenda' },
+      { text: 'Nos précédentes représentations', url: '/#agenda' },
+    ],
+  },
+  { text: 'Billetterie', url: '/#agenda' },
 ];
 
 function Nav() {
@@ -45,8 +71,14 @@ function Nav() {
         <Link href={RoutesPathEnum.HOMEPAGE}>
           <Image className="mx-6" alt="Logo de l'ORPM" src={logo} height={50} />
         </Link>
-        {navList.map(({ text, url }) => (
-          <NavItem key={text} text={text} url={url} pathname={pathname} />
+        {navList.map(({ text, url, dropdown }) => (
+          <NavItem
+            key={text}
+            text={text}
+            url={url}
+            pathname={pathname}
+            dropdown={dropdown}
+          />
         ))}
       </div>
     </nav>
