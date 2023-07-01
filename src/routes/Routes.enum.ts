@@ -1,10 +1,12 @@
 enum RoutesPathEnum {
     HOMEPAGE = '/',
-    MISERABLES = '/les-miserables',
+    HISTOIRE = '/histoire',
+    PERSONNAGES = '/personnages',
+    COMEDIE_MUSICALE = '/comedie-musicale',
     ORCHESTRE = '/orchestre',
+    EQUIPE_ARTISTIQUE = '/equipe-artistique',
+    PRECEDENTS_SPECTACLES = '/precedents/spectacles',
     TROUPE = '/la-troupe',
-    AGENDA = '/agenda',
-    BILLETTERIE = '/billetterie'
-  }
+}
 
 export default RoutesPathEnum;

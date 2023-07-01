@@ -4,6 +4,7 @@ import image1 from '@/assets/pages/homepage/homepage-carousel/image1.png';
 import Section from '@/containers/Section/Section';
 import Agenda from '@/containers/Agenda/Agenda';
 import { newsSection, playSection } from '@/assets/pages/homepage/homepageSections';
+import SupportSection from '@/containers/SupportSection/SupportSection';
 
 const items: CarouselItemProps[] = [
   {
@@ -46,13 +47,14 @@ export default function Home() {
               url: '/',
             },
             secondLink: {
-              text: 'Jouer',
+              text: 'En cours de construction',
               url: '/',
             },
           }}
           reverse
         />
       </div>
+      <SupportSection />
     </>
   );
 }

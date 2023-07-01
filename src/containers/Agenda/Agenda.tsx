@@ -7,7 +7,7 @@ const { Title, Paragraph } = Typography;
 
 function NoDate() {
   return (
-    <div className="flex flex-col items-center bg-secondary p-sectionPage m-section">
+    <div id="agenda" className="flex flex-col items-center bg-secondary p-sectionPage m-section">
       <Title level={2} className="m-sectionTitle">
         En attendant notre spectacle...
       </Title>
