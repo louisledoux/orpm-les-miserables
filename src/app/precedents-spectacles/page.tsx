@@ -47,7 +47,7 @@ export default function EquipeArtistiquePage() {
           musicale “FAME”, un spectacle qui a rassemblé 11000 personnes au Colisée de Roubaix
           et toute l&apos;Euro-métropole.
         </div>
-        <div className={`${amithenFont.className} m-section p-section text-center text-h2 text-primary bg-secondary py-60px`}>
+        <div className={`${amithenFont.className} mb-60px px-120px text-center text-h2 text-primary bg-secondary py-60px`}>
           Nous sommes fiers de partager ces aventures,
           et nous sommes impatients de vous accueillir à nos représentations des Misérables !
         </div>
