@@ -30,7 +30,7 @@ export const playSection: SectionData = {
       'La page de jeux est en cours de construction, nous vous invitons à revenir très bientôt !',
       'Vous serez informés de l\'ouverture de la page et des animations ludiques via nos réseaux sociaux, n\'hésitez pas à nous suivre sur nos pages Facebook et Instagram pour ne rien râter de nos actualités !',
       'En attendant, nous vous invitons à découvrir l\'histoire des Misérables ici et sa comédie musicale ici !',
-      'Bonne lecture ! '
+      'Bonne lecture ! ',
     ],
   }],
   image: {
