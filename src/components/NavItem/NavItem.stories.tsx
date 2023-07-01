@@ -16,3 +16,15 @@ export const Button: Story = {
     url: RoutesPathEnum.HOMEPAGE,
   },
 };
+
+export const Dropdown: Story = {
+  args: {
+    text: 'Agenda',
+    url: '#',
+    pathname: '#',
+    dropdown: [
+      { text: 'Toutes nos dates', url: '#' },
+      { text: 'Nos précédentes représentations', url: '#' },
+    ],
+  },
+};
