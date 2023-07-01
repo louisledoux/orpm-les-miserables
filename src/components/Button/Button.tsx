@@ -10,7 +10,11 @@ export interface ButtonProps {
   /**
    * Optional URL redirection
    */
-  url?: RoutesPathEnum,
+  url?: RoutesPathEnum | string,
+  /**
+   * Is URL external?
+   */
+  externalUrl?: boolean,
   /**
    * Type of the button
    */
@@ -39,13 +43,14 @@ function getButtonColors(type: 'primary' | 'secondary'): ButtonColors {
 }
 
 function Button({
-  title, url, type = 'primary',
+  title, url, externalUrl, type = 'primary',
 }: ButtonProps) {
   const { bgColor, titleColor } = getButtonColors(type);
 
   return (
     <Link
       href={url || ''}
+      passHref={externalUrl}
       className={`w-fit p-button ${bgColor} ${titleColor} text-h3 font-semibold uppercase
           hover:text-white ease-in-out duration-150`}
       type="button"
