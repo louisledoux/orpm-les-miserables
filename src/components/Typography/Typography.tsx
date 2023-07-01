@@ -20,8 +20,17 @@ interface TitleProps extends Props {
    * The level of the title
    */
   level: number,
+  /**
+   * Color of the title
+   */
+  color?: 'primary' | 'secondary',
 }
-function Title({ children, level, className = '' }: TitleProps) {
+function Title({
+  children,
+  level,
+  color = 'primary',
+  className = '',
+}: TitleProps) {
   const commonClassNames = `whitespace-pre-line ${className}`;
 
   switch (level) {
@@ -45,14 +54,14 @@ function Title({ children, level, className = '' }: TitleProps) {
       );
     case 2:
       return (
-        <h2 className={`${commonClassNames} ${amithenFont.className} text-primary text-h2`}>
+        <h2 className={`${commonClassNames} ${amithenFont.className} text-${color} text-h2`}>
           {children}
         </h2>
       );
     case 1:
     default:
       return (
-        <h1 className={`${commonClassNames} ${amithenFont.className} text-secondary text-center text-h1 m-pageTitle`}>
+        <h1 className={`${commonClassNames} ${amithenFont.className} ${color === 'primary' ? 'text-secondary' : 'text-primary'} text-center text-h1 m-pageTitle`}>
           {children}
         </h1>
       );

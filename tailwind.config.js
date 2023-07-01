@@ -10,12 +10,16 @@ module.exports = {
     extend: {
       colors: {
         primary: '#EBAF2B',
-        fadePrimary: 'rgba(235, 175, 43, 0.8)',
+        fadePrimary: 'hsla(41, 83%, 55%, 0.8)',
         secondary: '#1E2F36',
       },
       screens: {
         desktop: '1024px',
         mobile: '480px',
+      },
+      spacing: {
+        '60px': '60px',
+        '512px': '512px',
       },
       maxWidth: {
         content: '1440px',
