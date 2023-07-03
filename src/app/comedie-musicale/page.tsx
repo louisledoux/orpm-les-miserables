@@ -1,14 +1,11 @@
 import Typography from '@/components/Typography/Typography';
 import Image from 'next/image';
-import localFont from 'next/font/local';
 import AlternativeSection from '@/containers/AlternativeSection/AlternativeSection';
 import Section from '@/containers/Section/Section';
-import mainComedie from '@/assets/pages/comedie-musicale/images/mainComedie.png';
+import mainComedie from '@/assets/pages/comedie-musicale/images/mainComedie.jpg';
 import {
   aProposSection, sceneClefsAlternativeSection,
 } from '@/assets/pages/comedie-musicale/comedieMusicaleSection';
-
-const amithenFont = localFont({ src: '../../assets/font/amithen.ttf' });
 
 export default function ComedieMusicale() {
   return (
@@ -17,7 +14,7 @@ export default function ComedieMusicale() {
         <Image
           src={mainComedie}
           alt="Cosette les Miserables ORPM"
-          style={{ objectPosition: '50% 60%' }}
+          style={{ objectPosition: '50% 35%' }}
           className="w-full h-full object-cover"
         />
       </div>

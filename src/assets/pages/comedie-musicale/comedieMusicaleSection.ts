@@ -1,5 +1,5 @@
 import { SectionData } from '@/types/Section.type';
-import aPropos from '@/assets/pages/comedie-musicale/images/apropos.png'
+import aPropos from '@/assets/pages/comedie-musicale/images/apropos.png';
 import scenesClefs from '@/assets/pages/comedie-musicale/images/scenesclefs.png';
 
 export const aProposSection: SectionData = {
@@ -35,7 +35,7 @@ export const sceneClefsAlternativeSection: SectionData = {
       'AVEUX\n Valjean confie Cosette à Marius et lui avoue qu\'il est en réalité Jean Valjean, le forçat condamné. Marius lui pardonne et lui demande de rester avec eux.',
       'PAIX\n Valjean décide de partir pour mourir en paix, mais Javert le retrouve une dernière fois. Javert ne peut accepter que Valjean ait changé et ait accompli de bonnes actions, et il se suicide plutôt que de vivre avec cette contradiction. Valjean meurt peu de temps après, en paix avec lui-même et avec les autres.',
     ],
-    style: { alignSelf : 'center'},
+    style: { alignSelf: 'center' },
   }],
   image: {
     image: scenesClefs,
