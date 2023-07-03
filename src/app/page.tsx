@@ -4,6 +4,7 @@ import image1 from '@/assets/pages/homepage/homepage-carousel/image1.png';
 import image2 from '@/assets/pages/homepage/homepage-carousel/image2.jpg';
 import image3 from '@/assets/pages/homepage/homepage-carousel/image3.png';
 import image4 from '@/assets/pages/homepage/homepage-carousel/image4.png';
+import image5 from '@/assets/pages/homepage/homepage-carousel/image5.png';
 import Section from '@/containers/Section/Section';
 import Agenda from '@/containers/Agenda/Agenda';
 import { newsSection, playSection } from '@/assets/pages/homepage/homepageSections';
@@ -22,13 +23,18 @@ const items: CarouselItemProps[] = [
   },
   {
     imageSrc: image3,
-    alt: 'Eponyne Révolution',
-    style: { objectPosition: '50% 55%' },
+    alt: 'Les misérables Révolution',
+    style: { objectPosition: '50% 15%' },
   },
   {
     imageSrc: image4,
-    alt: 'Fantine et Cosette',
-    style: { objectPosition: '50% 0%' },
+    alt: 'Eponine Révolution',
+    style: { objectPosition: '50% 20%' },
+  },
+  {
+    imageSrc: image5,
+    alt: 'Jean Valjean',
+    style: { objectPosition: '50% 15%' },
   },
 ];
 
