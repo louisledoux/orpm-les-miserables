@@ -36,7 +36,7 @@ export default function Home() {
   return (
     <>
       <div className="mb-120px">
-        <Carousel items={items} />
+        <Carousel items={items} autoplay />
       </div>
       <div className="mb-120px">
         <Section
