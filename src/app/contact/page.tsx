@@ -15,11 +15,11 @@ export default function ContactPage() {
           className="w-full h-full object-cover"
         />
       </div>
-      <div className="mb-60px">
+      <div className="lg:mb-60px mb-30px">
         <Typography.Title level={1}>
           Contact
         </Typography.Title>
-        <div className="px-120px mb-60px text-center">
+        <div className="px-20px lg:px-120px mb-60px text-center">
           <p className="text-22 font-medium text-primary mb-4">
             Adresse mail
           </p>
