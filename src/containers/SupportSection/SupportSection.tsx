@@ -8,9 +8,9 @@ const { Title, Paragraph } = Typography;
 function SupportSection() {
   return (
     <>
-      <div className="flex flex-col items-center bg-fadePrimary pt-60px px-64 pb-80">
-        <Title className="mb-8" level={2} color="secondary">Soutenez-nous !</Title>
-        <Paragraph className="font-light text-center text-secondary">
+      <div className="flex flex-col items-center bg-fadePrimary pt-30px px-20px pb-44 lg:pt-60px lg:px-64 lg:pb-80">
+        <Title className="mb-30px lg:mb-8" level={2} color="secondary">Soutenez-nous !</Title>
+        <Paragraph className="font-normal text-center text-secondary">
           Vous êtes fan de la comédie musicale &quot;Les Misérables&quot; ? Nous aussi !
           <br />
           Aidez nous à créer une production exceptionnelle en finançant nos costumes.
@@ -21,8 +21,8 @@ function SupportSection() {
           comme des invitations aux répétitions, des rencontres avec les artistes, les musiciens…
         </Paragraph>
       </div>
-      <div className="flex flex-col items-center mb-32">
-        <Image className="-mt-64 mb-60px object-cover h-full max-h-512px" src={supportUsImage} alt="Une flutiste derrière un pupitre" />
+      <div className="flex flex-col items-center mb-60px lg:mb-32 p-20px lg:p-0">
+        <Image className="-mt-40 lg:-mt-64 mb-30px lg:mb-60px object-cover h-353px lg:h-full lg:max-h-512px" src={supportUsImage} alt="Une flutiste derrière un pupitre" />
         <Button
           title="Contribuer au projet"
           type="secondary"
