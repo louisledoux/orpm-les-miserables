@@ -24,7 +24,7 @@ export default function ContactPage() {
             Adresse mail
           </p>
           <Typography.Paragraph className="mb-30px">
-           miserables.spectacle@gmail.com
+            miserables.spectacle@gmail.com
           </Typography.Paragraph>
           <p className="text-22 font-medium text-primary mb-4">
             Siège social de l`&apos;`Orchestre Régional Pévèle Mélantois
@@ -45,7 +45,7 @@ export default function ContactPage() {
               src={facebook}
               alt="Page Facebook de l'ORPM"
               style={{ width: '40px' }}
-              />
+            />
           </Link>
         </div>
       </div>
