@@ -54,14 +54,14 @@ function Title({
       );
     case 2:
       return (
-        <h2 className={`${commonClassNames} ${amithenFont.className} text-${color} text-h2`}>
+        <h2 className={`${commonClassNames} ${amithenFont.className} text-${color} lg:text-h2 text-h2Mobile`}>
           {children}
         </h2>
       );
     case 1:
     default:
       return (
-        <h1 className={`${commonClassNames} ${amithenFont.className} ${color === 'primary' ? 'text-secondary' : 'text-primary'} text-center text-h1 mt-60px mb-120px`}>
+        <h1 className={`${commonClassNames} ${amithenFont.className} ${color === 'primary' ? 'text-secondary' : 'text-primary'} text-center text-h1Mobile lg:text-h1 lg:mt-60px lg:mb-120px mt-30px mb-60px`}>
           {children}
         </h1>
       );
@@ -71,7 +71,7 @@ Typography.Title = Title;
 
 function Paragraph({ children, className = '' }: Props) {
   return (
-    <p className={`whitespace-pre-line font-light text-base ${className}`}>{children}</p>
+    <p className={`whitespace-pre-line font-light text-baseMobile lg:text-base ${className}`}>{children}</p>
   );
 }
 Typography.Paragraph = Paragraph;

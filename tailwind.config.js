@@ -32,10 +32,15 @@ module.exports = {
         footer: '230px',
         mentionslegales: '105px',
         75: '75%',
+        33: '33%',
+        66: '66%',
       },
       height: {
         carousel: '700px',
         headerImage: '500px',
+      },
+      maxHeight: {
+        550: '550px',
       },
       padding: {
         button: '20px 35px',
@@ -44,10 +49,13 @@ module.exports = {
       fontSize: {
         22: ['22px', '30px'],
         h1: ['90px', '95px'],
+        h1Mobile: ['65px', '75px'],
         h2: ['60px', '70px'],
+        h2Mobile: ['40px', '55px'],
         h3: ['35px', '40px'],
         h4: ['30px', '35px'],
         base: ['18px', '22px'],
+        baseMobile: ['16px', '20px'],
       },
       letterSpacing: {
         '2%': '2%',
