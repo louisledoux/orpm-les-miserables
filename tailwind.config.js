@@ -29,6 +29,7 @@ module.exports = {
         inSection: '47%',
         footer: '230px',
         mentionslegales: '105px',
+        75: '75%',
       },
       height: {
         carousel: '700px',
