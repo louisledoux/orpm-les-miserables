@@ -23,8 +23,8 @@ export default function ContactPage() {
           <p className="text-22 font-medium text-primary mb-4">
             Adresse mail
           </p>
-         <Typography.Paragraph className="mb-30px">
-            miserables.spectacle@gmail.com
+          <Typography.Paragraph className="mb-30px">
+           miserables.spectacle@gmail.com
           </Typography.Paragraph>
           <p className="text-22 font-medium text-primary mb-4">
             Siège social de l`&apos;`Orchestre Régional Pévèle Mélantois
@@ -42,10 +42,10 @@ export default function ContactPage() {
         <div className="px-120px mb-60px text-center flex justify-center">
           <Link href="https://www.facebook.com/profile.php?id=100063630728155">
             <Image
-            src={facebook}
-            alt="Page Facebook de l'ORPM"
-            style={{ width: '40px' }}
-            />
+              src={facebook}
+              alt="Page Facebook de l'ORPM"
+              style={{ width: '40px' }}
+              />
           </Link>
         </div>
       </div>
