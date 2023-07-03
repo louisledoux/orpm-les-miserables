@@ -10,7 +10,7 @@ import precedentsSpectaclesCarouselData3 from '@/assets/pages/precedentsSpectacl
 
 const amithenFont = localFont({ src: '../../assets/font/amithen.ttf' });
 
-export default function EquipeArtistiquePage() {
+export default function PrecedentsSpectaclesPage() {
   return (
     <>
       <div className="h-headerImage w-full">
