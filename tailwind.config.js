@@ -30,10 +30,15 @@ module.exports = {
         footer: '230px',
         mentionslegales: '105px',
         75: '75%',
+        33: '33%',
+        66: '66%',
       },
       height: {
         carousel: '700px',
         headerImage: '500px',
+      },
+      maxHeight: {
+        550: '550px',
       },
       padding: {
         button: '20px 35px',
