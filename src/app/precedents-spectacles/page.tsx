@@ -17,7 +17,7 @@ export default function PrecedentsSpectaclesPage() {
         <Image
           src={memphis}
           alt="Memphis spectacle ORPM"
-          style={{ objectPosition: '50% 35%' }}
+          style={{ objectPosition: '40% 35%' }}
           className="w-full h-full object-cover"
         />
       </div>
@@ -25,10 +25,10 @@ export default function PrecedentsSpectaclesPage() {
         <Typography.Title level={1}>
           Nos précédents spectacles
         </Typography.Title>
-        <div className="px-120px mb-60px">
+        <div className="mb-30px lg:mb-60px lg:px-120px px-20px">
           <Carousel items={precedentsSpectaclesCarouselData3} autoplay />
         </div>
-        <div className="px-120px mb-60px text-center text-22 font-light">
+        <div className="mb-30px lg:mb-60px text-center text-22 font-light lg:px-120px px-20px">
           Au fil des années, nous avons eu l&apos;immense privilège de partager notre passion
           avec un public de plus en plus large. En 2022, nous avons relevé un nouveau défi:
           Emmener notre public faire un voyage à travers le temps à l&apos;époque de la ségrégation
@@ -38,23 +38,23 @@ export default function PrecedentsSpectaclesPage() {
           et enthousiaste qui a confirmé notre place dans la production de comédies musicales
           dans la tradition de celles de Londres ou de Broadway.
         </div>
-        <iframe className="w-full mb-60px flex justify-center" height="700px" src="https://www.youtube.com/embed/exzzOJx751w" title="Memphis ORPM" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />
-        <div className="px-120px mb-60px">
+        <iframe className="w-full mb-60px flex justify-center h-headerImage lg:h-700px lg:px-120px px-20px" src="https://www.youtube.com/embed/exzzOJx751w" title="Memphis ORPM" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />
+        <div className="lg:mb-60px mb-30px lg:px-120px px-20px">
           <Carousel items={precedentsSpectaclesCarouselData2} autoplay />
         </div>
-        <div className="px-120px mb-60px text-center text-22 font-light">
+        <div className="mb-60px text-center text-22 font-light lg:px-120px px-20px">
           En 2018-2019, nous avons continué à émerveiller les spectateurs avec notre comédie
           musicale “FAME”, un spectacle qui a rassemblé 11000 personnes au Colisée de Roubaix
           et toute l&apos;Euro-métropole.
         </div>
-        <div className={`${amithenFont.className} mb-60px px-120px text-center text-h2 text-primary bg-secondary py-60px`}>
+        <div className={`${amithenFont.className} mb-60px text-center text-4xl lg:text-h2 text-primary bg-secondary lg:px-120px px-20px lg:py-60px py-30px`}>
           Nous sommes fiers de partager ces aventures,
           et nous sommes impatients de vous accueillir à nos représentations des Misérables !
         </div>
-        <div className="px-120px mb-60px">
+        <div className="mb-30px lg:mb-60px lg:px-120px px-20px">
           <Carousel items={precedentsSpectaclesCarouselData1} autoplay />
         </div>
-        <div className="px-120px mb-60px text-center text-22 font-light">
+        <div className="mb-60px text-center text-22 font-light lg:px-120px px-20px">
           En 2015, nous avons présenté “Billy Elliot” sur les scènes du Théâtre Sébastopol et
           dans toute la région, offrant à plus de 8000 personnes une expérience inoubliable.
         </div>

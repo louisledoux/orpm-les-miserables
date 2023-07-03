@@ -19,7 +19,6 @@ interface CarouselProps {
 function CarouselContainer({ items, autoplay }: CarouselProps) {
   return (
     <Carousel
-      className="h-carousel"
       autoPlay={autoplay}
       infiniteLoop={autoplay}
       interval={5000}
