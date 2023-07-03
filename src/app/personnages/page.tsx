@@ -16,7 +16,7 @@ export default function EquipeArtistiquePage() {
           className="w-full h-full object-cover"
         />
       </div>
-      <div className="mb-120px">
+      <div className="mb-60px lg:mb-120px">
         <Typography.Title level={1}>
           Les personnages
         </Typography.Title>
