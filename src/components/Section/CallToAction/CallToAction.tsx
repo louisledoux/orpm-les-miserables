@@ -14,7 +14,7 @@ export interface CallToActionProps {
 function CallToAction({
   firstLink, secondLink,
 }: CallToActionProps) {
-  const isLargeScreen = typeof window !== 'undefined' && window.matchMedia("(min-width: 1024px)").matches;
+  const isLargeScreen = typeof window !== 'undefined' && window.matchMedia('(min-width: 1024px)').matches;
   if (isLargeScreen) {
     return (
       <div className="flex flex-row w-full justify-between items-center bg-secondary p-extra">
@@ -36,18 +36,17 @@ function CallToAction({
         )}
       </div>
     );
-  } else {
-    return (
-      <div className="flex justify-center bg-secondary px-20px py-15px rounded-sm mt-30px">
-        <Link
-          href={firstLink.url}
-          className="flex text-primary text-base font-medium uppercase"
-        >
-          <span>{firstLink.mobile}</span>
-        </Link>
-      </div>
-    );
-  };
+  }
+  return (
+    <div className="flex justify-center bg-secondary px-20px py-15px rounded-sm mt-30px">
+      <Link
+        href={firstLink.url}
+        className="flex text-primary text-base font-medium uppercase"
+      >
+        <span>{firstLink.mobile}</span>
+      </Link>
+    </div>
+  );
 }
 
 export default CallToAction;

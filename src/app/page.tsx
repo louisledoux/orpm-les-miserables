@@ -28,7 +28,7 @@ export default function Home() {
             firstLink: {
               text: 'Télécharger le dossier de presse',
               url: '/',
-              mobile: 'Téléchargez le dossier de presse'
+              mobile: 'Téléchargez le dossier de presse',
             },
             secondLink: {
               text: 'Découvrir',
@@ -46,7 +46,7 @@ export default function Home() {
             firstLink: {
               text: 'Jouez et découvrez les Misérables autrement',
               url: '/',
-              mobile: 'Jouez avec nous !'
+              mobile: 'Jouez avec nous !',
             },
             secondLink: {
               text: 'En cours de construction',

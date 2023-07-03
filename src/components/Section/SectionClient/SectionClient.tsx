@@ -34,7 +34,7 @@ function SectionClient({
     if (!observedDiv.current) return;
 
     const resizeObserver = new ResizeObserver(() => {
-      if (observedDiv?.current?.offsetHeight !== divHeight && window.matchMedia("(min-width: 1024px)").matches) {
+      if (observedDiv?.current?.offsetHeight !== divHeight && window.matchMedia('(min-width: 1024px)').matches) {
         setDivHeight(observedDiv?.current?.offsetHeight);
       }
     });
@@ -49,7 +49,7 @@ function SectionClient({
 
   return (
     <div className={`flex justify-between items-center lg:${reverse ? 'flex-row-reverse' : 'flex-row'} ${reverse ? 'flex-col-reverse' : 'flex-col-reverse'}`}>
-      <div style={{ height: divHeight,  }} className="lg:max-w-inSection w-full">
+      <div style={{ height: divHeight }} className="lg:max-w-inSection w-full">
         <Image className="object-cover h-full max-h-fit" src={image.image} alt={image.alt} style={image.style} />
       </div>
       {pages.map((page) => (
