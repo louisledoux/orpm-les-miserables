@@ -25,11 +25,15 @@ export default function RootLayout({
     <html lang="fr">
       <body className={`${oswald.className} tracking-2%`}>
         <div className="w-full">
-          <Header socialMediasIcons={
-            [SocialMediasEnum.FACEBOOK,
-              SocialMediasEnum.INSTAGRAM,
-            ]
-          }
+          <Header socialMediasIcons={[
+            {
+              icon: SocialMediasEnum.FACEBOOK,
+              link: 'https://www.facebook.com/people/Les-Mis%C3%A9rables-Spectacle/100063630728155/',
+            },
+            {
+              icon: SocialMediasEnum.INSTAGRAM,
+            },
+          ]}
           />
           <Nav />
           <main className="max-w-content mx-auto">

@@ -53,7 +53,7 @@ function Icon({
   return (
     <>
       {link ? (
-        <Link href={link} passHref>
+        <Link href={link} passHref target="_blank">
           <FontAwesomeIcon
             className={iconVariants({ type, size })}
             icon={icon}
