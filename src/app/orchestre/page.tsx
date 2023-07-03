@@ -32,13 +32,14 @@ export default function OrchestrePage() {
           <Typography.Title level={2} className="mb-60px">
             La musique, directement chez vous
           </Typography.Title>
-          <Typography.Paragraph className="text-white text-center text-22 mb-30px">
+          {/* TODO: revise text-22 classname to avoid CSS rule overrides */}
+          <Typography.Paragraph className="text-white text-center font-normal !text-22 mb-30px">
             Écoutez-nous avant même de venir à nos représentations,
             et découvrez nos précédents spectacles !
           </Typography.Paragraph>
           <Button
             title="Découvrir"
-            url={RoutesPathEnum.HOMEPAGE}
+            url={RoutesPathEnum.PRECEDENTS_SPECTACLES}
             type="primary"
           />
         </div>

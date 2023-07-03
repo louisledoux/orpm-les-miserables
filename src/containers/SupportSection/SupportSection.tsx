@@ -10,12 +10,15 @@ function SupportSection() {
     <>
       <div className="flex flex-col items-center bg-fadePrimary pt-60px px-64 pb-80">
         <Title className="mb-8" level={2} color="secondary">Soutenez-nous !</Title>
-        <Paragraph className="font-light text-center">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Vestibulum rhoncus diam ut sapien ornare, congue convallis quam auctor.
-          In pharetra sed ex dapibus eleifend. Sed nec leo euismod nisi venenatis semper.
-          Sed tempor ex eget bibendum auctor.
-          Aliquam sagittis sem accumsan mi efficitur, non eleifend elit mattis.
+        <Paragraph className="font-light text-center text-secondary">
+          Vous êtes fan de la comédie musicale &quot;Les Misérables&quot; ? Nous aussi !
+          <br />
+          Aidez nous à créer une production exceptionnelle en finançant nos costumes.
+          Votre contribution nous permettra de donner vie à cette histoire intemporelle
+          avec des costumes de qualité qui feront vibrer notre public.
+          <br />
+          En retour, nous vous offrons des récompenses uniques et des avantages exclusifs,
+          comme des invitations aux répétitions, des rencontres avec les artistes, les musiciens…
         </Paragraph>
       </div>
       <div className="flex flex-col items-center mb-32">
