@@ -18,11 +18,13 @@ module.exports = {
         mobile: '480px',
       },
       spacing: {
+        '10px': '10px',
         '20px': '20px',
         '30px': '30px',
         '40px': '40px',
         '60px': '60px',
         '120px': '120px',
+        '353px': '353px',
         '512px': '512px',
       },
       maxWidth: {

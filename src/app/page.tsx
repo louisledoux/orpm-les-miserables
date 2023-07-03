@@ -35,10 +35,10 @@ const items: CarouselItemProps[] = [
 export default function Home() {
   return (
     <>
-      <div className="mb-120px">
+      <div className="lg:mb-120px mb-60px">
         <Carousel items={items} autoplay />
       </div>
-      <div className="mb-120px">
+      <div className="lg:mb-120px mb-60px">
         <Section
           pages={newsSection.pages}
           image={newsSection.image}
@@ -55,7 +55,7 @@ export default function Home() {
         />
       </div>
       <Agenda />
-      <div className="mb-120px">
+      <div className="lg:mb-120px mb:60px">
         <Section
           pages={playSection.pages}
           image={playSection.image}
