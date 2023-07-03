@@ -11,14 +11,14 @@ function NoDate() {
       <Title level={2} className="mb-60px">
         En attendant notre spectacle...
       </Title>
-      <Paragraph className="font-normal text-white text-center text-22 mb-30px">
+      <Paragraph className="font-normal text-white text-center !text-22 mb-30px">
         {'Impatients d’y être ?\n'
           + 'Promis, les dates seront annoncées d’ici peu sur notre site Internet et sur nos réseaux sociaux !\n'
           + 'En attendant, nous vous invitons à découvrir nos précédentes représentations...'}
       </Paragraph>
       <Button
         title="Découvrir"
-        url={RoutesPathEnum.HOMEPAGE}
+        url={RoutesPathEnum.PRECEDENTS_SPECTACLES}
         type="primary"
       />
     </div>
