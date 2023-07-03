@@ -31,14 +31,14 @@ function AlternativeSection({
           className={`flex flex-col max-w-75 w-full pt-60px px-40px ${reverse ? 'self-start' : 'self-end'}`}
           style={page.style}
         >
-        <Typography.Title className="mb-60px text-center" level={2}>{page.title}</Typography.Title>
-        {page.paragraphs.map((paragraph) => (
-        <Typography.Paragraph
+          <Typography.Title className="mb-60px text-center" level={2}>{page.title}</Typography.Title>
+          {page.paragraphs.map((paragraph) => (
+          <Typography.Paragraph
             className="mb-30px text-justify font-light text-base"
             key={`${paragraph}-${page.title}`}
-        >
+          >
             {paragraph}
-        </Typography.Paragraph>
+          </Typography.Paragraph>
         ))}
       </div>
       ))}
