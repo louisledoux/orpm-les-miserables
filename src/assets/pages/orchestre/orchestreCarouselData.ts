@@ -7,7 +7,7 @@ import carousel5 from '@/assets/pages/orchestre/images/carouselorchestre5.jpg';
 import carousel6 from '@/assets/pages/orchestre/images/carouselorchestre6.jpg';
 import carousel7 from '@/assets/pages/orchestre/images/carouselorchestre7.jpg';
 import carousel8 from '@/assets/pages/orchestre/images/carouselorchestre8.jpeg';
-import carousel9 from '@/assets/pages/orchestre/images/carouselorchestre9.jpg'
+import carousel9 from '@/assets/pages/orchestre/images/carouselorchestre9.jpg';
 
 const orchestreCarouselData: CarouselItemProps[] = [
   {
