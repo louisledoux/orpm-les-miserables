@@ -36,7 +36,7 @@ export default function HistoireMiserables() {
         <Typography.Paragraph className="!text-22">
           Nous nous sommes lancé le défi de vous transporter dans les rues de Paris en 1832,
           à l&apos;époque des barricades, et de vous faire revivre les mélodies les plus célèbres
-          de cette comédie musicale, revisitées pour séduire le public d&apos;aujourd'hui.
+          de cette comédie musicale, revisitées pour séduire le public d&apos;aujourd&apos;hui.
         </Typography.Paragraph>
       </div>
       <AlternativeSection
