@@ -39,12 +39,19 @@ export default function HistoireMiserables() {
           de cette comédie musicale, revisitées pour séduire le public d&apos;aujourd'hui.
         </Typography.Paragraph>
       </div>
-      <AlternativeSection pages={aProposAlternativeSection.pages}
-      image={aProposAlternativeSection.image} />
-      <AlternativeSection pages={histoireAlternativeSection.pages}
-      image={histoireAlternativeSection.image} reverse />
-      <AlternativeSection pages={StructureAlternativeSection.pages}
-      image={StructureAlternativeSection.image} />
+      <AlternativeSection
+        pages={aProposAlternativeSection.pages}
+        image={aProposAlternativeSection.image}
+      />
+      <AlternativeSection
+        pages={histoireAlternativeSection.pages}
+        image={histoireAlternativeSection.image}
+        reverse
+      />
+      <AlternativeSection
+        pages={StructureAlternativeSection.pages}
+        image={StructureAlternativeSection.image}
+      />
       <div className={`mb-60px px-120px bg-secondary py-60px ${amithenFont.className}`}>
         <Typography.Paragraph className="!text-h2 text-primary text-center">
           &quot;Il n&apos;y a pas de petites misères ni de grandes misères,
