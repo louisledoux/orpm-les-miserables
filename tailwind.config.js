@@ -18,6 +18,7 @@ module.exports = {
         mobile: '480px',
       },
       spacing: {
+        '20px': '20px',
         '30px': '30px',
         '40px': '40px',
         '60px': '60px',
