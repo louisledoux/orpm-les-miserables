@@ -33,14 +33,14 @@ function AlternativeSection({
         >
           <Typography.Title className="mb-60px text-center" level={2}>{page.title}</Typography.Title>
           {page.paragraphs.map((paragraph) => (
-          <Typography.Paragraph
-            className="mb-30px text-justify font-light text-base"
-            key={`${paragraph}-${page.title}`}
-          >
-            {paragraph}
-          </Typography.Paragraph>
-        ))}
-      </div>
+            <Typography.Paragraph
+              className="mb-30px text-justify font-light text-base"
+              key={`${paragraph}-${page.title}`}
+            >
+              {paragraph}
+            </Typography.Paragraph>
+          ))}
+        </div>
       ))}
     </div>
   );
