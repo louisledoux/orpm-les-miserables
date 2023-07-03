@@ -27,13 +27,13 @@ export default function ContactPage() {
             miserables.spectacle@gmail.com
           </Typography.Paragraph>
           <p className="text-22 font-medium text-primary mb-4">
-            Siège social de l`&apos;`Orchestre Régional Pévèle Mélantois
+            Siège social de l&apos;Orchestre Régional Pévèle Mélantois
           </p>
           <Typography.Paragraph className="mb-30px">
             3 rue du Général de Gaulle 59551 Tourmignies
           </Typography.Paragraph>
           <p className="text-22 font-medium text-primary mb-4">
-            Président de l`&apos;`Orchestre Régional Pévèle Mélantois
+            Président de l&apos;Orchestre Régional Pévèle Mélantois
           </p>
           <Typography.Paragraph>
             Thierry Olivier
