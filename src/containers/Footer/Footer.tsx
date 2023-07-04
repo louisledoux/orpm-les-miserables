@@ -9,19 +9,19 @@ type FooterLink = {
 const footerLinks: FooterLink[] = [
   { text: 'Accueil', url: RoutesPathEnum.HOMEPAGE },
   { text: 'Auteur et œuvres', url: '/#' },
-  { text: 'L\'histoire et les personnages', url: '/#' },
-  { text: 'La comédie musicale', url: '/#' },
+  { text: 'L\'histoire', url: RoutesPathEnum.HISTOIRE },
+  { text: 'Les personnages', url: RoutesPathEnum.PERSONNAGES },
+  { text: 'La comédie musicale', url: RoutesPathEnum.COMEDIE_MUSICALE },
   { text: 'Jouons !', url: '/#' },
   { text: 'L\'orchestre', url: RoutesPathEnum.ORCHESTRE },
-  { text: 'L\'équipe artistique', url: '/#' },
+  { text: 'L\'équipe artistique', url: RoutesPathEnum.EQUIPE_ARTISTIQUE },
   { text: 'L\'équipe technique', url: '/#' },
-  { text: 'La troupe', url: '/#' },
-  { text: 'Nos précédents spectacles', url: '/#' },
-  { text: 'L\'agenda', url: '/#' },
-  { text: 'Billetterie', url: '/#' },
-  { text: 'Nous soutenir', url: '/#' },
-  { text: 'Nous contacter', url: '/#' },
-  { text: 'Rejoindre l\'équipe', url: '/#' },
+  { text: 'La troupe', url: RoutesPathEnum.TROUPE },
+  { text: 'Nos précédents spectacles', url: RoutesPathEnum.PRECEDENTS_SPECTACLES },
+  { text: 'L\'agenda', url: '/#agenda' },
+  { text: 'Billetterie', url: '/#agenda' },
+  { text: 'Nous soutenir', url: 'https://www.helloasso.com/associations/orchestre-regional-du-pevele-melantois/collectes/aidez-nous-a-financer-les-costumes-de-notre-spectacle' },
+  { text: 'Nous contacter', url: RoutesPathEnum.CONTACT },
 ];
 
 function divideLinksInColumns(links: FooterLink[]) {
@@ -60,7 +60,7 @@ function Footer() {
         ))}
       </div>
       <div className="flex flex-row justify-center font-base">
-        <Link className="hover:text-primary ease-in-out duration-150 mr-3.5 max-w-mentionslegales w-full text-left" href="/#">Mentions légales</Link>
+        <Link className="hover:text-primary ease-in-out duration-150 mr-3.5 max-w-mentionslegales w-full text-left" href={`${RoutesPathEnum.MENTIONLEGALES}`}>Mentions légales</Link>
         <Link className="hover:text-primary ease-in-out duration-150 ml-3.5 max-w-mentionslegales w-full text-right" href="/#">Médias</Link>
       </div>
     </footer>

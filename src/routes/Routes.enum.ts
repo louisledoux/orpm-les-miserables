@@ -7,6 +7,8 @@ enum RoutesPathEnum {
     EQUIPE_ARTISTIQUE = '/equipe-artistique',
     PRECEDENTS_SPECTACLES = '/precedents-spectacles',
     TROUPE = '/la-troupe',
+    CONTACT = '/contact',
+    MENTIONLEGALES = '/mentions-legales',
 }
 
 export default RoutesPathEnum;
