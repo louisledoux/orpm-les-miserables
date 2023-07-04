@@ -4,24 +4,29 @@ import RoutesPathEnum from '@/routes/Routes.enum';
 type FooterLink = {
   text: string,
   url: string,
+  externalLink?: boolean,
 }
 
 const footerLinks: FooterLink[] = [
   { text: 'Accueil', url: RoutesPathEnum.HOMEPAGE },
-  { text: 'Auteur et œuvres', url: '/#' },
-  { text: 'L\'histoire et les personnages', url: '/#' },
-  { text: 'La comédie musicale', url: '/#' },
-  { text: 'Jouons !', url: '/#' },
+  { text: 'Auteur et œuvres', url: RoutesPathEnum.AUTEUR_ET_OEUVRES },
+  { text: 'L\'histoire', url: RoutesPathEnum.HISTOIRE },
+  { text: 'Les personnages', url: RoutesPathEnum.PERSONNAGES },
+  { text: 'La comédie musicale', url: RoutesPathEnum.COMEDIE_MUSICALE },
+  { text: 'Jouons !', url: '/#jouons' },
   { text: 'L\'orchestre', url: RoutesPathEnum.ORCHESTRE },
-  { text: 'L\'équipe artistique', url: '/#' },
-  { text: 'L\'équipe technique', url: '/#' },
-  { text: 'La troupe', url: '/#' },
-  { text: 'Nos précédents spectacles', url: '/#' },
-  { text: 'L\'agenda', url: '/#' },
-  { text: 'Billetterie', url: '/#' },
-  { text: 'Nous soutenir', url: '/#' },
-  { text: 'Nous contacter', url: '/#' },
-  { text: 'Rejoindre l\'équipe', url: '/#' },
+  { text: 'L\'équipe artistique', url: RoutesPathEnum.EQUIPE_ARTISTIQUE },
+  { text: 'L\'équipe technique', url: RoutesPathEnum.EQUIPE_TECHNIQUE },
+  { text: 'La troupe', url: RoutesPathEnum.TROUPE },
+  { text: 'Nos précédents spectacles', url: RoutesPathEnum.PRECEDENTS_SPECTACLES },
+  { text: 'L\'agenda', url: '/#agenda' },
+  { text: 'Billetterie', url: '/#agenda' },
+  {
+    text: 'Nous soutenir',
+    url: 'https://www.helloasso.com/associations/orchestre-regional-du-pevele-melantois/collectes/aidez-nous-a-financer-les-costumes-de-notre-spectacle',
+    externalLink: true,
+  },
+  { text: 'Nous contacter', url: RoutesPathEnum.CONTACT },
 ];
 
 function divideLinksInColumns(links: FooterLink[]) {
@@ -47,11 +52,13 @@ function Footer() {
         {divideLinksInColumns(footerLinks).map((column, index) => (
           // eslint-disable-next-line react/no-array-index-key
           <div key={`footer-column-${index}`} className="flex flex-col items-center lg:gap-7 gap-6 max-w-footer w-full mb-6 lg:mb-0 ">
-            {column.map(({ text, url }) => (
+            {column.map(({ text, url, externalLink }) => (
               <Link
                 key={`footer-link-${text}`}
                 className="lg:text-lg text-base lg:font-medium font-base hover:text-primary ease-in-out duration-150"
                 href={url}
+                passHref={externalLink}
+                target={externalLink ? '_blank' : '_self'}
               >
                 {text}
               </Link>
@@ -60,7 +67,7 @@ function Footer() {
         ))}
       </div>
       <div className="flex flex-row justify-center font-base">
-        <Link className="hover:text-primary ease-in-out duration-150 mr-3.5 max-w-mentionslegales w-full text-left" href="/#">Mentions légales</Link>
+        <Link className="hover:text-primary ease-in-out duration-150 mr-3.5 max-w-mentionslegales w-full text-left" href={`${RoutesPathEnum.MENTIONLEGALES}`}>Mentions légales</Link>
         <Link className="hover:text-primary ease-in-out duration-150 ml-3.5 max-w-mentionslegales w-full text-right" href="/#">Médias</Link>
       </div>
     </footer>
