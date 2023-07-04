@@ -51,7 +51,8 @@ export default function Home() {
           extra={{
             firstLink: {
               text: 'Télécharger le dossier de presse',
-              url: '/',
+              url: '/dossierpressemiserablesV3.pdf',
+              newTab: true,
             },
             secondLink: {
               text: 'Découvrir',
