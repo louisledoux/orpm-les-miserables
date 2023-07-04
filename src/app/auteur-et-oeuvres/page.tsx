@@ -24,11 +24,11 @@ export default function LaTroupePage() {
           L&apos;auteur et l&apos;oeuvre
         </Typography.Title>
         <div className={`mb-60px px-20px lg:px-120px bg-secondary py-30px lg:py-60px ${amithenFont.className}`}>
-          <Typography.Paragraph className="!text-4xl lg:!text-h2 text-primary lg:text-white text-center">
+          <Typography.Paragraph className="!text-3xl lg:!text-4xl text-primary !leading-relaxed text-center">
             &quot; Tant qu&apos;il existera, par le fait des lois et des murs,
             une damnation sociale créant artificiellement, en pleine civilisation,
             des enfers et compliquant d&apos;une fatalité humaine, la destinée
-            qui est divine tant qu&apos; il y aura sur la terre
+            qui est divine tant qu&apos;il y aura sur la terre
             ignorance et misère, des livres comme celui-ci ne pourront pas être inutiles. &quot;
           </Typography.Paragraph>
         </div>
@@ -39,10 +39,12 @@ export default function LaTroupePage() {
           />
         </div>
         <div className={`mb-60px px-20px lg:px-120px bg-secondary py-30px lg:py-60px ${amithenFont.className}`}>
-          <Typography.Paragraph className="!text-4xl lg:!text-h2 text-primary lg:text-white text-center">
+          <Typography.Paragraph className="!text-3xl lg:!text-4xl text-primary !leading-relaxed text-center">
             &quot; Je ne suis pas, messieurs, de ceux qui croient qu&apos;on peut supprimer
-            la souffrance en ce monde ; la souffrance est une loi divine ; mais je suis de ceux
-            qui pensent et qui affirment qu&apos;on peut détruire la misère.
+            la souffrance en ce monde ; la souffrance est une loi divine ;
+            mais je suis de ceux qui pensent et qui affirment qu&apos;on peut détruire la misère.
+            <br />
+            {' '}
             <br />
             Tant que les trois problèmes du siècle, la dégradation de l&apos;homme par le
             prolétariat, la déchéance de la femme par la faim, l&apos;atrophie de l&apos;enfant
