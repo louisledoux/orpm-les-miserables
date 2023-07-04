@@ -1,20 +1,12 @@
 'use client';
 
-import React, { useEffect, useState } from 'react';
-import NavItem from '@/components/NavItem/NavItem';
-import logo from '@/assets/logo.svg';
-import Image from 'next/image';
-import Link from 'next/link';
 import RoutesPathEnum from '@/routes/Routes.enum';
 import { usePathname } from 'next/navigation';
-import { DropdownLinkType } from '@/components/NavDropdown/NavDropdown';
-
-type NavListType = {
-  text: string,
-  url: RoutesPathEnum | string,
-  externalLink?: boolean,
-  dropdown?: DropdownLinkType[],
-}
+import NavListType from '@/types/Nav.type';
+import DesktopNav from '@/components/Nav/DesktopNav';
+import useScroll from '@/hooks/useScroll';
+import useViewport from '@/hooks/useViewport';
+import MobileNav from '@/components/Nav/MobileNav';
 
 const navList: NavListType[] = [
   { text: 'Accueil', url: RoutesPathEnum.HOMEPAGE },
@@ -25,6 +17,7 @@ const navList: NavListType[] = [
       { text: 'L\'histoire', url: RoutesPathEnum.HISTOIRE },
       { text: 'Les personnages', url: RoutesPathEnum.PERSONNAGES },
       { text: 'La comédie musicale', url: RoutesPathEnum.COMEDIE_MUSICALE },
+      { text: 'Auteur et oeuvres', url: RoutesPathEnum.AUTEUR_ET_OEUVRES },
     ],
   },
   {
@@ -36,7 +29,14 @@ const navList: NavListType[] = [
       { text: 'Nos précédents spectacles', url: RoutesPathEnum.PRECEDENTS_SPECTACLES },
     ],
   },
-  { text: 'La troupe', url: RoutesPathEnum.TROUPE },
+  {
+    text: 'La troupe',
+    url: '#',
+    dropdown: [
+      { text: 'La troupe', url: RoutesPathEnum.TROUPE },
+      { text: 'L\'équipe technique', url: RoutesPathEnum.EQUIPE_TECHNIQUE },
+    ],
+  },
   {
     text: 'Agenda',
     url: '#',
@@ -50,37 +50,16 @@ const navList: NavListType[] = [
 
 function Nav() {
   const pathname = usePathname();
-  const [isScrolled, setIsScrolled] = useState(false);
-
-  const handleScroll = () => {
-    const scrollTop = window.scrollY;
-    setIsScrolled(scrollTop > 0);
-  };
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+  const { isScrolling } = useScroll();
+  const { isMobileScreen } = useViewport();
 
   return (
-    <nav className={`bg-secondary z-10 ${isScrolled ? 'fixed top-0 w-full' : ''}`}>
-      <div className="max-w-content mx-auto flex flex-row justify-between items-center">
-        <Link href={RoutesPathEnum.HOMEPAGE}>
-          <Image className="mx-6" alt="Logo de l'ORPM" src={logo} height={50} />
-        </Link>
-        {navList.map(({ text, url, dropdown }) => (
-          <NavItem
-            key={text}
-            text={text}
-            url={url}
-            pathname={pathname}
-            dropdown={dropdown}
-          />
-        ))}
-      </div>
+    <nav className={`bg-secondary z-10 ${isScrolling ? 'fixed top-0 w-full' : ''}`}>
+      {isMobileScreen ? (
+        <MobileNav navList={navList} pathname={pathname} />
+      ) : (
+        <DesktopNav navList={navList} pathname={pathname} />
+      )}
     </nav>
   );
 }
