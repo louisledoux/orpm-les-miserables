@@ -76,7 +76,7 @@ function Nav() {
     <nav className={`bg-secondary z-10 ${isScrolled ? 'fixed top-0 w-full' : ''}`}>
       <div className="max-w-content mx-auto flex flex-row justify-between items-center">
         <Link href={RoutesPathEnum.HOMEPAGE}>
-          <Image className="mx-6" alt="Logo de l'ORPM" src={logo} height={50} />
+          <Image className="mx-6" alt="Logo de l'ORPM" src={logo} height={70} />
         </Link>
         {navList.map(({ text, url, dropdown }) => (
           <NavItem
