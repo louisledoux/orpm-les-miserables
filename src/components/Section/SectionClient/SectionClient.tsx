@@ -27,14 +27,14 @@ type SectionClientProps = {
 function SectionClient({
   pages, image, reverse,
 }: SectionClientProps) {
-  const [divHeight, setDivHeight] = useState<number>();
+  const [divHeight, setDivHeight] = useState<number | undefined>(353);
   const observedDiv: MutableRefObject<HTMLDivElement | null> = useRef(null);
 
   useEffect(() => {
     if (!observedDiv.current) return;
 
     const resizeObserver = new ResizeObserver(() => {
-      if (observedDiv?.current?.offsetHeight !== divHeight) {
+      if (observedDiv?.current?.offsetHeight !== divHeight && window.matchMedia('(min-width: 1024px)').matches) {
         setDivHeight(observedDiv?.current?.offsetHeight);
       }
     });
@@ -48,21 +48,21 @@ function SectionClient({
   }, [divHeight, observedDiv]);
 
   return (
-    <div className={`flex justify-between items-center ${reverse ? 'flex-row-reverse' : ''}`}>
-      <div style={{ height: divHeight }} className="max-w-inSection w-full">
+    <div className={`flex justify-between items-center ${reverse ? 'lg:flex-row-reverse' : 'lg:flex-row'} ${reverse ? 'flex-col-reverse' : 'flex-col-reverse'}`}>
+      <div style={{ height: divHeight }} className="lg:max-w-inSection w-full">
         <Image className="object-cover h-full max-h-fit" src={image.image} alt={image.alt} style={image.style} />
       </div>
       {pages.map((page) => (
         <div
           key={page.title}
-          className="flex flex-col justify-center max-w-inSection w-full py-60px px-40px"
+          className="flex flex-col justify-center lg:max-w-inSection w-full lg:py-60px lg:px-40px lg:mb-0 mb-30px"
           ref={observedDiv}
           style={page.style}
         >
-          <Title className="mb-60px text-center" level={2}>{page.title}</Title>
+          <Title className="lg:mb-60px mb-30px text-center" level={2}>{page.title}</Title>
           {page.paragraphs.map((paragraph) => (
             <Paragraph
-              className="mb-30px text-justify font-light text-base"
+              className="mb-20px lg:mb-30px text-justify font-light text-baseMobile lg:text-base"
               key={`${paragraph}-${page.title}`}
             >
               {paragraph}

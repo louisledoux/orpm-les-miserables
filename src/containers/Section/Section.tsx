@@ -25,7 +25,7 @@ function Section({
   pages, image, reverse, extra,
 }: SectionProps) {
   return (
-    <div className="mb-120px px-120px">
+    <div className="mb-60px px-20px lg:mb-120px lg:px-120px">
       <SectionClient pages={pages} image={image} reverse={reverse} />
       {extra ? <CallToAction firstLink={extra.firstLink} secondLink={extra.secondLink} /> : <></>}
     </div>
