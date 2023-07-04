@@ -61,7 +61,7 @@ export default function Home() {
         />
       </div>
       <Agenda />
-      <div className="lg:mb-120px mb:60px">
+      <div id="jouons" className="lg:mb-120px mb:60px">
         <Section
           pages={playSection.pages}
           image={playSection.image}

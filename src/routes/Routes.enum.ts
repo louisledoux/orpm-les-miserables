@@ -5,9 +5,12 @@ enum RoutesPathEnum {
     COMEDIE_MUSICALE = '/comedie-musicale',
     ORCHESTRE = '/orchestre',
     EQUIPE_ARTISTIQUE = '/equipe-artistique',
+    EQUIPE_TECHNIQUE = '/equipe-technique',
+    AUTEUR_ET_OEUVRES = '/auteur-et-oeuvres',
     PRECEDENTS_SPECTACLES = '/precedents-spectacles',
     TROUPE = '/la-troupe',
-    EQUIPE_TECHNIQUE = '/equipe-technique',
+    CONTACT = '/contact',
+    MENTIONS_LEGALES = '/mentions-legales',
 }
 
 export default RoutesPathEnum;
