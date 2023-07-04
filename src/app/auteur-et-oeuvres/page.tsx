@@ -24,7 +24,7 @@ export default function AuteurEtOeuvresPage() {
           L&apos;auteur et l&apos;oeuvre
         </Typography.Title>
         <div className={`mb-60px px-20px lg:px-120px bg-secondary py-30px lg:py-60px ${amithenFont.className}`}>
-          <Typography.Paragraph className="!text-3xl lg:!text-4xl text-primary !leading-relaxed text-center">
+          <Typography.Paragraph className="!text-3xl lg:!text-4xl lg:!leading-[3.5rem] text-primary !leading-relaxed text-center">
             &quot; Tant qu&apos;il existera, par le fait des lois et des murs,
             une damnation sociale créant artificiellement, en pleine civilisation,
             des enfers et compliquant d&apos;une fatalité humaine, la destinée
@@ -39,7 +39,7 @@ export default function AuteurEtOeuvresPage() {
           />
         </div>
         <div className={`mb-60px px-20px lg:px-120px bg-secondary py-30px lg:py-60px ${amithenFont.className}`}>
-          <Typography.Paragraph className="!text-3xl lg:!text-4xl text-primary !leading-relaxed text-center">
+          <Typography.Paragraph className="!text-3xl lg:!text-4xl text-primary lg:!leading-[3.5rem] !leading-relaxed text-center">
             &quot; Je ne suis pas, messieurs, de ceux qui croient qu&apos;on peut supprimer
             la souffrance en ce monde ; la souffrance est une loi divine ;
             mais je suis de ceux qui pensent et qui affirment qu&apos;on peut détruire la misère.
