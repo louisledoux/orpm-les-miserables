@@ -38,6 +38,7 @@ function NavItem({
         <Link
           href={url}
           passHref={externalLink}
+          target={externalLink ? '_blank' : '_self'}
           className={`${isActive ? 'bg-primary text-white' : 'bg-secondary text-primary'}
             uppercase font-semibold px-10 py-6
             hover:bg-primary hover:text-white ease-in-out duration-150

@@ -51,7 +51,8 @@ function Button({
     <Link
       href={url || ''}
       passHref={externalUrl}
-      className={`w-fit p-button ${bgColor} ${titleColor} text-h3 font-semibold uppercase
+      target={externalUrl ? '_blank' : '_self'}
+      className={`w-fit p-10px lg:p-button ${bgColor} ${titleColor} text-base lg:text-h3 font-semibold uppercase
           hover:text-white ease-in-out duration-150`}
       type="button"
     >

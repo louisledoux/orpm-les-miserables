@@ -19,7 +19,7 @@ export default function LaTroupePage() {
           className="w-full h-full object-cover"
         />
       </div>
-      <div className="mb-120px">
+      <div className="lg:mb-120px mb-60px">
         <Typography.Title level={1}>
           La troupe
         </Typography.Title>
@@ -37,7 +37,7 @@ export default function LaTroupePage() {
             },
           }}
         />
-        <div className="px-120px mb-120px">
+        <div className="lg:px-120px px-20px lg:mb-120px mb-60px">
           <Carousel items={laTroupeCarouselData} autoplay />
         </div>
       </div>

@@ -10,6 +10,14 @@ type Story = StoryObj<typeof Header>;
 
 export const Primary: Story = {
   args: {
-    socialMediasIcons: [SocialMediasEnum.FACEBOOK, SocialMediasEnum.INSTAGRAM],
+    socialMediasIcons: [
+      {
+        icon: SocialMediasEnum.FACEBOOK,
+        link: 'https://www.facebook.com/people/Les-Mis%C3%A9rables-Spectacle/100063630728155/',
+      },
+      {
+        icon: SocialMediasEnum.INSTAGRAM,
+      },
+    ],
   },
 };
