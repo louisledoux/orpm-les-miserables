@@ -8,14 +8,14 @@ type FooterLink = {
 
 const footerLinks: FooterLink[] = [
   { text: 'Accueil', url: RoutesPathEnum.HOMEPAGE },
-  { text: 'Auteur et œuvres', url: '/#' },
+  { text: 'Auteur et œuvres', url: RoutesPathEnum.AUTEUR_ET_OEUVRES },
   { text: 'L\'histoire', url: RoutesPathEnum.HISTOIRE },
   { text: 'Les personnages', url: RoutesPathEnum.PERSONNAGES },
   { text: 'La comédie musicale', url: RoutesPathEnum.COMEDIE_MUSICALE },
-  { text: 'Jouons !', url: '/#' },
+  { text: 'Jouons !', url: '/#jouons' },
   { text: 'L\'orchestre', url: RoutesPathEnum.ORCHESTRE },
   { text: 'L\'équipe artistique', url: RoutesPathEnum.EQUIPE_ARTISTIQUE },
-  { text: 'L\'équipe technique', url: '/#' },
+  { text: 'L\'équipe technique', url: RoutesPathEnum.EQUIPE_TECHNIQUE },
   { text: 'La troupe', url: RoutesPathEnum.TROUPE },
   { text: 'Nos précédents spectacles', url: RoutesPathEnum.PRECEDENTS_SPECTACLES },
   { text: 'L\'agenda', url: '/#agenda' },
