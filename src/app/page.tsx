@@ -4,11 +4,11 @@ import image1 from '@/assets/pages/homepage/homepage-carousel/image1.png';
 import image2 from '@/assets/pages/homepage/homepage-carousel/image2.jpg';
 import image3 from '@/assets/pages/homepage/homepage-carousel/image3.png';
 import image4 from '@/assets/pages/homepage/homepage-carousel/image4.png';
-import image5 from '@/assets/pages/homepage/homepage-carousel/image5.png';
 import Section from '@/containers/Section/Section';
 import Agenda from '@/containers/Agenda/Agenda';
 import { newsSection, playSection } from '@/assets/pages/homepage/homepageSections';
 import SupportSection from '@/containers/SupportSection/SupportSection';
+import image5 from '@/assets/pages/homepage/homepage-carousel/image5.png';
 
 const items: CarouselItemProps[] = [
   {

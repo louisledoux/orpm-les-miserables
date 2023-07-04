@@ -23,20 +23,22 @@ export default function LaTroupePage() {
         <Typography.Title level={1}>
           La troupe
         </Typography.Title>
-        <Section
-          pages={laTroupeSection.pages}
-          image={laTroupeSection.image}
-          extra={{
-            firstLink: {
-              text: 'Les rôles incarnés par la troupe',
-              url: RoutesPathEnum.PERSONNAGES,
-            },
-            secondLink: {
-              text: 'Découvrir',
-              url: RoutesPathEnum.PERSONNAGES,
-            },
-          }}
-        />
+        <div className="lg:px-40px">
+          <Section
+            pages={laTroupeSection.pages}
+            image={laTroupeSection.image}
+            extra={{
+              firstLink: {
+                text: 'Les rôles incarnés par la troupe',
+                url: RoutesPathEnum.PERSONNAGES,
+              },
+              secondLink: {
+                text: 'Découvrir',
+                url: RoutesPathEnum.PERSONNAGES,
+              },
+            }}
+          />
+        </div>
         <div className="lg:px-120px px-20px lg:mb-120px mb-60px">
           <Carousel items={laTroupeCarouselData} autoplay />
         </div>
