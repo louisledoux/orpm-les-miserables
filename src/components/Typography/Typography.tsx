@@ -48,7 +48,7 @@ function Title({
       );
     case 3:
       return (
-        <h3 className={`${commonClassNames} text-primary font-semibold text-h3`}>
+        <h3 className={`${commonClassNames} text-primary font-semibold text-3xl lg:text-h3`}>
           {children}
         </h3>
       );
