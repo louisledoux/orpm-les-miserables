@@ -4,6 +4,7 @@ import RoutesPathEnum from '@/routes/Routes.enum';
 type FooterLink = {
   text: string,
   url: string,
+  externalLink?: boolean,
 }
 
 const footerLinks: FooterLink[] = [
@@ -20,7 +21,11 @@ const footerLinks: FooterLink[] = [
   { text: 'Nos précédents spectacles', url: RoutesPathEnum.PRECEDENTS_SPECTACLES },
   { text: 'L\'agenda', url: '/#agenda' },
   { text: 'Billetterie', url: '/#agenda' },
-  { text: 'Nous soutenir', url: 'https://www.helloasso.com/associations/orchestre-regional-du-pevele-melantois/collectes/aidez-nous-a-financer-les-costumes-de-notre-spectacle' },
+  {
+    text: 'Nous soutenir',
+    url: 'https://www.helloasso.com/associations/orchestre-regional-du-pevele-melantois/collectes/aidez-nous-a-financer-les-costumes-de-notre-spectacle',
+    externalLink: true,
+  },
   { text: 'Nous contacter', url: RoutesPathEnum.CONTACT },
 ];
 
@@ -47,11 +52,13 @@ function Footer() {
         {divideLinksInColumns(footerLinks).map((column, index) => (
           // eslint-disable-next-line react/no-array-index-key
           <div key={`footer-column-${index}`} className="flex flex-col items-center lg:gap-7 gap-6 max-w-footer w-full mb-6 lg:mb-0 ">
-            {column.map(({ text, url }) => (
+            {column.map(({ text, url, externalLink }) => (
               <Link
                 key={`footer-link-${text}`}
                 className="lg:text-lg text-base lg:font-medium font-base hover:text-primary ease-in-out duration-150"
                 href={url}
+                passHref={externalLink}
+                target={externalLink ? '_blank' : '_self'}
               >
                 {text}
               </Link>
