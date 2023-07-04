@@ -3,6 +3,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
+import useViewport from '@/hooks/useViewport';
 
 type ExtraLink = {
   text: string,
@@ -17,13 +18,8 @@ export interface CallToActionProps {
 function CallToAction({
   firstLink, secondLink,
 }: CallToActionProps) {
-  const [width, setWidth] = useState<number>(0);
+  const { width } = useViewport();
   const breakpoint = 1024;
-
-  useEffect(() => {
-    window.addEventListener('resize', () => setWidth(window.innerWidth));
-    setWidth(window.innerWidth);
-  }, []);
 
   return (
     <>
