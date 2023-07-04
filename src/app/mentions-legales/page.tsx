@@ -79,7 +79,7 @@ export default function MentionsLegalesPage() {
                 passHref
                 target="_blank"
               >
-                Pauline Ledoux
+                Pauline Ledoux-Juste
               </Link>
             </Paragraph>
           </div>
