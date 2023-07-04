@@ -9,8 +9,8 @@ export interface CarouselItemProps {
 
 function CarouselItem({ imageSrc, alt, style = {} }: CarouselItemProps) {
   return (
-    <div className="h-carousel">
-      <Image style={style} className="w-full h-carousel object-cover" src={imageSrc} alt={alt} />
+    <div className="lg:h-carousel h-headerImage">
+      <Image style={style} className="w-full h-headerImage lg:h-carousel object-cover" src={imageSrc} alt={alt} />
     </div>
   );
 }

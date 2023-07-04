@@ -16,11 +16,11 @@ export default function EquipeArtistiquePage() {
           className="w-full h-full object-cover"
         />
       </div>
-      <div className="mb-120px">
-        <Typography.Title level={1}>
+      <div className="lg:mb-120px mb-60px">
+        <Typography.Title level={1} className="px-20px lg-px-0">
           L&apos;équipe artistique
         </Typography.Title>
-        <div className="mb-120px px-120px text-center text-22 font-light">
+        <div className="lg:mb-120px mb-60px lg:px-120px px-20px lg:text-center text-base text-justify lg:text-22 font-light">
           Le coeur du projet s&apos;appuie sur une équipe artistique soudée
           et confirmée au long de nos nombreux spectacles précédents.
           Elle se rassemble autour du chef d&apos;orchestre, Hubert Gressier,

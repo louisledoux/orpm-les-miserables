@@ -59,6 +59,7 @@ function NavDropdown({
                 key={subNavItem.text}
                 href={subNavItem.url}
                 passHref={subNavItem.externalLink}
+                target={subNavItem.externalLink ? '_blank' : '_self'}
               >
                 {subNavItem.text}
               </Link>

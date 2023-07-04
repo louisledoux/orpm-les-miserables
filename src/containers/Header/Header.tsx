@@ -5,8 +5,13 @@ export enum SocialMediasEnum {
   INSTAGRAM = 'square-instagram'
 }
 
+type HeaderIconType = {
+  icon: SocialMediasEnum,
+  link?: string,
+}
+
 interface HeaderProps {
-  socialMediasIcons: SocialMediasEnum[]
+  socialMediasIcons: HeaderIconType[]
 }
 
 function Header({
@@ -14,9 +19,10 @@ function Header({
 }: HeaderProps) {
   return (
     <div className="flex max-w-content mx-auto justify-end gap-2 py-3 px-2">
-      {socialMediasIcons.map((icon) => (
+      {socialMediasIcons.map(({ icon, link }) => (
         <Icon
           key={icon}
+          link={link}
           icon={['fab', `${icon}`]}
           type="secondary"
           size="large"
