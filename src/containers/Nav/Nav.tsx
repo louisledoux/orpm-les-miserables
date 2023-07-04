@@ -36,7 +36,14 @@ const navList: NavListType[] = [
       { text: 'Nos précédents spectacles', url: RoutesPathEnum.PRECEDENTS_SPECTACLES },
     ],
   },
-  { text: 'La troupe', url: RoutesPathEnum.TROUPE },
+  {
+    text: 'La troupe',
+    url: '#',
+    dropdown: [
+      { text: 'La troupe', url: RoutesPathEnum.TROUPE },
+      { text: 'L\'équipe technique', url: RoutesPathEnum.EQUIPE_TECHNIQUE },
+    ],
+  },
   {
     text: 'Agenda',
     url: '#',
