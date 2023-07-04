@@ -14,7 +14,7 @@ const footerLinks: FooterLink[] = [
   { text: 'Jouons !', url: '/#' },
   { text: 'L\'orchestre', url: RoutesPathEnum.ORCHESTRE },
   { text: 'L\'équipe artistique', url: '/#' },
-  { text: 'L\'équipe technique', url: '/#' },
+  { text: 'L\'équipe technique', url: RoutesPathEnum.EQUIPE_TECHNIQUE },
   { text: 'La troupe', url: '/#' },
   { text: 'Nos précédents spectacles', url: '/#' },
   { text: 'L\'agenda', url: '/#' },
