@@ -68,7 +68,7 @@ function Footer() {
       </div>
       <div className="flex flex-row justify-center font-base">
         <Link className="hover:text-primary ease-in-out duration-150 mr-3.5 max-w-mentionslegales w-full text-left" href={RoutesPathEnum.MENTIONS_LEGALES}>Mentions légales</Link>
-        <Link className="hover:text-primary ease-in-out duration-150 ml-3.5 max-w-mentionslegales w-full text-right" href="/#">Médias</Link>
+        <Link className="hover:text-primary ease-in-out duration-150 ml-3.5 max-w-mentionslegales w-full text-right" href={RoutesPathEnum.MEDIAS}>Médias</Link>
       </div>
     </footer>
   );
