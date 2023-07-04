@@ -9,6 +9,7 @@ type ExtraLink = {
   text: string,
   url: string,
   mobile?: string,
+  newTab?: boolean,
 }
 
 export interface CallToActionProps {
@@ -26,6 +27,7 @@ function CallToAction({
         <div className="flex flex-row w-full justify-between items-center bg-secondary p-extra">
           <Link
             href={firstLink.url}
+            target={firstLink.newTab ? '_blank' : '_self'}
             className="flex flex-row items-center gap-5 text-white text-22 font-medium
             hover:text-primary ease-in-out duration-150"
           >
