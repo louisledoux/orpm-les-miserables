@@ -17,6 +17,7 @@ const navList: NavListType[] = [
       { text: 'L\'histoire', url: RoutesPathEnum.HISTOIRE },
       { text: 'Les personnages', url: RoutesPathEnum.PERSONNAGES },
       { text: 'La comédie musicale', url: RoutesPathEnum.COMEDIE_MUSICALE },
+      { text: 'Auteur et oeuvres', url: RoutesPathEnum.AUTEUR_ET_OEUVRES },
     ],
   },
   {
