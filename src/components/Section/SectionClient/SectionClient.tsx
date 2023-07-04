@@ -27,7 +27,7 @@ type SectionClientProps = {
 function SectionClient({
   pages, image, reverse,
 }: SectionClientProps) {
-  const [divHeight, setDivHeight] = useState<number>(353);
+  const [divHeight, setDivHeight] = useState<number | undefined>(353);
   const observedDiv: MutableRefObject<HTMLDivElement | null> = useRef(null);
 
   useEffect(() => {
@@ -48,7 +48,7 @@ function SectionClient({
   }, [divHeight, observedDiv]);
 
   return (
-    <div className={`flex justify-between items-center lg:${reverse ? 'flex-row-reverse' : 'flex-row'} ${reverse ? 'flex-col-reverse' : 'flex-col-reverse'}`}>
+    <div className={`flex justify-between items-center ${reverse ? 'lg:flex-row-reverse' : 'lg:flex-row'} ${reverse ? 'flex-col-reverse' : 'flex-col-reverse'}`}>
       <div style={{ height: divHeight }} className="lg:max-w-inSection w-full">
         <Image className="object-cover h-full max-h-fit" src={image.image} alt={image.alt} style={image.style} />
       </div>

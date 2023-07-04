@@ -46,7 +46,6 @@ export default function Home() {
             firstLink: {
               text: 'Télécharger le dossier de presse',
               url: '/',
-              mobile: 'Téléchargez le dossier de presse',
             },
             secondLink: {
               text: 'Découvrir',
