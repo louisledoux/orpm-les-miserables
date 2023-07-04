@@ -17,7 +17,7 @@ export interface CallToActionProps {
 function CallToAction({
   firstLink, secondLink,
 }: CallToActionProps) {
-  const [width, setWidth] = useState<number>(window.innerWidth);
+  const [width, setWidth] = useState<number>(0);
   const breakpoint = 1024;
 
   useEffect(() => {
