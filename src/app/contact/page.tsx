@@ -40,7 +40,11 @@ export default function ContactPage() {
           </Typography.Paragraph>
         </div>
         <div className="px-120px mb-60px text-center flex justify-center">
-          <Link href="https://www.facebook.com/profile.php?id=100063630728155">
+          <Link
+            href="https://www.facebook.com/profile.php?id=100063630728155"
+            passHref
+            target="_blank"
+          >
             <Image
               src={facebook}
               alt="Page Facebook de l'ORPM"
