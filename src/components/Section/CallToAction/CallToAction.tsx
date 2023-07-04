@@ -1,6 +1,7 @@
 'use client';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import Link from 'next/link';
 import useViewport from '@/hooks/useViewport';
 
@@ -17,19 +18,18 @@ export interface CallToActionProps {
 function CallToAction({
   firstLink, secondLink,
 }: CallToActionProps) {
-  const { width } = useViewport();
-  const breakpoint = 1024;
+  const { isDesktopScreen } = useViewport();
 
   return (
     <>
-      {width > breakpoint ? (
+      {isDesktopScreen ? (
         <div className="flex flex-row w-full justify-between items-center bg-secondary p-extra">
           <Link
             href={firstLink.url}
             className="flex flex-row items-center gap-5 text-white text-22 font-medium
             hover:text-primary ease-in-out duration-150"
           >
-            <FontAwesomeIcon icon={['fas', 'arrow-right']} />
+            <FontAwesomeIcon icon={faArrowRight} />
             <span>{firstLink.text}</span>
           </Link>
           {secondLink && (
