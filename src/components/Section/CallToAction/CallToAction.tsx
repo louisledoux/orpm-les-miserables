@@ -22,6 +22,7 @@ function CallToAction({
 
   useEffect(() => {
     window.addEventListener('resize', () => setWidth(window.innerWidth));
+    setWidth(window.innerWidth);
   }, []);
 
   return (
