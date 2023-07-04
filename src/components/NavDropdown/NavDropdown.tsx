@@ -50,7 +50,7 @@ function NavDropdown({
           aria-orientation="vertical"
           role="menu"
         >
-          <div className="py-1" role="none">
+          <div className="py-1" role="menuitem">
             {dropdown.map((subNavItem) => (
               <Link
                 className="block px-6 py-4 text-secondary

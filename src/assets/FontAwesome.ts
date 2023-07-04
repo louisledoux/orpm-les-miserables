@@ -3,12 +3,8 @@ import {
   faFacebook,
   faSquareInstagram,
 } from '@fortawesome/free-brands-svg-icons';
-import {
-  faArrowRight,
-} from '@fortawesome/free-solid-svg-icons';
 
 library.add(
   faFacebook,
   faSquareInstagram,
-  faArrowRight,
 );
