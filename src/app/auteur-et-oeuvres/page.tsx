@@ -8,7 +8,7 @@ import localFont from 'next/font/local';
 
 const amithenFont = localFont({ src: '../../assets/font/amithen.ttf' });
 
-export default function LaTroupePage() {
+export default function AuteurEtOeuvresPage() {
   return (
     <>
       <div className="h-headerImage w-full">
