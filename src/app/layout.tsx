@@ -24,25 +24,27 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fr">
-      <body className={`${oswald.className} tracking-2%`}>
-        <div className="w-full">
-          <Header socialMediasIcons={[
-            {
-              icon: SocialMediasEnum.FACEBOOK,
-              link: 'https://www.facebook.com/people/Les-Mis%C3%A9rables-Spectacle/100063630728155/',
-            },
-            {
-              icon: SocialMediasEnum.INSTAGRAM,
-            },
-          ]}
-          />
-          <Nav />
-          <main className="max-w-content mx-auto">
-            {children}
-          </main>
-          <Analytics />
+      <body className={`${oswald.className} tracking-2% h-full`}>
+        <div className="min-h-screen h-full flex flex-col justify-between">
+          <div className="w-full">
+            <Header socialMediasIcons={[
+              {
+                icon: SocialMediasEnum.FACEBOOK,
+                link: 'https://www.facebook.com/people/Les-Mis%C3%A9rables-Spectacle/100063630728155/',
+              },
+              {
+                icon: SocialMediasEnum.INSTAGRAM,
+              },
+            ]}
+            />
+            <Nav />
+            <main className="max-w-content mx-auto">
+              {children}
+            </main>
+            <Analytics />
+          </div>
+          <Footer />
         </div>
-        <Footer />
       </body>
     </html>
   );
