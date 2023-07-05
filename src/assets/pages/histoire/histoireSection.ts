@@ -1,7 +1,7 @@
 import { SectionData } from '@/types/Section.type';
-import histoireAPropos from '@/assets/pages/histoire/images/histoireapropos.png';
-import structureImg from '@/assets/pages/histoire/images/structure.png';
-import histoireImg from '@/assets/pages/histoire/images/histoire.png';
+import histoireAPropos from '@/assets/pages/histoire/images/histoireapropos.jpg';
+import structureImg from '@/assets/pages/histoire/images/structure.jpg';
+import histoireImg from '@/assets/pages/histoire/images/histoire.jpg';
 
 export const aProposAlternativeSection: SectionData = {
   key: 'AlternativeSection APropos',

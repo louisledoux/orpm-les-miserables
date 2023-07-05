@@ -1,7 +1,7 @@
 import Typography from '@/components/Typography/Typography';
 import Image from 'next/image';
 import React from 'react';
-import mainPersonnages from '@/assets/pages/personnages/images/mainpersonnages.png';
+import mainPersonnages from '@/assets/pages/personnages/images/mainpersonnages.jpg';
 import personnageSections from '@/assets/pages/personnages/personnagesSections';
 import PersonnagesSection from '@/containers/PersonnagesSection/PersonnagesSection';
 

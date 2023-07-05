@@ -1,6 +1,6 @@
 import { SectionData } from '@/types/Section.type';
-import aPropos from '@/assets/pages/comedie-musicale/images/apropos.png';
-import scenesClefs from '@/assets/pages/comedie-musicale/images/scenesclefs.png';
+import aPropos from '@/assets/pages/comedie-musicale/images/apropos.jpg';
+import scenesClefs from '@/assets/pages/comedie-musicale/images/scenesclefs.jpg';
 
 export const aProposSection: SectionData = {
   key: 'Section APropos',

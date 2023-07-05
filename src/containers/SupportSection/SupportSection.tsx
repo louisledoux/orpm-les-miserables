@@ -1,6 +1,6 @@
 import Typography from '@/components/Typography/Typography';
 import Image from 'next/image';
-import supportUsImage from '@/assets/images/support_us.png';
+import supportUsImage from '@/assets/images/support_us.jpg';
 import Button from '@/components/Button/Button';
 
 const { Title, Paragraph } = Typography;

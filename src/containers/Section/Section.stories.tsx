@@ -1,6 +1,6 @@
 import { Meta, StoryObj } from '@storybook/react';
 import Section from '@/containers/Section/Section';
-import newsImage from '@/assets/pages/homepage/images/newsImage.png';
+import newsImage from '@/assets/pages/homepage/images/newsImage.jpg';
 
 const meta: Meta<typeof Section> = {
   component: Section,

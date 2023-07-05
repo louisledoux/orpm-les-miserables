@@ -3,7 +3,7 @@ import eric from '@/assets/pages/equipeArtistique/images/ericpauwels.jpg';
 import magali from '@/assets/pages/equipeArtistique/images/magali.jpg';
 import celine from '@/assets/pages/equipeArtistique/images/celine.jpg';
 import manon from '@/assets/pages/equipeArtistique/images/manon.jpg';
-import claire from '@/assets/pages/equipeArtistique/images/claire.png';
+import claire from '@/assets/pages/equipeArtistique/images/claire.jpg';
 import marie from '@/assets/pages/equipeArtistique/images/marie.jpg';
 import { SectionData } from '@/types/Section.type';
 

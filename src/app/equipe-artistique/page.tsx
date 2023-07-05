@@ -2,7 +2,7 @@ import Typography from '@/components/Typography/Typography';
 import Section from '@/containers/Section/Section';
 import Image from 'next/image';
 import React from 'react';
-import mainequipeArtistique from '@/assets/pages/equipeArtistique/images/mainequipeArtistique.png';
+import mainequipeArtistique from '@/assets/pages/equipeArtistique/images/mainequipeArtistique.jpg';
 import equipeArtistiqueSections from '@/assets/pages/equipeArtistique/equipeArtistiqueSections';
 
 export default function EquipeArtistiquePage() {

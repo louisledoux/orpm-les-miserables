@@ -1,6 +1,6 @@
 import { SectionData } from '@/types/Section.type';
-import newsImage from '@/assets/pages/homepage/images/newsImage.png';
-import onJoueImage from '@/assets/pages/homepage/images/onJoueImage.png';
+import newsImage from '@/assets/pages/homepage/images/newsImage.jpg';
+import onJoueImage from '@/assets/pages/homepage/images/onJoueImage.jpg';
 
 export const newsSection: SectionData = {
   key: 'Section News',
