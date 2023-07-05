@@ -85,11 +85,13 @@ export default function MentionsLegalesPage() {
           </div>
           <Title level={3} className="mt-12 mb-8">Propriété intellectuelle</Title>
           <div className="flex flex-col gap-2">
-            <Paragraph>
+            <div className="flex flex-col">
               <strong>Photos de la troupe :</strong>
-              {' '}
-              Elise Lecocq
-            </Paragraph>
+              <span>Elise Lecocq</span>
+              <span>Pauline Ledoux Juste</span>
+              <span>Frédérique Gressier</span>
+              <span>Orchestre Régional du Pévèle Mélantois</span>
+            </div>
           </div>
         </div>
       </div>

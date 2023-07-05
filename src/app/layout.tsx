@@ -1,6 +1,7 @@
 import { config } from '@fortawesome/fontawesome-svg-core';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import { Oswald } from 'next/font/google';
+import { Analytics } from '@vercel/analytics/react';
 import React from 'react';
 import './globals.css';
 import Header, { SocialMediasEnum } from '@/containers/Header/Header';
@@ -39,6 +40,7 @@ export default function RootLayout({
           <main className="max-w-content mx-auto">
             {children}
           </main>
+          <Analytics />
         </div>
         <Footer />
       </body>
