@@ -1,4 +1,4 @@
-import orchestreHeroImage from '@/assets/pages/orchestre/images/mainorchestre.png';
+import orchestreHeroImage from '@/assets/pages/orchestre/images/mainorchestre.jpg';
 import Typography from '@/components/Typography/Typography';
 import Section from '@/containers/Section/Section';
 import Image from 'next/image';

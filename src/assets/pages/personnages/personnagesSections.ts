@@ -1,13 +1,13 @@
-import jeanValjean from '@/assets/pages/personnages/images/jeanvaljean.png';
-import javert from '@/assets/pages/personnages/images/javert.png';
-import cosette from '@/assets/pages/personnages/images/cosette.png';
-import eponine from '@/assets/pages/personnages/images/eponine.png';
-import fantine from '@/assets/pages/personnages/images/fantine.png';
-import marius from '@/assets/pages/personnages/images/marius.png';
-import enjolras from '@/assets/pages/personnages/images/enjolras.png';
-import mrThenardier from '@/assets/pages/personnages/images/mrthenardier.png';
-import mmeThenardier from '@/assets/pages/personnages/images/mmethenardier.png';
-import gavroche from '@/assets/pages/personnages/images/gavroche.png';
+import jeanValjean from '@/assets/pages/personnages/images/jeanvaljean.jpg';
+import javert from '@/assets/pages/personnages/images/javert.jpg';
+import cosette from '@/assets/pages/personnages/images/cosette.jpg';
+import eponine from '@/assets/pages/personnages/images/eponine.jpg';
+import fantine from '@/assets/pages/personnages/images/fantine.jpg';
+import marius from '@/assets/pages/personnages/images/marius.jpg';
+import enjolras from '@/assets/pages/personnages/images/enjolras.jpg';
+import mrThenardier from '@/assets/pages/personnages/images/mrthenardier.jpg';
+import mmeThenardier from '@/assets/pages/personnages/images/mmethenardier.jpg';
+import gavroche from '@/assets/pages/personnages/images/gavroche.jpg';
 import { SectionData } from '@/types/Section.type';
 
 const equipeArtistiqueSections: SectionData[] = [

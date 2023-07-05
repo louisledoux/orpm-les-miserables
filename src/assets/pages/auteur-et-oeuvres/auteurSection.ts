@@ -1,5 +1,5 @@
 import { SectionData } from '@/types/Section.type';
-import auteur from '@/assets/pages/auteur-et-oeuvres/images/auteur.png';
+import auteur from '@/assets/pages/auteur-et-oeuvres/images/auteur.jpg';
 
 const auteurSection: SectionData = {
   key: 'Section Auteur',

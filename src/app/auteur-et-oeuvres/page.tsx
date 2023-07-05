@@ -2,7 +2,7 @@ import Typography from '@/components/Typography/Typography';
 import Section from '@/containers/Section/Section';
 import Image from 'next/image';
 import React from 'react';
-import mainAuteur from '@/assets/pages/auteur-et-oeuvres/images/mainAuteur.png';
+import mainAuteur from '@/assets/pages/auteur-et-oeuvres/images/mainAuteur.jpg';
 import auteurSection from '@/assets/pages/auteur-et-oeuvres/auteurSection';
 import localFont from 'next/font/local';
 
