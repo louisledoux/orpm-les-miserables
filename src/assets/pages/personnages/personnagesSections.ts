@@ -30,7 +30,7 @@ const equipeArtistiqueSections: SectionData[] = [
     pages: [{
       title: 'Javert',
       paragraphs: [
-        'Personnage antagoniste de l\'histoire, Javert est un fonctionnaire zélé qui poursuit Jean Valjean sans relâche, croyant qu\'un ancien forçat ne peut jamais changer.\n C\'est un personnage rigide et inflexible, mais il finit par remettre en question ses propres convictions lorsqu\'il réalise que Jean Valjean est devenue une personne meilleure.\n Inspecteur de police obsédé par la justice, Javert est un personnage complexe et tourmenté, qui finit par se suicider lorsqu\'il réalise qu\'il s\'est trompé sur le compte de Valjean et qu\'il a été capable de se racheter.',
+        'Personnage antagoniste de l\'histoire, Javert est un fonctionnaire zélé qui poursuit Jean Valjean sans relâche, croyant qu\'un ancien forçat ne peut jamais changer.\n C\'est un personnage rigide et inflexible, mais il finit par remettre en question ses propres convictions lorsqu\'il réalise que Jean Valjean est devenu une personne meilleure.\n Inspecteur de police obsédé par la justice, Javert est un personnage complexe et tourmenté, qui finit par se suicider lorsqu\'il réalise qu\'il s\'est trompé sur le compte de Valjean et qu\'il a été capable de se racheter.',
       ],
     }],
     image: {
@@ -58,7 +58,7 @@ const equipeArtistiqueSections: SectionData[] = [
     pages: [{
       title: 'Eponine',
       paragraphs: [
-        'Eponine est la fille des Thénardier, des propriétaires de l\'auberge où Valjean et Cosette s\'installent. Elle est amoureuse de Marius, un étudiant révolutionnaire, mais elle finit par accepter que ses sentiments ne seront jamais partagés et par aider Marius à retrouver Cosette.\n Eponine est un personnage très attachant qui est à la fois forte et vulnérable. Elle finit par se sacrifier pour aider les autres et meurt sur la barricade lors de la révolution de 1832.',
+        'Eponine est la fille des Thénardier, des propriétaires de l\'auberge où Valjean et Cosette s\'installent. Elle est amoureuse de Marius, un étudiant révolutionnaire, mais elle finit par accepter que ses sentiments ne seront jamais partagés et par aider Marius à retrouver Cosette.\n Eponine est un personnage très attachant qui est à la fois fort et vulnérable. Elle finit par se sacrifier pour aider les autres et meurt sur la barricade lors de la révolution de 1832.',
       ],
     }],
     image: {
