@@ -27,7 +27,7 @@ export const playSection: SectionData = {
     paragraphs: [
       'Curieux de découvrir l\'univers des Misérables autrement ? Jouez avec nous, et aventurez-vous dans les méandres des oeuvres de Victor Hugo',
       'La page de jeux est en cours de construction, nous vous invitons à revenir très bientôt !',
-      'Vous serez informés de l\'ouverture de la page et des animations ludiques via nos réseaux sociaux, n\'hésitez pas à nous suivre sur nos pages Facebook et Instagram pour ne rien râter de nos actualités !',
+      'Vous serez informés de l\'ouverture de la page et des animations ludiques via nos réseaux sociaux, n\'hésitez pas à nous suivre sur nos pages Facebook et Instagram pour ne rien rater de nos actualités !',
       'En attendant, nous vous invitons à découvrir l\'histoire des Misérables et sa comédie musicale dans les sections de notre site !',
       'Bonne lecture ! ',
     ],
