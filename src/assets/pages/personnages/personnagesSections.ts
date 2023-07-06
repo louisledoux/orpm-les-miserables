@@ -128,7 +128,7 @@ const equipeArtistiqueSections: SectionData[] = [
     pages: [{
       title: 'Mme Thénardier',
       paragraphs: [
-        'Thénardier est un personnage diabolique et sans scrupules, qui exploite et vole tous ceux qu\'il peut pour s\'enrichir. Il est le propriétaire de l\'auberge où grandit Cosette dans l\'exploitation et la misère.\n Thénardier est marié à Madame Thénardier, qui est tout aussi malveillante que lui. Le couple a deux enfants, Eponine et Azelma, qui sont tous deux très attachants malgré leur éducation déplorable.\n Thénardier est un personnage complexe et ambivalent, qui finit par être révélé sous un jour nouveau à la fin de l\'histoire.',
+        'Madame Thénardier est un personnage essentiel de "Les Misérables" de Victor Hugo. Elle incarne la cupidité, la cruauté et la manipulation.\n En tant que femme du propriétaire de l\'auberge de Montfermeil, elle exploite les pensionnaires et les maltraite sans scrupules. Petite, et au visage dur, elle est avide d\'argent et prête à tout pour l\'obtenir. Sa fausse gentillesse lui permet de duper les autres et de les exploiter.\n Madame Thénardier est particulièrement impliquée dans l\'histoire de Cosette, la fille de Fantine. Elle néglige et maltraite l\'enfant, la gardant dans des conditions misérables et l\'exploitant sans pitié.\n Elle est également impliquée dans des actes criminels tels que le vol et la tromperie. Son personnage représente la face sombre de la société, incarnant la noirceur et la vilenie humaine.\n Dans l\'ensemble, Madame Thénardier est un personnage complexe et malfaisant, symbole de la rapacité et de la cruauté présentes dans "Les Misérables".',
       ],
     }],
     image: {
