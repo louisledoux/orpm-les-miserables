@@ -13,7 +13,7 @@ config.autoAddCss = false;
 const oswald = Oswald({ subsets: ['latin'] });
 
 export const metadata = {
-  title: 'ORPM Spectacle - Les Misérables',
+  title: 'ORPM Spectacles - Les Misérables',
   description: 'Venez découvrir la prochaine comédie musicale de l\'Orchestre Régional du Pévèle Mélantois : Les Misérables, d\'après l\'oeuvre de Victor Hugo !',
   keywords: ['ORPM', 'Spectacle', 'Comédie musicale', 'Les Misérables'],
 };
