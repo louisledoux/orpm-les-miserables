@@ -41,6 +41,7 @@ const items: CarouselItemProps[] = [
 export default function Home() {
   return (
     <>
+      <h1 className="hidden">ORPM Spectacle - Les Misérables</h1>
       <div className="lg:mb-120px mb-60px">
         <Carousel items={items} autoplay />
       </div>
