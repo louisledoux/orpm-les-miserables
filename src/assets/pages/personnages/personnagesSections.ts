@@ -27,12 +27,16 @@ const equipeArtistiqueSections: PersonnagesSectionData[] = [
       {
         image: vincentChoquel,
         alt: 'Vincent Choquel dans le rôle de Jean Valjean',
-        style: { width: '100%', height: '100%', borderRadius: '2px' },
+        style: {
+          width: '100%', height: '100%', borderRadius: '2px', objectPosition: '50% 15%',
+        },
       },
       {
         image: alexandrosMoraitis,
         alt: 'Alexandrios Moraitis dans le rôle de Jean Valjean',
-        style: { width: '100%', height: '100%', borderRadius: '2px' },
+        style: {
+          width: '100%', height: '100%', borderRadius: '2px', objectPosition: '50% 15%',
+        },
       }],
   },
   {
@@ -63,12 +67,16 @@ const equipeArtistiqueSections: PersonnagesSectionData[] = [
       {
         image: claireGressier,
         alt: 'Claire Gressier dans le rôle de Cosette',
-        style: { width: '100%', height: '100%', borderRadius: '2px' },
+        style: {
+          width: '100%', height: '100%', borderRadius: '2px', objectPosition: '50% 15%',
+        },
       },
       {
         image: louiseDenoeux,
         alt: 'Louise Denoeux dans le rôle de Cosette enfant',
-        style: { width: '100%', height: '100%', borderRadius: '2px' },
+        style: {
+          width: '100%', height: '100%', borderRadius: '2px', objectPosition: '40% 10%',
+        },
       },
     ],
   },
@@ -84,12 +92,16 @@ const equipeArtistiqueSections: PersonnagesSectionData[] = [
       {
         image: floreSouames,
         alt: 'Flore Souames dans le rôle de Eponine',
-        style: { width: '100%', height: '100%', borderRadius: '2px' },
+        style: {
+          width: '100%', height: '100%', borderRadius: '2px', objectPosition: '30% 5%',
+        },
       },
       {
         image: laoraBrachot,
         alt: 'Laora Brachot dans le rôle de Eponine',
-        style: { width: '100%', height: '100%', borderRadius: '2px' },
+        style: {
+          width: '100%', height: '100%', borderRadius: '2px', objectPosition: '30% 5%',
+        },
       },
     ],
   },
@@ -105,12 +117,16 @@ const equipeArtistiqueSections: PersonnagesSectionData[] = [
       {
         image: emelineDenoeux,
         alt: 'Emeline Denoeux dans le rôle de Fantine',
-        style: { width: '100%', height: '100%', borderRadius: '2px' },
+        style: {
+          width: '100%', height: '100%', borderRadius: '2px', objectPosition: '40% 10%',
+        },
       },
       {
         image: manonSouames,
         alt: 'Manon Souames dans le rôle de Fantine',
-        style: { width: '100%', height: '100%', borderRadius: '2px' },
+        style: {
+          width: '100%', height: '100%', borderRadius: '2px', objectPosition: '40% 10%',
+        },
       },
     ],
   },

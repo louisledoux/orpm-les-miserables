@@ -31,6 +31,7 @@ function PersonnagesSection({
             items={images.map((image) => ({
               imageSrc: image.image,
               alt: image.alt,
+              style: image.style,
             }))}
           />
         )}
