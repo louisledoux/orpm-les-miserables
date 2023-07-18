@@ -1,40 +1,47 @@
 import Carousel from '@/containers/Carousel/Carousel';
 import { CarouselItemProps } from '@/components/CarouselItem/CarouselItem';
-import image1 from '@/assets/pages/homepage/homepage-carousel/image1.jpg';
-import image2 from '@/assets/pages/homepage/homepage-carousel/image2.jpg';
-import image3 from '@/assets/pages/homepage/homepage-carousel/image3.jpg';
-import image4 from '@/assets/pages/homepage/homepage-carousel/image4.jpg';
+import cosette from '@/assets/pages/homepage/homepage-carousel/cosette.jpg';
+import cosetteAdulte from '@/assets/pages/homepage/homepage-carousel/cosette2.jpg';
+import eponine from '@/assets/pages/homepage/homepage-carousel/eponime.jpg';
+import gavroche from '@/assets/pages/homepage/homepage-carousel/gavroche.jpg';
+import jeanValjean from '@/assets/pages/homepage/homepage-carousel/jeanValjean.jpg';
+// eslint-disable-next-line import/no-unresolved
+import thernardier from '@/assets/pages/homepage/homepage-carousel/thernardier.jpg';
 import Section from '@/containers/Section/Section';
 import Agenda from '@/containers/Agenda/Agenda';
 import { newsSection, playSection } from '@/assets/pages/homepage/homepageSections';
 import SupportSection from '@/containers/SupportSection/SupportSection';
-import image5 from '@/assets/pages/homepage/homepage-carousel/image5.jpg';
 
 const items: CarouselItemProps[] = [
   {
-    imageSrc: image1,
-    alt: 'Cosette dans la rue',
-    style: { objectPosition: '50% 80%' },
-  },
-  {
-    imageSrc: image2,
-    alt: 'Cosette révolution',
-    style: { objectPosition: '50% 10%' },
-  },
-  {
-    imageSrc: image3,
-    alt: 'Les misérables Révolution',
+    imageSrc: jeanValjean,
+    alt: 'Jean Valjean',
     style: { objectPosition: '50% 15%' },
   },
   {
-    imageSrc: image4,
+    imageSrc: cosetteAdulte,
+    alt: 'Cosette révolution',
+    style: { objectPosition: '50% 15%' },
+  },
+  {
+    imageSrc: gavroche,
+    alt: 'Gavroche révolution',
+    style: { objectPosition: '50% 15%' },
+  },
+  {
+    imageSrc: eponine,
     alt: 'Eponine Révolution',
     style: { objectPosition: '50% 20%' },
   },
   {
-    imageSrc: image5,
-    alt: 'Jean Valjean',
-    style: { objectPosition: '50% 15%' },
+    imageSrc: thernardier,
+    alt: 'Thénardier Révolution',
+    style: { objectPosition: '50% 10%' },
+  },
+  {
+    imageSrc: cosette,
+    alt: 'Cosette dans la rue',
+    style: { objectPosition: '50% 80%' },
   },
 ];
 
@@ -43,7 +50,7 @@ export default function Home() {
     <>
       <h1 className="hidden">ORPM Spectacle - Les Misérables</h1>
       <div className="lg:mb-120px mb-60px">
-        <Carousel items={items} autoplay />
+        <Carousel items={items} autoplay hero />
       </div>
       <div className="lg:mb-120px mb-60px">
         <Section

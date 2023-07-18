@@ -54,9 +54,9 @@ export default function HistoireMiserables() {
       />
       <div className={`mb-60px px-20px lg:px-120px bg-secondary py-30px lg:py-60px ${amithenFont.className}`}>
         <Typography.Paragraph className="!text-4xl lg:!text-h2 text-primary text-center">
-          &quot;Il n&apos;y a pas de petites misères ni de grandes misères,
+          &quot;Vous voulez la misère secourue,
           <br />
-          il n&apos;y a que des misères.&quot;
+          moi, je la veux supprimée.&quot;
         </Typography.Paragraph>
       </div>
     </>

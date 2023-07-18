@@ -20,8 +20,13 @@ export default function EquipeArtistiquePage() {
         <Typography.Title level={1}>
           Les personnages
         </Typography.Title>
-        {personnageSections.map(({ key, pages, image }, index) => (
-          <PersonnagesSection key={key} pages={pages} image={image} reverse={Boolean(index % 2)} />
+        {personnageSections.map(({ key, pages, images }, index) => (
+          <PersonnagesSection
+            key={key}
+            pages={pages}
+            images={images}
+            reverse={Boolean(index % 2)}
+          />
         ))}
       </div>
     </>

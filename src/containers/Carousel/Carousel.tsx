@@ -14,9 +14,10 @@ interface CarouselProps {
    * Default to false
    */
   autoplay?: boolean,
+  hero?: boolean,
 }
 
-function CarouselContainer({ items, autoplay }: CarouselProps) {
+function CarouselContainer({ items, autoplay, hero }: CarouselProps) {
   return (
     <Carousel
       autoPlay={autoplay}
@@ -27,7 +28,7 @@ function CarouselContainer({ items, autoplay }: CarouselProps) {
       showStatus={false}
     >
       {items.map(({ imageSrc, alt, style }) => (
-        <CarouselItem key={`${alt}-index`} imageSrc={imageSrc} alt={alt} style={style} />
+        <CarouselItem hero={hero} key={`${alt}-index`} imageSrc={imageSrc} alt={alt} style={style} />
       ))}
     </Carousel>
   );
