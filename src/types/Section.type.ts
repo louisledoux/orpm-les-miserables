@@ -19,3 +19,9 @@ export type SectionData = {
   pages: SectionPageType[],
   image: SectionImageType,
 }
+
+export type PersonnagesSectionData = {
+  key: string,
+  pages: SectionPageType[],
+  images: SectionImageType[],
+}
