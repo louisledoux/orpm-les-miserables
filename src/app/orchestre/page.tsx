@@ -49,7 +49,7 @@ export default function OrchestrePage() {
           reverse
         />
         <div className=" px-20px mb-60px lg:px-120px lg:mb-120px">
-          <Carousel items={orchestreCarouselData} autoplay />
+          <Carousel items={orchestreCarouselData} autoplay hero />
         </div>
       </div>
     </>
