@@ -87,7 +87,6 @@ export default function MentionsLegalesPage() {
           <Paragraph className="flex flex-col gap-2">
             <strong>Photos de la troupe :</strong>
             <span>Elise Lecocq</span>
-            {/* <span>Pauline Ledoux Juste</span> */}
             <span>Frédérique Gressier</span>
             <span>Orchestre Régional du Pévèle Mélantois</span>
           </Paragraph>
