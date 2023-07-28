@@ -75,11 +75,11 @@ export default function MentionsLegalesPage() {
             <Paragraph>
               <Link
                 className="underline underline-offset-2 hover:text-primary transition ease-in-out duration-150"
-                href="https://www.linkedin.com/in/pauline-ledoux-juste-724a69ab/"
+                href="https://www.linkedin.com/in/axel-juste-7a5704240/"
                 passHref
                 target="_blank"
               >
-                Pauline Ledoux-Juste
+                Axel Juste
               </Link>
             </Paragraph>
           </div>
@@ -87,7 +87,6 @@ export default function MentionsLegalesPage() {
           <Paragraph className="flex flex-col gap-2">
             <strong>Photos de la troupe :</strong>
             <span>Elise Lecocq</span>
-            <span>Pauline Ledoux Juste</span>
             <span>Frédérique Gressier</span>
             <span>Orchestre Régional du Pévèle Mélantois</span>
           </Paragraph>
