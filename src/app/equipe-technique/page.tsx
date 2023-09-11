@@ -1,9 +1,17 @@
+import { Metadata } from 'next';
 import Typography from '@/components/Typography/Typography';
 import Section from '@/containers/Section/Section';
 import Image from 'next/image';
 import React from 'react';
 import mainTechnique from '@/assets/pages/equipe-technique/images/mainequipetechnique.jpg';
 import { equipeTechnique1Section, equipeTechnique2Section } from '@/assets/pages/equipe-technique/equipeTechniqueSection';
+
+export const metadata: Metadata = {
+  title: "L'équipe technique",
+  openGraph: {
+    title: "L'équipe technique",
+  },
+};
 
 export default function LaTroupePage() {
   return (

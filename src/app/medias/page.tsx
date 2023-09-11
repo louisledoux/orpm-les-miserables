@@ -1,7 +1,15 @@
+import { Metadata } from 'next';
 import Typography from '@/components/Typography/Typography';
 import Link from 'next/link';
 
 const { Title, Paragraph } = Typography;
+
+export const metadata: Metadata = {
+  title: 'Médias',
+  openGraph: {
+    title: 'Médias',
+  },
+};
 
 export default function MediasPage() {
   return (

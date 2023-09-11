@@ -1,3 +1,4 @@
+import { Metadata } from 'next';
 import orchestreHeroImage from '@/assets/pages/orchestre/images/mainorchestre.jpg';
 import Typography from '@/components/Typography/Typography';
 import Section from '@/containers/Section/Section';
@@ -11,6 +12,13 @@ import {
   directionMusicaleSection,
   orchestreSection,
 } from '@/assets/pages/orchestre/orchestreSections';
+
+export const metadata: Metadata = {
+  title: "L'orchestre",
+  openGraph: {
+    title: "L'orchestre",
+  },
+};
 
 export default function OrchestrePage() {
   return (

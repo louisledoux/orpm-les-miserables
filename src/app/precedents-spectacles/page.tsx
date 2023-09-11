@@ -1,3 +1,4 @@
+import { Metadata } from 'next';
 import Typography from '@/components/Typography/Typography';
 import Image from 'next/image';
 import React from 'react';
@@ -9,6 +10,13 @@ import precedentsSpectaclesCarouselData2 from '@/assets/pages/precedentsSpectacl
 import precedentsSpectaclesCarouselData3 from '@/assets/pages/precedentsSpectacles/precedentsSpectaclesCarouselData3';
 
 const amithenFont = localFont({ src: '../../assets/font/amithen.ttf' });
+
+export const metadata: Metadata = {
+  title: 'Nos précédents spectacles',
+  openGraph: {
+    title: 'Nos précédents spectacles',
+  },
+};
 
 export default function PrecedentsSpectaclesPage() {
   return (
