@@ -1,3 +1,4 @@
+import { Metadata } from 'next';
 import Typography from '@/components/Typography/Typography';
 import Image from 'next/image';
 import localFont from 'next/font/local';
@@ -8,6 +9,13 @@ import {
 } from '@/assets/pages/histoire/histoireSection';
 
 const amithenFont = localFont({ src: '../../assets/font/amithen.ttf' });
+
+export const metadata: Metadata = {
+  title: "L'histoire des Misérables",
+  openGraph: {
+    title: "L'histoire des Misérables",
+  },
+};
 
 export default function HistoireMiserables() {
   return (

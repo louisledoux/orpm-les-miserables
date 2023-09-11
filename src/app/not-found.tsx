@@ -1,6 +1,14 @@
+import { Metadata } from 'next';
 import Typography from '@/components/Typography/Typography';
 
 const { Title, Paragraph } = Typography;
+
+export const metadata: Metadata = {
+  title: 'Page introuvable',
+  openGraph: {
+    title: 'Page introuvable',
+  },
+};
 
 export default function NotFound() {
   return (

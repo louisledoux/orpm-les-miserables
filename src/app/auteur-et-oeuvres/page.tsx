@@ -1,3 +1,4 @@
+import { Metadata } from 'next';
 import Typography from '@/components/Typography/Typography';
 import Section from '@/containers/Section/Section';
 import Image from 'next/image';
@@ -5,6 +6,13 @@ import React from 'react';
 import mainAuteur from '@/assets/pages/auteur-et-oeuvres/images/mainAuteur.jpg';
 import auteurSection from '@/assets/pages/auteur-et-oeuvres/auteurSection';
 import localFont from 'next/font/local';
+
+export const metadata: Metadata = {
+  title: "L'auteur et l'œuvre",
+  openGraph: {
+    title: "L'auteur et l'œuvre",
+  },
+};
 
 const amithenFont = localFont({ src: '../../assets/font/amithen.ttf' });
 

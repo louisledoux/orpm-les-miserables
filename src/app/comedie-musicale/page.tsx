@@ -1,3 +1,4 @@
+import { Metadata } from 'next';
 import Typography from '@/components/Typography/Typography';
 import Image from 'next/image';
 import AlternativeSection from '@/containers/AlternativeSection/AlternativeSection';
@@ -6,6 +7,13 @@ import mainComedie from '@/assets/pages/comedie-musicale/images/mainComedie.jpg'
 import {
   aProposSection, sceneClefsAlternativeSection,
 } from '@/assets/pages/comedie-musicale/comedieMusicaleSection';
+
+export const metadata: Metadata = {
+  title: 'La comédie musicale',
+  openGraph: {
+    title: 'La comédie musicale',
+  },
+};
 
 export default function ComedieMusicale() {
   return (

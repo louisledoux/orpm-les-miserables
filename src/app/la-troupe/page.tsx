@@ -1,3 +1,4 @@
+import { Metadata } from 'next';
 import Typography from '@/components/Typography/Typography';
 import Section from '@/containers/Section/Section';
 import Image from 'next/image';
@@ -7,6 +8,13 @@ import laTroupeSection from '@/assets/pages/laTroupe/laTroupeSections';
 import RoutesPathEnum from '@/routes/Routes.enum';
 import Carousel from '@/containers/Carousel/Carousel';
 import laTroupeCarouselData from '@/assets/pages/laTroupe/laTroupeCarouselData';
+
+export const metadata: Metadata = {
+  title: 'La troupe',
+  openGraph: {
+    title: 'La troupe',
+  },
+};
 
 export default function LaTroupePage() {
   return (

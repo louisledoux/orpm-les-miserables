@@ -1,3 +1,4 @@
+import { Metadata } from 'next';
 import { config } from '@fortawesome/fontawesome-svg-core';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import { Oswald } from 'next/font/google';
@@ -12,12 +13,21 @@ config.autoAddCss = false;
 
 const oswald = Oswald({ subsets: ['latin'] });
 
-export const metadata = {
-  title: 'ORPM Spectacles - Les Misérables',
+export const metadata: Metadata = {
+  title: {
+    template: '%s | ORPM Spectacles - Les Misérables',
+    default: 'ORPM Spectacles - Les Misérables', // a default is required when creating a template
+  },
+  openGraph: {
+    title: {
+      template: '%s | ORPM Spectacles - Les Misérables',
+      default: 'ORPM Spectacles - Les Misérables',
+    },
+    description: 'Venez découvrir la prochaine comédie musicale de l\'Orchestre Régional du Pévèle Mélantois : Les Misérables, d\'après l\'oeuvre de Victor Hugo !',
+  },
   description: 'Venez découvrir la prochaine comédie musicale de l\'Orchestre Régional du Pévèle Mélantois : Les Misérables, d\'après l\'oeuvre de Victor Hugo !',
   keywords: ['ORPM', 'Spectacle', 'Comédie musicale', 'Les Misérables'],
 };
-
 export default function RootLayout({
   children,
 }: {

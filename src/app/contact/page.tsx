@@ -1,8 +1,16 @@
+import { Metadata } from 'next';
 import Typography from '@/components/Typography/Typography';
 import Image from 'next/image';
 import orchestre from '@/assets/pages/orchestre/images/aproposorchestre.jpg';
 import Link from 'next/link';
 import facebook from '@/assets/pages/contact/images/facebook.svg';
+
+export const metadata: Metadata = {
+  title: 'Contact',
+  openGraph: {
+    title: 'Contact',
+  },
+};
 
 export default function ContactPage() {
   return (

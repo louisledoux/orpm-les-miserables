@@ -1,9 +1,17 @@
+import { Metadata } from 'next';
 import Typography from '@/components/Typography/Typography';
 import Section from '@/containers/Section/Section';
 import Image from 'next/image';
 import React from 'react';
 import mainequipeArtistique from '@/assets/pages/equipeArtistique/images/mainequipeArtistique.jpg';
 import equipeArtistiqueSections from '@/assets/pages/equipeArtistique/equipeArtistiqueSections';
+
+export const metadata: Metadata = {
+  title: "L'équipe artistique",
+  openGraph: {
+    title: "L'équipe artistique",
+  },
+};
 
 export default function EquipeArtistiquePage() {
   return (
