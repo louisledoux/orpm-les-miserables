@@ -1,6 +1,5 @@
 import alexandrosMoraitis from '@/assets/pages/personnages/images/alexandros_moraitis.jpg';
 import vincentChoquel from '@/assets/pages/personnages/images/vincent_choquel.jpg';
-import gregoryCollesson from '@/assets/pages/personnages/images/gregory_collesson.jpg';
 import claireGressier from '@/assets/pages/personnages/images/claire_gressier.jpg';
 import louiseDenoeux from '@/assets/pages/personnages/images/louise_denoeux.jpg';
 import floreSouames from '@/assets/pages/personnages/images/flore_souames.jpg';
@@ -8,6 +7,7 @@ import laoraBrachot from '@/assets/pages/personnages/images/laora_brachot.jpg';
 import emelineDenoeux from '@/assets/pages/personnages/images/emeline_denoeux.jpg';
 import manonSouames from '@/assets/pages/personnages/images/manon_souames.jpg';
 import sebastienDeWilde from '@/assets/pages/personnages/images/sebastien_de_wilde.jpg';
+import thomasBaille from '@/assets/pages/personnages/images/thomas_baille.jpg';
 import quentinChoquel from '@/assets/pages/personnages/images/quentin_choquel.jpg';
 import fredericDupont from '@/assets/pages/personnages/images/frederic_dupont.jpg';
 import magaliVanhoutte from '@/assets/pages/personnages/images/magali_vanhoutte.jpg';
@@ -49,8 +49,8 @@ const equipeArtistiqueSections: PersonnagesSectionData[] = [
     }],
     images: [
       {
-        image: gregoryCollesson,
-        alt: 'Gregory Collesson dans le rôle de Javert',
+        image: quentinChoquel,
+        alt: 'Quentin Choquel dans le rôle de Javert',
         style: { width: '100%', height: '100%', borderRadius: '2px' },
       },
     ],
@@ -156,8 +156,8 @@ const equipeArtistiqueSections: PersonnagesSectionData[] = [
     }],
     images: [
       {
-        image: quentinChoquel,
-        alt: 'Quentin Choquel dans le rôle de Enjolras',
+        image: thomasBaille,
+        alt: 'Thomas Baille dans le rôle de Enjolras',
         style: { width: '100%', height: '100%', borderRadius: '2px' },
       },
     ],
