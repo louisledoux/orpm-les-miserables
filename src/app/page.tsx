@@ -11,6 +11,7 @@ import Section from '@/containers/Section/Section';
 import Agenda from '@/containers/Agenda/Agenda';
 import { newsSection, playSection } from '@/assets/pages/homepage/homepageSections';
 import SupportSection from '@/containers/SupportSection/SupportSection';
+import RoutesPathEnum from '@/routes/Routes.enum';
 
 const items: CarouselItemProps[] = [
   {
@@ -77,12 +78,12 @@ export default function Home() {
           extra={{
             firstLink: {
               text: 'Jouez et découvrez les Misérables autrement',
-              url: '/',
+              url: RoutesPathEnum.JOUONS,
               mobile: 'Jouez avec nous !',
             },
             secondLink: {
-              text: 'En cours de construction',
-              url: '/',
+              text: 'Jouer',
+              url: RoutesPathEnum.JOUONS,
             },
           }}
           reverse

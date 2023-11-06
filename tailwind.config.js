@@ -12,6 +12,7 @@ module.exports = {
         primary: '#EBAF2B',
         fadePrimary: 'hsla(41, 83%, 55%, 0.8)',
         secondary: '#1E2F36',
+        fadeSecondary: 'hsla(198, 29%, 16%, 0.8)',
       },
       screens: {
         desktop: '1024px',

@@ -50,8 +50,8 @@ const navList: NavListType[] = [
 
 function Nav() {
   const pathname = usePathname();
-  const { isScrolling } = useScroll();
   const { isMobileScreen } = useViewport();
+  const { isScrolling } = useScroll();
 
   return (
     <nav className={`bg-secondary z-10 ${isScrolling ? 'fixed top-0 w-full' : ''}`}>
