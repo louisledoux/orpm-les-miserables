@@ -7,11 +7,11 @@ export const newsSection: SectionData = {
   pages: [{
     title: 'En ce moment',
     paragraphs: [
-      'Nouveau projet, nouveaux objectifs !',
-      'Nous lançons une campagne de financement participatif pour financer les costumes de notre nouveau projet : Les Misérables ! L\'ORPM besoin de votre aide pour donner vie à cette expérience théâtrale mémorable, et créer des costumes à la hauteur de cette œuvre intemporelle ! Avec votre soutien, nous pourrons créer des costumes de qualité pour donner vie aux personnages emblématiques de cette œuvre et vous transporter dans l\'univers du 19e siècle.',
-      'Vous pouvez nous aider en contribuant à notre projet, nous vous invitons à scroller en bas de page pour en savoir plus !',
-      'Tous les dons sont sujets à déduction fiscale comme nous sommes une association (un don de 100€ ne vous coute que 34€ après déduction).',
-      'Votre soutien, qu\'il soit financier ou par le biais de partages sur les réseaux sociaux, est inestimable pour nous et nous vous en sommes reconnaissants. Ensemble, nous allons atteindre nos objectifs pour créer une nouvelle expérience artistique incroyable !',
+      'Nous offrons une opportunité unique aux collectivités, entreprises et associations caritatives qui partagent notre passion pour le théâtre, la musique et la danse. Nous sommes prêts à apporter l\'univers captivant des "Misérables" dans une salle de votre choix, dans le but louable de collecter des fonds pour des causes qui en ont besoin.',
+      'Depuis sa première représentation, "Les Misérables" a conquis les cœurs du public mondial. Basée sur le roman de Victor Hugo, cette comédie musicale vous plonge dans le 19e siècle en France avec des personnages inoubliables, une musique envoûtante et une histoire chargée d\'émotion, offrant une expérience théâtrale extraordinaire.',
+      'En collaborant avec nous pour organiser une représentation des "Misérables" dans votre salle, vous permettez à votre communauté de partager une expérience unique, tout en renforçant les liens de votre territoire ou de votre entreprise.',
+      'Mieux encore, les recettes de ces spectacles ne serviront pas seulement à couvrir les coûts de production, mais aussi à soutenir des causes caritatives qui vous tiennent à cœur, que ce soit pour aider les plus démunis, financer des projets communautaires ou soutenir des associations caritatives.',
+      'Pour vous impliquer, contactez-nous pour discuter des détails, y compris les coûts, les dates disponibles et les modalités d\'organisation. Avec "Les Misérables", offrez à votre public une soirée mémorable et contribuez à un changement positif pour votre collectivité, entreprise ou association caritative. Rejoignez-nous dans cette noble quête de solidarité et d\'émotion !',
     ],
   }],
   image: {
