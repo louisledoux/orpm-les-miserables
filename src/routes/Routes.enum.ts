@@ -12,6 +12,7 @@ enum RoutesPathEnum {
     CONTACT = '/contact',
     MENTIONS_LEGALES = '/mentions-legales',
     MEDIAS = '/medias',
+    JOUONS = '/jouons'
 }
 
 export default RoutesPathEnum;
