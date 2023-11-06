@@ -13,12 +13,13 @@ function SupportSection() {
         <Paragraph className="font-normal text-center text-secondary">
           Vous êtes fan de la comédie musicale &quot;Les Misérables&quot; ? Nous aussi !
           <br />
-          Aidez nous à créer une production exceptionnelle en finançant nos costumes.
-          Votre contribution nous permettra de donner vie à cette histoire intemporelle
-          avec des costumes de qualité qui feront vibrer notre public.
           <br />
-          En retour, nous vous offrons des récompenses uniques et des avantages exclusifs,
-          comme des invitations aux répétitions, des rencontres avec les artistes, les musiciens…
+          Soutenez-nous pour promouvoir l&apos;art et la culture, tout en bénéficiant d&apos;avantages fiscaux.
+          <br />
+          Cliquez sur le bouton ci-dessous pour contribuer et en savoir plus sur la déduction fiscale.
+          <br />
+          <br/>
+          Votre soutien est précieux, merci !
         </Paragraph>
       </div>
       <div className="flex flex-col items-center mb-60px lg:mb-32 p-20px lg:p-0">
@@ -26,7 +27,7 @@ function SupportSection() {
         <Button
           title="Contribuer au projet"
           type="secondary"
-          url="https://www.helloasso.com/associations/orchestre-regional-du-pevele-melantois/collectes/aidez-nous-a-financer-les-costumes-de-notre-spectacle"
+          url="https://www.helloasso.com/associations/orchestre-regional-du-pevele-melantois/formulaires/2"
           externalUrl
         />
       </div>

@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   },
 };
 
-export default function EquipeArtistiquePage() {
+export default function PersonnagesPage() {
   return (
     <>
       <div className="h-headerImage w-full">
