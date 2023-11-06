@@ -14,11 +14,13 @@ function SupportSection() {
           Vous êtes fan de la comédie musicale &quot;Les Misérables&quot; ? Nous aussi !
           <br />
           <br />
-          Soutenez-nous pour promouvoir l&apos;art et la culture, tout en bénéficiant d&apos;avantages fiscaux.
+          Soutenez-nous pour promouvoir l&apos;art et la culture, tout en
+          bénéficiant d&apos;avantages fiscaux.
           <br />
-          Cliquez sur le bouton ci-dessous pour contribuer et en savoir plus sur la déduction fiscale.
+          Cliquez sur le bouton ci-dessous pour contribuer et en
+          savoir plus sur la déduction fiscale.
           <br />
-          <br/>
+          <br />
           Votre soutien est précieux, merci !
         </Paragraph>
       </div>
