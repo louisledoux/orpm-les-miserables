@@ -1,9 +1,12 @@
+'use client';
+
 import Typography from '@/components/Typography/Typography';
 import RoutesPathEnum from '@/routes/Routes.enum';
 import Button from '@/components/Button/Button';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { getDatesFromFirebase } from '@/services/agenda.service';
 import DateCarousel from '@/containers/Agenda/AgendaCarousel';
+import { AgendaItemProps } from '@/components/AgendaItem/AgendaItem';
 
 const { Title, Paragraph } = Typography;
 
@@ -29,11 +32,20 @@ function NoDate() {
 }
 
 async function Agenda() {
-  const datesData = await getDatesFromFirebase();
+  const [datesData, setDatesData] = useState<Array<AgendaItemProps>>([]);
+
+  useEffect(() => {
+    const fetchDates = async () => {
+      const data = await getDatesFromFirebase();
+      setDatesData(data);
+    };
+
+    fetchDates();
+  }, []);
 
   return (
     <div id="agenda" className="flex flex-col items-center bg-secondary px-20px py-30px lg:py-60px lg:px-40px mb-60px lg:mb-120px">
-      {datesData && datesData.length > 0 ? <DateCarousel datesData={datesData} /> : <NoDate />}
+      {datesData.length > 0 ? <DateCarousel datesData={datesData} /> : <NoDate />}
     </div>
   );
 }
