@@ -22,12 +22,13 @@ function DateCarousel({ datesData }: DateCarouselProps) {
         showArrows
         showThumbs={false}
         showStatus={false}
+        className="w-full"
       >
         {datesData.map(({
           title, date, location, reservationlink,
         }) => (
           <AgendaItem
-            key={title}
+            key={`${title}-${date}-${location}`}
             date={date}
             title={title}
             location={location}

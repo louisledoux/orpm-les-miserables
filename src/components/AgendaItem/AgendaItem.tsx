@@ -34,7 +34,7 @@ function AgendaItem({
       <div className="lg:mb-0">
         <p className="font-semibold lg:text-xl text-md text-primary mb-10px">{date}</p>
         <p className="lg:text-3xl text-xl font-semibold mb-10px lg:mb-20px">{title}</p>
-        <Paragraph className="lg:text-18 text-16">{location}</Paragraph>
+        <Paragraph className="text-wrap">{location}</Paragraph>
       </div>
       <div className="flex items-center justify-center w-full mb-20px lg:mb-30px">
         <Button
