@@ -18,6 +18,7 @@ const navList: NavListType[] = [
       { text: 'Les personnages', url: RoutesPathEnum.PERSONNAGES },
       { text: 'La comédie musicale', url: RoutesPathEnum.COMEDIE_MUSICALE },
       { text: 'Auteur et oeuvres', url: RoutesPathEnum.AUTEUR_ET_OEUVRES },
+      { text: 'Nos showcases', url: RoutesPathEnum.SHOWCASES },
     ],
   },
   {
@@ -42,7 +43,6 @@ const navList: NavListType[] = [
     url: '#',
     dropdown: [
       { text: 'Toutes nos dates', url: '/#agenda' },
-      { text: 'Nos précédentes représentations', url: RoutesPathEnum.PRECEDENTS_SPECTACLES },
     ],
   },
   { text: 'Billetterie', url: '/#agenda' },
@@ -54,13 +54,16 @@ function Nav() {
   const { isScrolling } = useScroll();
 
   return (
-    <nav className={`bg-secondary z-10 ${isScrolling ? 'fixed top-0 w-full' : ''}`}>
-      {isMobileScreen ? (
-        <MobileNav navList={navList} pathname={pathname} />
-      ) : (
-        <DesktopNav navList={navList} pathname={pathname} />
-      )}
-    </nav>
+    <>
+      <div className={isScrolling ? 'h-[70px]' : ''} />
+      <nav className={`bg-secondary z-10 ${isScrolling ? 'fixed top-0 w-full' : ''}`}>
+        {isMobileScreen ? (
+          <MobileNav navList={navList} pathname={pathname} />
+        ) : (
+          <DesktopNav navList={navList} pathname={pathname} />
+        )}
+      </nav>
+    </>
   );
 }
 

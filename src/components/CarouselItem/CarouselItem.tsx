@@ -12,10 +12,10 @@ function CarouselItem({
   imageSrc, alt, hero, style = {},
 }: CarouselItemProps) {
   return (
-    <div className={`${hero ? 'lg:h-carousel h-headerImage' : 'h-353px lg:h-full'}`}>
+    <div className={`${hero ? 'lg:h-carousel h-headerImage' : 'h-353px lg:h-full lg:max-h-[700px]'}`}>
       <Image
         style={style}
-        className={`w-full ${hero ? 'lg:h-carousel h-headerImage' : 'h-353px lg:h-full'} object-cover`}
+        className={`w-full ${hero ? 'lg:h-carousel h-headerImage' : 'h-353px lg:h-full lg:max-h-[700px]'} object-cover`}
         src={imageSrc}
         alt={alt}
       />
