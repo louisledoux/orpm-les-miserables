@@ -1,5 +1,5 @@
 import hubert from '@/assets/pages/orchestre/images/hubert.jpg';
-import eric from '@/assets/pages/equipeArtistique/images/ericPauwels.jpg';
+import eric from '@/assets/pages/equipeArtistique/images/eric-pauwels.jpg';
 import magali from '@/assets/pages/equipeArtistique/images/magali.jpg';
 import justine from '@/assets/pages/equipeArtistique/images/justine.jpg';
 import manon from '@/assets/pages/equipeArtistique/images/manon.jpg';
