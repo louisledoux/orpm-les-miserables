@@ -18,6 +18,7 @@ const navList: NavListType[] = [
       { text: 'Les personnages', url: RoutesPathEnum.PERSONNAGES },
       { text: 'La comédie musicale', url: RoutesPathEnum.COMEDIE_MUSICALE },
       { text: 'Auteur et oeuvres', url: RoutesPathEnum.AUTEUR_ET_OEUVRES },
+      { text: 'Nos showcases', url: RoutesPathEnum.SHOWCASES },
     ],
   },
   {
@@ -42,7 +43,6 @@ const navList: NavListType[] = [
     url: '#',
     dropdown: [
       { text: 'Toutes nos dates', url: '/#agenda' },
-      { text: 'Nos showcases', url: RoutesPathEnum.SHOWCASES },
     ],
   },
   { text: 'Billetterie', url: '/#agenda' },

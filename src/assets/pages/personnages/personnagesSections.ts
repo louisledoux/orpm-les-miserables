@@ -1,4 +1,3 @@
-import alexandrosMoraitis from '@/assets/pages/personnages/images/alexandros_moraitis.jpg';
 import vincentChoquel from '@/assets/pages/personnages/images/vincent_choquel.jpg';
 import claireGressier from '@/assets/pages/personnages/images/claire_gressier.jpg';
 import louiseDenoeux from '@/assets/pages/personnages/images/louise_denoeux.jpg';
@@ -12,6 +11,11 @@ import quentinChoquel from '@/assets/pages/personnages/images/quentin_choquel.jp
 import fredericDupont from '@/assets/pages/personnages/images/frederic_dupont.jpg';
 import magaliVanhoutte from '@/assets/pages/personnages/images/magali_vanhoutte.jpg';
 import samuelThaon from '@/assets/pages/personnages/images/samuel_thaon.jpg';
+import bandeGavroche1 from '@/assets/pages/personnages/images/bande_gavroche_1.jpg';
+import bandeGavroche2 from '@/assets/pages/personnages/images/bande_gavroche_2.jpg';
+import bandeGavroche3 from '@/assets/pages/personnages/images/bande_gavroche_3.jpg';
+import bandeGavroche4 from '@/assets/pages/personnages/images/bande_gavroche_4.jpg';
+
 import { PersonnagesSectionData } from '@/types/Section.type';
 
 const equipeArtistiqueSections: PersonnagesSectionData[] = [
@@ -31,13 +35,7 @@ const equipeArtistiqueSections: PersonnagesSectionData[] = [
           width: '100%', height: '100%', borderRadius: '2px', objectPosition: '50% 15%',
         },
       },
-      {
-        image: alexandrosMoraitis,
-        alt: 'Alexandrios Moraitis dans le rôle de Jean Valjean',
-        style: {
-          width: '100%', height: '100%', borderRadius: '2px', objectPosition: '50% 15%',
-        },
-      }],
+    ],
   },
   {
     key: 'Javert',
@@ -206,6 +204,39 @@ const equipeArtistiqueSections: PersonnagesSectionData[] = [
       {
         image: samuelThaon,
         alt: 'Samuel Thaon dans le rôle de Gavroche',
+        style: { width: '100%', height: '100%', borderRadius: '2px' },
+      },
+    ],
+  },
+  {
+    key: 'La bande a Gavroche',
+    pages: [{
+      title: 'La bande à Gavroche',
+      paragraphs: [
+        'Dans les ruelles animées de Paris, où l\'espoir se mêle à la lutte dans chaque coin de rue, quatre compagnons intrépides se tiennent aux côtés du jeune Gavroche, formant un cercle indissociable de camaraderie et de solidarité.',
+        'Tout d\'abord, il y a Azelma, la sœur dévouée au cœur tendre, toujours prête à soutenir Gavroche. Ensuite, Eponine, l\'amie loyale au courage indomptable, dont la présence réconfortante et le soutien inébranlable sont un phare dans les moments sombres. Aux côtés de ces deux âmes bienveillantes se tiennent deux autres complices: Lucien, le garçon au rire contagieux et au cœur généreux. Il est le frère que Gavroche n’a pas, son frère de cœur. Et enfin Marguerite, la fille au tempérament fier et à l\'esprit vif, dont la détermination et le charisme rayonnent d\'une énergie inspirante.',
+        'Ensemble, ces cinq jeunes esprits forment un lien indissoluble de fraternité et de soutien mutuel, prêts à affronter les épreuves avec une détermination inébranlable. Leur groupe est une ode à l\'amitié et à la famille choisie.',
+      ],
+    }],
+    images: [
+      {
+        image: bandeGavroche1,
+        alt: 'Azelma',
+        style: { width: '100%', height: '100%', borderRadius: '2px' },
+      },
+      {
+        image: bandeGavroche2,
+        alt: 'Eponine',
+        style: { width: '100%', height: '100%', borderRadius: '2px' },
+      },
+      {
+        image: bandeGavroche3,
+        alt: 'Lucien',
+        style: { width: '100%', height: '100%', borderRadius: '2px' },
+      },
+      {
+        image: bandeGavroche4,
+        alt: 'Marguerite',
         style: { width: '100%', height: '100%', borderRadius: '2px' },
       },
     ],
