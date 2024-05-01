@@ -25,7 +25,7 @@ function SupportSection() {
         </Paragraph>
       </div>
       <div className="flex flex-col items-center mb-60px lg:mb-32 p-20px lg:p-0">
-        <Image className="-mt-40 lg:-mt-64 mb-30px lg:mb-60px object-cover h-353px lg:h-full lg:max-h-512px w-2/3" src={supportUsImage} alt="Photo de l'orchestre en représentation" />
+        <Image className="-mt-40 lg:-mt-64 mb-30px lg:mb-60px object-cover h-353px lg:h-full lg:max-h-512px lg:w-2/3" src={supportUsImage} alt="Photo de l'orchestre en représentation" />
         <Button
           title="Contribuer au projet"
           type="secondary"
