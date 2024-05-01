@@ -1,22 +1,40 @@
 import { SectionData } from '@/types/Section.type';
 import newsImage from '@/assets/pages/homepage/images/newsImage.jpg';
 import onJoueImage from '@/assets/pages/homepage/images/onJoueImage.jpg';
+import showcaseImage from '@/assets/pages/homepage/images/showcaseImage.jpg';
 
 export const newsSection: SectionData = {
   key: 'Section News',
   pages: [{
-    title: 'En ce moment',
+    title: 'Edito',
     paragraphs: [
-      'Nous offrons une opportunité unique aux collectivités, entreprises et associations caritatives qui partagent notre passion pour le théâtre, la musique et la danse. Nous sommes prêts à apporter l\'univers captivant des "Misérables" dans une salle de votre choix, dans le but louable de collecter des fonds pour des causes qui en ont besoin.',
-      'Depuis sa première représentation, "Les Misérables" a conquis les cœurs du public mondial. Basée sur le roman de Victor Hugo, cette comédie musicale vous plonge dans le 19e siècle en France avec des personnages inoubliables, une musique envoûtante et une histoire chargée d\'émotion, offrant une expérience théâtrale extraordinaire.',
-      'En collaborant avec nous pour organiser une représentation des "Misérables" dans votre salle, vous permettez à votre communauté de partager une expérience unique, tout en renforçant les liens de votre territoire ou de votre entreprise.',
-      'Mieux encore, les recettes de ces spectacles ne serviront pas seulement à couvrir les coûts de production, mais aussi à soutenir des causes caritatives qui vous tiennent à cœur, que ce soit pour aider les plus démunis, financer des projets communautaires ou soutenir des associations caritatives.',
-      'Pour vous impliquer, contactez-nous pour discuter des détails, y compris les coûts, les dates disponibles et les modalités d\'organisation. Avec "Les Misérables", offrez à votre public une soirée mémorable et contribuez à un changement positif pour votre collectivité, entreprise ou association caritative. Rejoignez-nous dans cette noble quête de solidarité et d\'émotion !',
+      'Bienvenue sur le site officiel "Les Misérables". Face aux défis sociaux actuels, notre spectacle devient un moteur de changement et de solidarité.',
+      'La culture a le pouvoir de nous rassembler et de nous motiver à agir. Notre version "Les Misérables" fait plus que divertir; elle soutient activement des causes importantes. Chaque billet vendu contribue à des projets locaux contre la pauvreté et pour la santé.',
+      'Nous croyons que chacun peut impacter le monde positivement, à l\'image de Jean Valjean. Au-delà du théâtre, nous lançons cette initiative pour promouvoir la solidarité. Ensemble, nous pouvons changer les choses.',
+      'Visitez notre site pour découvrir nos spectacles. Rejoignez-nous pour une soirée où art et générosité se rencontrent. Votre participation est un engagement pour un monde plus uni et solidaire.',
+      'Nous espérons vous voir bientôt pour vivre ensemble cette expérience mémorable.',
     ],
   }],
   image: {
     image: newsImage,
     alt: 'Affiche des Misérables',
+  },
+};
+
+export const showcasesSection: SectionData = {
+  key: 'Section Showcases',
+  pages: [{
+    title: 'Showcases',
+    paragraphs: [
+      'Avant la comédie musicale à venir, ce sont aussi des showcases qui sont organisés pour vous faire découvrir l\'univers des Misérables.',
+      'Ces événements vous permettront de vous plonger dans l\'histoire des Misérables et de découvrir les artistes qui participent à la comédie musicale.',
+      'Vous pourrez également découvrir les coulisses de la comédie musicale et les différentes étapes de sa création.',
+      'Retrouvez sans plus attendre les photos des showcases passés !',
+    ],
+  }],
+  image: {
+    image: showcaseImage,
+    alt: 'Showcase des Misérables',
   },
 };
 

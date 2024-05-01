@@ -54,13 +54,16 @@ function Nav() {
   const { isScrolling } = useScroll();
 
   return (
-    <nav className={`bg-secondary z-10 ${isScrolling ? 'fixed top-0 w-full' : ''}`}>
-      {isMobileScreen ? (
-        <MobileNav navList={navList} pathname={pathname} />
-      ) : (
-        <DesktopNav navList={navList} pathname={pathname} />
-      )}
-    </nav>
+    <>
+      <div className={isScrolling ? 'h-[70px]' : ''} />
+      <nav className={`bg-secondary z-10 ${isScrolling ? 'fixed top-0 w-full' : ''}`}>
+        {isMobileScreen ? (
+          <MobileNav navList={navList} pathname={pathname} />
+        ) : (
+          <DesktopNav navList={navList} pathname={pathname} />
+        )}
+      </nav>
+    </>
   );
 }
 

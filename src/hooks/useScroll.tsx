@@ -5,7 +5,7 @@ function useScroll() {
 
   const handleScroll = () => {
     const scrollTop = window.scrollY;
-    setIsScrolling(scrollTop > 0);
+    setIsScrolling(scrollTop > 70);
   };
 
   useEffect(() => {

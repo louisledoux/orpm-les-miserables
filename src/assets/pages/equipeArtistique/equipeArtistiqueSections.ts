@@ -1,7 +1,7 @@
 import hubert from '@/assets/pages/orchestre/images/hubert.jpg';
-import eric from '@/assets/pages/equipeArtistique/images/ericpauwels.jpg';
+import eric from '@/assets/pages/equipeArtistique/images/ericPauwels.jpg';
 import magali from '@/assets/pages/equipeArtistique/images/magali.jpg';
-import celine from '@/assets/pages/equipeArtistique/images/celine.jpg';
+import justine from '@/assets/pages/equipeArtistique/images/justine.jpg';
 import manon from '@/assets/pages/equipeArtistique/images/manon.jpg';
 import claire from '@/assets/pages/equipeArtistique/images/claire.jpg';
 import marie from '@/assets/pages/equipeArtistique/images/marie.jpg';
@@ -58,18 +58,17 @@ const equipeArtistiqueSections: SectionData[] = [
     },
   },
   {
-    key: 'Costumes Celine',
+    key: 'Costumes Justine',
     pages: [{
-      title: 'Céline Delelis \n Costumière',
+      title: 'Justine Lefevre \n Costumière',
       paragraphs: [
-        "Passionnée de comédies musicales anglosaxonnes (j'en ai déjà vu au moins une centaine entre Londres, New York et Paris), Les Misérables fait partie de mes préférées.",
-        "Pendant longtemps, je me suis contentée d'en être spectatrice, partageant avec entrain mes impressions sur mon blog (so 2010...je sais) jusqu'à ce que je prenne des cours de claquettes et de chant et que je rejoigne l'ORPM sur son précédent projet, Memphis, en tant que choriste et membre de l'ensemble.",
-        "Aujourd'hui, en plus de toujours faire partie de l'ensemble, je suis officiellement costumière aux côtés de Magali, mais la tâche s'avère cette fois-ci un peu plus compliquée dans la mesure où les redingotes, corsets et hauts-de-forme se font nettement plus rares que les colliers de perles, jupons et cravates... Mais je viens de me mettre à la couture. Peut-être cela pourra-t-il se montrer utile ?",
+        'Passionnée par le monde du textile depuis petite (j’en ai même fait mes études), et musicienne depuis mes 7 ans, comment dire que participer à la création de costumes pour notre comédie musicale “Les Misérables” est une évidence et un plaisir quotidien !',
+        'La passion du partage, à l’orchestre comme lors de nos réunions couture, c’est cela qui m’anime ! Le goût du challenge aussi, car l’exigence est de rigueur, et les robes majestueuses de l’époque ne sont pas de toute simplicité à reproduire... Quelle fierté de voir prendre vie sur scène ce projet de comédie musicale, habillée des mains de Magali et des ouvrages de la team couture.',
       ],
     }],
     image: {
-      image: celine,
-      alt: 'Céline costumiere',
+      image: justine,
+      alt: 'Justine costumiere',
       style: { width: '100%', height: '100%', borderRadius: '2px' },
     },
   },

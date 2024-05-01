@@ -40,8 +40,8 @@ module.exports = {
         66: '66%',
       },
       height: {
-        carousel: '700px',
-        headerImage: '500px',
+        carousel: '500px',
+        headerImage: '300px',
       },
       maxHeight: {
         550: '550px',

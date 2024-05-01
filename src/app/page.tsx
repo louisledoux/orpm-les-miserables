@@ -1,48 +1,38 @@
 import Carousel from '@/containers/Carousel/Carousel';
 import { CarouselItemProps } from '@/components/CarouselItem/CarouselItem';
-import cosette from '@/assets/pages/homepage/homepage-carousel/cosette.jpg';
-import cosetteAdulte from '@/assets/pages/homepage/homepage-carousel/cosette2.jpg';
-import eponine from '@/assets/pages/homepage/homepage-carousel/eponime.jpg';
-import gavroche from '@/assets/pages/homepage/homepage-carousel/gavroche.jpg';
-import jeanValjean from '@/assets/pages/homepage/homepage-carousel/jeanValjean.jpg';
-// eslint-disable-next-line import/no-unresolved
-import thernardier from '@/assets/pages/homepage/homepage-carousel/thernardier.jpg';
+import heroSlider1 from '@/assets/pages/homepage/homepage-carousel/hero_slider_1.jpg';
+import heroSlider2 from '@/assets/pages/homepage/homepage-carousel/hero_slider_2.jpg';
+import heroSlider3 from '@/assets/pages/homepage/homepage-carousel/hero_slider_3.jpg';
+import heroSlider4 from '@/assets/pages/homepage/homepage-carousel/hero_slider_4.jpg';
 import Section from '@/containers/Section/Section';
 import Agenda from '@/containers/Agenda/Agenda';
-import { newsSection, playSection } from '@/assets/pages/homepage/homepageSections';
+import {
+  newsSection,
+  showcasesSection,
+} from '@/assets/pages/homepage/homepageSections';
 import SupportSection from '@/containers/SupportSection/SupportSection';
 import RoutesPathEnum from '@/routes/Routes.enum';
 
 const items: CarouselItemProps[] = [
   {
-    imageSrc: jeanValjean,
-    alt: 'Jean Valjean',
-    style: { objectPosition: '50% 15%' },
+    imageSrc: heroSlider1,
+    alt: 'Les Misérables - La culture au service de la solidarité',
+    style: { objectPosition: '95% 15%' },
   },
   {
-    imageSrc: cosetteAdulte,
-    alt: 'Cosette révolution',
-    style: { objectPosition: '50% 15%' },
+    imageSrc: heroSlider2,
+    alt: 'Les Misérables - Le 111 des Arts',
+    style: { objectPosition: '100% 15%' },
   },
   {
-    imageSrc: gavroche,
-    alt: 'Gavroche révolution',
-    style: { objectPosition: '50% 15%' },
+    imageSrc: heroSlider3,
+    alt: 'Les Misérables - ASP Gilbert Deniselle',
+    style: { objectPosition: '100% 15%' },
   },
   {
-    imageSrc: eponine,
-    alt: 'Eponine Révolution',
-    style: { objectPosition: '50% 20%' },
-  },
-  {
-    imageSrc: thernardier,
-    alt: 'Thénardier Révolution',
-    style: { objectPosition: '50% 10%' },
-  },
-  {
-    imageSrc: cosette,
-    alt: 'Cosette dans la rue',
-    style: { objectPosition: '50% 80%' },
+    imageSrc: heroSlider4,
+    alt: 'Les Misérables - La Pommeraie',
+    style: { objectPosition: '100% 15%' },
   },
 ];
 
@@ -71,19 +61,18 @@ export default function Home() {
         />
       </div>
       <Agenda />
-      <div id="jouons" className="lg:mb-120px mb:60px">
+      <div id="showcases" className="lg:mb-120px mb:60px">
         <Section
-          pages={playSection.pages}
-          image={playSection.image}
+          pages={showcasesSection.pages}
+          image={showcasesSection.image}
           extra={{
             firstLink: {
-              text: 'Jouez et découvrez les Misérables autrement',
-              url: RoutesPathEnum.JOUONS,
-              mobile: 'Jouez avec nous !',
+              text: 'Découvrez nos showcases',
+              url: RoutesPathEnum.SHOWCASES,
             },
             secondLink: {
-              text: 'Jouer',
-              url: RoutesPathEnum.JOUONS,
+              text: 'Galerie',
+              url: RoutesPathEnum.SHOWCASES,
             },
           }}
           reverse

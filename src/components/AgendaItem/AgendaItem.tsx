@@ -29,6 +29,8 @@ export interface AgendaItemProps {
 function AgendaItem({
   date, title, location, reservationlink,
 }: AgendaItemProps) {
+  const hasReservationLink = reservationlink !== '#';
+
   return (
     <div className="flex flex-col h-full justify-between items-center lg:px-40px lg:py-30px lg:mb-30px mb-30px px-20px pt-20px pb-30px text-white">
       <div className="lg:mb-0">
@@ -38,9 +40,10 @@ function AgendaItem({
       </div>
       <div className="flex items-center justify-center w-full mb-20px lg:mb-30px">
         <Button
-          title="Réserver"
+          title={hasReservationLink ? 'Réserver' : 'Réservations à venir'}
           url={reservationlink}
           externalUrl
+          disabled={!hasReservationLink}
           type="primary"
         />
       </div>
