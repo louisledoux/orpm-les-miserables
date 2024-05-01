@@ -80,16 +80,6 @@ export default function MentionsLegalesPage() {
                 Louis Ledoux
               </Link>
             </Paragraph>
-            <Paragraph>
-              <Link
-                className="underline underline-offset-2 hover:text-primary transition ease-in-out duration-150"
-                href="https://www.linkedin.com/in/axel-juste-7a5704240/"
-                passHref
-                target="_blank"
-              >
-                Axel Juste
-              </Link>
-            </Paragraph>
           </div>
           <Title level={3} className="mt-12 mb-8">Propriété intellectuelle</Title>
           <Paragraph className="flex flex-col gap-2">

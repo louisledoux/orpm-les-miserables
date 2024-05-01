@@ -41,7 +41,7 @@ module.exports = {
       },
       height: {
         carousel: '500px',
-        headerImage: '300px',
+        headerImage: '500px',
       },
       maxHeight: {
         550: '550px',

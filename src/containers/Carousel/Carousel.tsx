@@ -22,7 +22,7 @@ function CarouselContainer({ items, autoplay, hero }: CarouselProps) {
     <Carousel
       autoPlay={autoplay}
       infiniteLoop={autoplay}
-      interval={8000}
+      interval={5000}
       transitionTime={1000}
       showArrows
       showThumbs={false}
