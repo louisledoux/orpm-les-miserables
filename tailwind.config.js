@@ -18,6 +18,10 @@ module.exports = {
         desktop: '1024px',
         mobile: '480px',
       },
+      objectPosition: {
+        'hero-desktop': '95% 15%',
+        'hero-mobile': '50% 50%',
+      },
       spacing: {
         '10px': '10px',
         '15px': '15px',

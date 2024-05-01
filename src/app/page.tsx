@@ -17,22 +17,18 @@ const items: CarouselItemProps[] = [
   {
     imageSrc: heroSlider1,
     alt: 'Les Misérables - La culture au service de la solidarité',
-    style: { objectPosition: '95% 15%' },
   },
   {
     imageSrc: heroSlider2,
     alt: 'Les Misérables - Le 111 des Arts',
-    style: { objectPosition: '100% 15%' },
   },
   {
     imageSrc: heroSlider3,
     alt: 'Les Misérables - ASP Gilbert Deniselle',
-    style: { objectPosition: '100% 15%' },
   },
   {
     imageSrc: heroSlider4,
     alt: 'Les Misérables - La Pommeraie',
-    style: { objectPosition: '100% 15%' },
   },
 ];
 

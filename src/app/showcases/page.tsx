@@ -39,7 +39,7 @@ export default function ShowcasesPage() {
       <div className="mb-30px lg:mb-60px lg:px-120px px-20px">
         <Carousel items={showcasesCarouselData} autoplay />
       </div>
-      <div className="flex justify-center mb-60px lg:mb-120px">
+      <div className="flex justify-center mb-60px lg:mb-120px px-20px">
         <Button type="secondary" url="/#agenda" title="Nos prochaines dates" />
       </div>
     </>
