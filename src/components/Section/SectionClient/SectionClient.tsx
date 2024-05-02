@@ -23,19 +23,27 @@ type SectionClientProps = {
    * Default to false
    */
   reverse?: boolean,
+  /**
+   * Should the image be adjusted?
+   */
+  adjustImage?: boolean,
 }
 function SectionClient({
-  pages, image, reverse,
+  pages, image, reverse, adjustImage = true,
 }: SectionClientProps) {
-  const [divHeight, setDivHeight] = useState<number | undefined>(353);
+  const [divHeight, setDivHeight] = useState<number | undefined>();
   const observedDiv: MutableRefObject<HTMLDivElement | null> = useRef(null);
 
   useEffect(() => {
     if (!observedDiv.current) return;
 
     const resizeObserver = new ResizeObserver(() => {
-      if (observedDiv?.current?.offsetHeight !== divHeight && window.matchMedia('(min-width: 1024px)').matches) {
-        setDivHeight(observedDiv?.current?.offsetHeight);
+      if (observedDiv?.current?.offsetHeight !== divHeight && adjustImage) {
+        if (window.matchMedia('(min-width: 1024px)').matches) {
+          setDivHeight(observedDiv?.current?.offsetHeight);
+        } else {
+          setDivHeight(353);
+        }
       }
     });
 
@@ -45,7 +53,7 @@ function SectionClient({
     return function cleanup() {
       resizeObserver.disconnect();
     };
-  }, [divHeight, observedDiv]);
+  }, [divHeight, observedDiv, adjustImage]);
 
   return (
     <div className={`flex justify-between items-center ${reverse ? 'lg:flex-row-reverse' : 'lg:flex-row'} ${reverse ? 'flex-col-reverse' : 'flex-col-reverse'}`}>
