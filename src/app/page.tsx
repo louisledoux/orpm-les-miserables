@@ -54,6 +54,7 @@ export default function Home() {
               url: '/',
             },
           }}
+          adjustImage={false}
         />
       </div>
       <Agenda />
@@ -72,6 +73,7 @@ export default function Home() {
             },
           }}
           reverse
+          adjustImage={false}
         />
       </div>
       <SupportSection />
