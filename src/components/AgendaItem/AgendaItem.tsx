@@ -62,9 +62,9 @@ export type AgendaItemProps = {
    */
   reservationLink?: string,
   /**
-   * Optional title
+   * Event title
    */
-  title?: string,
+  title: string,
 }
 function AgendaItem({
   location, dateTime, partner, reservationLink, title,
@@ -84,7 +84,7 @@ function AgendaItem({
           <div className="flex items-center w-full p-4 justify-center bg-white min-h-[140px]">
             <Image src={partnerLogo.image} alt={partnerLogo.alt} />
           </div>
-          <span className="text-white tracking-wide">{title || partner}</span>
+          <span className="text-white tracking-wide">{title}</span>
         </div>
         <div className="flex justify-center items-center text-primary gap-2 text-xl font-light">
           <Icon icon={['fas', 'location-dot']} />

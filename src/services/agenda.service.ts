@@ -68,7 +68,7 @@ function convertFirebaseDateDataToAgendaItemProps(
     location: data.location,
     partner: data.partner,
     reservationLink: data.description ? getReservationLinkFromString(data.description) : '#',
-    title: data.partner ? undefined : data.title,
+    title: data.title,
   };
 }
 
