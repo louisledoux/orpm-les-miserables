@@ -4,7 +4,7 @@ import Typography from '@/components/Typography/Typography';
 import RoutesPathEnum from '@/routes/Routes.enum';
 import Button from '@/components/Button/Button';
 import React, { useEffect, useState } from 'react';
-import { getDatesFromFirebase } from '@/services/agenda.service';
+import { getHomepageDatesFromFirebase } from '@/services/agenda.service';
 import DateCarousel from '@/containers/HomepageAgenda/AgendaCarousel';
 import { HomepageAgendaItemProps } from '@/components/HomepageAgendaItem/HomepageAgendaItem';
 
@@ -36,7 +36,7 @@ async function HomepageAgenda() {
 
   useEffect(() => {
     const fetchDates = async () => {
-      const data = await getDatesFromFirebase();
+      const data = await getHomepageDatesFromFirebase();
       setDatesData(data);
     };
 
