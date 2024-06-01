@@ -14,6 +14,7 @@ enum RoutesPathEnum {
     MEDIAS = '/medias',
     JOUONS = '/jouons',
     SHOWCASES = '/showcases',
+    AGENDA = '/agenda',
 }
 
 export default RoutesPathEnum;
