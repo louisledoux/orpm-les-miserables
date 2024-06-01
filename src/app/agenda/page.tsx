@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import Image from 'next/image';
-import mainComedie from '@/assets/pages/comedie-musicale/images/mainComedie.jpg';
+import agendaHeader from '@/assets/pages/agenda/images/agendaHeader.jpg';
 import Typography from '@/components/Typography/Typography';
 import React from 'react';
 import Agenda from '@/containers/Agenda/Agenda';
@@ -17,9 +17,9 @@ export default function AgendaPage() {
     <>
       <div className="h-headerImage w-full">
         <Image
-          src={mainComedie}
+          src={agendaHeader}
           alt="Cosette les Miserables ORPM"
-          style={{ objectPosition: '50% 35%' }}
+          style={{ objectPosition: '5% 35%' }}
           className="w-full h-full object-cover"
         />
       </div>
