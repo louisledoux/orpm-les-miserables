@@ -1,7 +1,7 @@
 import { db } from '@/firebase';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { collection, getDocs } from '@firebase/firestore';
-import { AgendaItemProps } from '@/components/AgendaItem/AgendaItem';
+import { HomepageAgendaItemProps } from '@/components/HomepageAgendaItem/HomepageAgendaItem';
 
 type FirebaseDateData = {
   date: string;
@@ -28,7 +28,7 @@ function formatFirebaseDate(date: string): string {
   return new Date(date).toLocaleString('fr-FR', options);
 }
 
-function convertFirebaseDateDataToAgendaItemProps(data: FirebaseDateData): AgendaItemProps {
+function convertFirebaseDateDataToAgendaItemProps(data: FirebaseDateData): HomepageAgendaItemProps {
   return {
     date: data.date,
     title: data.title,
@@ -37,10 +37,10 @@ function convertFirebaseDateDataToAgendaItemProps(data: FirebaseDateData): Agend
   };
 }
 
-function getDatesFromFirebase(): Promise<Array<AgendaItemProps>> {
+function getDatesFromFirebase(): Promise<Array<HomepageAgendaItemProps>> {
   return getDocs(collection(db, 'dates'))
     .then((querySnapshot) => {
-      const dates: Array<AgendaItemProps> = [];
+      const dates: Array<HomepageAgendaItemProps> = [];
       querySnapshot.forEach((doc) => {
         const formattedData = convertFirebaseDateDataToAgendaItemProps(
           doc.data() as FirebaseDateData,

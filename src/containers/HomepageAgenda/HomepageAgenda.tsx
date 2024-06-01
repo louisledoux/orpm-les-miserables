@@ -5,8 +5,8 @@ import RoutesPathEnum from '@/routes/Routes.enum';
 import Button from '@/components/Button/Button';
 import React, { useEffect, useState } from 'react';
 import { getDatesFromFirebase } from '@/services/agenda.service';
-import DateCarousel from '@/containers/Agenda/AgendaCarousel';
-import { AgendaItemProps } from '@/components/AgendaItem/AgendaItem';
+import DateCarousel from '@/containers/HomepageAgenda/AgendaCarousel';
+import { HomepageAgendaItemProps } from '@/components/HomepageAgendaItem/HomepageAgendaItem';
 
 const { Title, Paragraph } = Typography;
 
@@ -31,8 +31,8 @@ function NoDate() {
   );
 }
 
-async function Agenda() {
-  const [datesData, setDatesData] = useState<Array<AgendaItemProps>>([]);
+async function HomepageAgenda() {
+  const [datesData, setDatesData] = useState<Array<HomepageAgendaItemProps>>([]);
 
   useEffect(() => {
     const fetchDates = async () => {
@@ -50,4 +50,4 @@ async function Agenda() {
   );
 }
 
-export default Agenda;
+export default HomepageAgenda;

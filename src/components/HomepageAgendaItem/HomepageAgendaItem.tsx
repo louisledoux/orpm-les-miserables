@@ -3,7 +3,7 @@ import Button from '@/components/Button/Button';
 
 const { Paragraph } = Typography;
 
-export interface AgendaItemProps {
+export interface HomepageAgendaItemProps {
   /**
    * The date of the event
    */
@@ -24,11 +24,11 @@ export interface AgendaItemProps {
 
 /**
  * The agenda item component
- * @param {AgendaItemProps} props - The props
+ * @param {HomepageAgendaItemProps} props - The props
  */
-function AgendaItem({
+function HomepageAgendaItem({
   date, title, location, reservationlink,
-}: AgendaItemProps) {
+}: HomepageAgendaItemProps) {
   const hasReservationLink = reservationlink !== '#';
 
   return (
@@ -51,4 +51,4 @@ function AgendaItem({
   );
 }
 
-export default AgendaItem;
+export default HomepageAgendaItem;

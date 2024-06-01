@@ -5,7 +5,7 @@ import heroSlider2 from '@/assets/pages/homepage/homepage-carousel/hero_slider_2
 import heroSlider3 from '@/assets/pages/homepage/homepage-carousel/hero_slider_3.jpg';
 import heroSlider4 from '@/assets/pages/homepage/homepage-carousel/hero_slider_4.jpg';
 import Section from '@/containers/Section/Section';
-import Agenda from '@/containers/Agenda/Agenda';
+import HomepageAgenda from '@/containers/HomepageAgenda/HomepageAgenda';
 import {
   newsSection,
   showcasesSection,
@@ -57,7 +57,7 @@ export default function Home() {
           adjustImage={false}
         />
       </div>
-      <Agenda />
+      <HomepageAgenda />
       <div id="showcases" className="lg:mb-120px mb:60px">
         <Section
           pages={showcasesSection.pages}

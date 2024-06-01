@@ -1,6 +1,6 @@
 'use client';
 
-import AgendaItem, { AgendaItemProps } from '@/components/AgendaItem/AgendaItem';
+import HomepageAgendaItem, { HomepageAgendaItemProps } from '@/components/HomepageAgendaItem/HomepageAgendaItem';
 import { Carousel } from 'react-responsive-carousel';
 import React from 'react';
 import Typography from '@/components/Typography/Typography';
@@ -8,7 +8,7 @@ import Typography from '@/components/Typography/Typography';
 const { Title } = Typography;
 
 type DateCarouselProps = {
-  datesData: Array<AgendaItemProps>,
+  datesData: Array<HomepageAgendaItemProps>,
 }
 function DateCarousel({ datesData }: DateCarouselProps) {
   return (
@@ -27,7 +27,7 @@ function DateCarousel({ datesData }: DateCarouselProps) {
         {datesData.map(({
           title, date, location, reservationlink,
         }) => (
-          <AgendaItem
+          <HomepageAgendaItem
             key={`${title}-${date}-${location}`}
             date={date}
             title={title}
