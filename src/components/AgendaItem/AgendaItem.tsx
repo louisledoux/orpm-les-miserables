@@ -78,7 +78,7 @@ function AgendaItem({
   const hour = `${dateTime.getHours()}h${dateTime.getMinutes() === 0 ? '00' : dateTime.getMinutes()}`;
 
   return (
-    <div className="flex flex-col px-8 py-4 bg-secondary flex-1 gap-6 md:min-w-[45%] lg:min-w-[25%]">
+    <div className="flex flex-col px-8 py-8 bg-secondary flex-1 gap-5 md:min-w-[45%] lg:min-w-[25%]">
       <div className="flex flex-col gap-3">
         <div className="flex flex-col items-center gap-3">
           <div className="flex items-center w-full p-4 justify-center bg-white min-h-[140px]">
@@ -91,7 +91,7 @@ function AgendaItem({
           <Paragraph className="tracking-wide font-medium">{location}</Paragraph>
         </div>
       </div>
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-8">
         <div className="flex justify-center items-center gap-4">
           <div
             className="flex flex-col justify-center items-center border-r border-white px-4 text-white"
