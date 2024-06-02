@@ -23,11 +23,20 @@ export interface ButtonProps {
    * Is the button disabled?
    */
   disabled?: boolean,
+  /**
+   * Size of the button
+   */
+  size?: 'small' | 'medium' | 'large',
 }
 
 type ButtonColors = {
   bgColor: string,
   titleColor: string,
+}
+
+type ButtonSize = {
+  buttonSize: string,
+  textSize: string,
 }
 
 function getButtonColors(type: 'primary' | 'secondary'): ButtonColors {
@@ -46,15 +55,37 @@ function getButtonColors(type: 'primary' | 'secondary'): ButtonColors {
   }
 }
 
+function getButtonSize(size: 'small' | 'medium' | 'large'): ButtonSize {
+  switch (size) {
+    case 'small':
+      return {
+        buttonSize: 'p-10px lg:px-12 lg:py-3',
+        textSize: 'text-base',
+      };
+    case 'medium':
+      return {
+        buttonSize: 'p-10px lg:px-4 lg:py-6',
+        textSize: 'text-base lg:text-md',
+      };
+    case 'large':
+    default:
+      return {
+        buttonSize: 'p-10px lg:p-button',
+        textSize: 'text-base lg:text-h3',
+      };
+  }
+}
+
 function Button({
-  title, url, externalUrl, type = 'primary', disabled,
+  title, url, externalUrl, type = 'primary', disabled, size = 'large',
 }: ButtonProps) {
   const { bgColor, titleColor } = getButtonColors(type);
+  const { buttonSize, textSize } = getButtonSize(size);
 
   return (
     <>
       {disabled ? (
-        <div className="w-full lg:w-fit cursor-not-allowed text-center p-10px lg:p-button bg-gray-500 text-gray-700 text-base lg:text-h3 font-semibold uppercase">
+        <div className={`w-full lg:w-fit cursor-not-allowed text-center bg-gray-500 text-gray-700 font-semibold uppercase ${buttonSize} ${textSize}`}>
           {title}
         </div>
       ) : (
@@ -62,7 +93,7 @@ function Button({
           href={url || ''}
           passHref={externalUrl}
           target={externalUrl ? '_blank' : '_self'}
-          className={`w-full lg:w-fit text-center p-10px lg:p-button ${bgColor} ${titleColor} text-base lg:text-h3 font-semibold uppercase
+          className={`w-full lg:w-fit text-center ${buttonSize} ${bgColor} ${titleColor} ${textSize} font-semibold uppercase
           hover:text-white ease-in-out duration-150`}
           type="button"
         >

@@ -1,6 +1,7 @@
 import { db } from '@/firebase';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { collection, getDocs } from '@firebase/firestore';
+import { HomepageAgendaItemProps } from '@/components/HomepageAgendaItem/HomepageAgendaItem';
 import { AgendaItemProps } from '@/components/AgendaItem/AgendaItem';
 
 type FirebaseDateData = {
@@ -8,6 +9,7 @@ type FirebaseDateData = {
   title: string;
   location: string;
   description: string;
+  partner: string;
 };
 
 function getReservationLinkFromString(description: string): string {
@@ -28,7 +30,9 @@ function formatFirebaseDate(date: string): string {
   return new Date(date).toLocaleString('fr-FR', options);
 }
 
-function convertFirebaseDateDataToAgendaItemProps(data: FirebaseDateData): AgendaItemProps {
+function convertFirebaseDateDataToHomepageAgendaItemProps(
+  data: FirebaseDateData,
+): HomepageAgendaItemProps {
   return {
     date: data.date,
     title: data.title,
@@ -37,12 +41,12 @@ function convertFirebaseDateDataToAgendaItemProps(data: FirebaseDateData): Agend
   };
 }
 
-function getDatesFromFirebase(): Promise<Array<AgendaItemProps>> {
+function getHomepageDatesFromFirebase(): Promise<Array<HomepageAgendaItemProps>> {
   return getDocs(collection(db, 'dates'))
     .then((querySnapshot) => {
-      const dates: Array<AgendaItemProps> = [];
+      const dates: Array<HomepageAgendaItemProps> = [];
       querySnapshot.forEach((doc) => {
-        const formattedData = convertFirebaseDateDataToAgendaItemProps(
+        const formattedData = convertFirebaseDateDataToHomepageAgendaItemProps(
           doc.data() as FirebaseDateData,
         );
         dates.push(formattedData);
@@ -56,5 +60,32 @@ function getDatesFromFirebase(): Promise<Array<AgendaItemProps>> {
     });
 }
 
+function convertFirebaseDateDataToAgendaItemProps(
+  data: FirebaseDateData,
+): AgendaItemProps {
+  return {
+    dateTime: new Date(data.date),
+    location: data.location,
+    partner: data.partner,
+    reservationLink: data.description ? getReservationLinkFromString(data.description) : '#',
+    title: data.title,
+  };
+}
+
+function getAgendaDatesFromFirebase(): Promise<Array<AgendaItemProps>> {
+  return getDocs(collection(db, 'dates'))
+    .then((querySnapshot) => {
+      const dates: Array<AgendaItemProps> = [];
+      querySnapshot.forEach((doc) => {
+        const formattedData = convertFirebaseDateDataToAgendaItemProps(
+          doc.data() as FirebaseDateData,
+        );
+        dates.push(formattedData);
+      });
+      return dates
+        .sort((a, b) => a.dateTime.getTime() - b.dateTime.getTime());
+    });
+}
+
 // eslint-disable-next-line import/prefer-default-export
-export { getDatesFromFirebase };
+export { getHomepageDatesFromFirebase, getAgendaDatesFromFirebase };

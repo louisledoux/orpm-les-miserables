@@ -1,51 +1,119 @@
+import Image, { StaticImageData } from 'next/image';
+import les111DesArts from '@/assets/images/partners/les111DesArts_logo.png';
+import asp from '@/assets/images/partners/asp_logo.jpg';
+import laPommeraie from '@/assets/images/partners/laPommeraie_logo.png';
+import lesRestosDuCoeur from '@/assets/images/partners/lesRestosDuCoeur_logo.svg';
+import orpm from '@/assets/logo.svg';
+import Icon from '@/components/Icon/Icon';
 import Typography from '@/components/Typography/Typography';
 import Button from '@/components/Button/Button';
 
 const { Paragraph } = Typography;
 
-export interface AgendaItemProps {
-  /**
-   * The date of the event
-   */
-  date: string,
-  /**
-   * The title of the event
-   */
-  title: string,
+type PartnerLogoType = {
+  image: StaticImageData,
+  alt: string,
+}
+function getPartnerLogo(partner: string): PartnerLogoType {
+  switch (partner) {
+    case 'Les 111 des Arts':
+      return {
+        image: les111DesArts,
+        alt: 'Logo Les 111 des Arts',
+      };
+    case 'ASP':
+      return {
+        image: asp,
+        alt: 'Logo ASP',
+      };
+    case 'La Pommeraie':
+      return {
+        image: laPommeraie,
+        alt: 'Logo La Pommeraie',
+      };
+    case 'Les Restos du Coeur':
+      return {
+        image: lesRestosDuCoeur,
+        alt: 'Logo Les Restos du Coeur',
+      };
+    default:
+      return {
+        image: orpm,
+        alt: 'Logo ORPM',
+      };
+  }
+}
+
+export type AgendaItemProps = {
   /**
    * The location of the event
    */
   location: string,
   /**
-   * The link to the event
+   * The date of the event
    */
-  reservationlink: string,
+  dateTime: Date,
+  /**
+   * The event's partner
+   */
+  partner: string,
+  /**
+   * Optional reservation link
+   */
+  reservationLink?: string,
+  /**
+   * Event title
+   */
+  title: string,
 }
-
-/**
- * The agenda item component
- * @param {AgendaItemProps} props - The props
- */
 function AgendaItem({
-  date, title, location, reservationlink,
+  location, dateTime, partner, reservationLink, title,
 }: AgendaItemProps) {
-  const hasReservationLink = reservationlink !== '#';
+  const hasReservationLink = reservationLink !== '#';
+  const partnerLogo = getPartnerLogo(partner);
+
+  const day = dateTime.getDate();
+  const month = dateTime.toLocaleString('fr-FR', { month: 'short' });
+  const year = dateTime.getFullYear();
+  const hour = `${dateTime.getHours()}h${dateTime.getMinutes() === 0 ? '00' : dateTime.getMinutes()}`;
 
   return (
-    <div className="flex flex-col h-full justify-between items-center lg:px-40px lg:py-30px lg:mb-30px mb-30px px-20px pt-20px pb-30px text-white">
-      <div className="lg:mb-0">
-        <p className="font-semibold lg:text-xl text-md text-primary mb-10px">{date}</p>
-        <p className="lg:text-3xl text-xl font-semibold mb-10px lg:mb-20px">{title}</p>
-        <Paragraph className="text-wrap">{location}</Paragraph>
+    <div className="flex flex-col px-8 py-8 lg:py-6 bg-secondary flex-1 gap-5 md:min-w-[45%] lg:min-w-[25%] rounded-md">
+      <div className="flex flex-col gap-3">
+        <div className="flex flex-col items-center gap-3">
+          <div className="flex items-center w-full p-4 justify-center bg-white min-h-[140px] rounded-md">
+            <Image src={partnerLogo.image} alt={partnerLogo.alt} className="max-h-[100px] object-contain" />
+          </div>
+          <span className="text-white tracking-wide">{title}</span>
+        </div>
+        <div className="flex justify-center items-center text-primary gap-2 text-xl font-light">
+          <Icon icon={['fas', 'location-dot']} />
+          <Paragraph className="tracking-wide font-medium">{location}</Paragraph>
+        </div>
       </div>
-      <div className="flex items-center justify-center w-full mb-20px lg:mb-30px">
-        <Button
-          title={hasReservationLink ? 'Réserver' : 'Réservations à venir'}
-          url={reservationlink}
-          externalUrl
-          disabled={!hasReservationLink}
-          type="primary"
-        />
+      <div className="flex flex-col gap-8">
+        <div className="flex justify-center items-center gap-4">
+          <div
+            className="flex flex-col justify-center items-center border-r border-white px-4 text-white"
+          >
+            <span className="text-4xl font-semibold">{day}</span>
+            <span className="text-xl font-semibold">{month}</span>
+            <span className="text-md tracking-wider">{year}</span>
+          </div>
+          <div className="flex gap-2 text-primary items-center">
+            <Icon icon={['fas', 'clock']} />
+            <Paragraph className="text-xl">{hour}</Paragraph>
+          </div>
+        </div>
+        <div className="flex justify-center items-center">
+          <Button
+            externalUrl
+            url={reservationLink}
+            disabled={!hasReservationLink}
+            title={hasReservationLink ? 'Réserver' : 'Réservation à venir'}
+            size="small"
+          />
+        </div>
       </div>
     </div>
   );

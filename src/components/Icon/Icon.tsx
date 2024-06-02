@@ -16,6 +16,9 @@ const iconVariants = cva('icon', {
       secondary: [
         'text-secondary',
       ],
+      white: [
+        'text-white',
+      ],
     },
     /**
      * Size of the icon
@@ -48,7 +51,7 @@ interface IconProps extends IconVariantProps {
 }
 
 function Icon({
-  icon, type, size, link,
+  icon, type, size, link = undefined,
 }: IconProps) {
   return (
     <>
@@ -68,9 +71,5 @@ function Icon({
     </>
   );
 }
-
-Icon.defaultProps = {
-  link: undefined,
-};
 
 export default Icon;
