@@ -1,6 +1,6 @@
 import Image, { StaticImageData } from 'next/image';
 import les111DesArts from '@/assets/images/partners/les111DesArts_logo.png';
-import asp from '@/assets/images/partners/asp_logo.png';
+import asp from '@/assets/images/partners/asp_logo.jpg';
 import laPommeraie from '@/assets/images/partners/laPommeraie_logo.png';
 import lesRestosDuCoeur from '@/assets/images/partners/lesRestosDuCoeur_logo.svg';
 import orpm from '@/assets/logo.svg';
@@ -78,11 +78,11 @@ function AgendaItem({
   const hour = `${dateTime.getHours()}h${dateTime.getMinutes() === 0 ? '00' : dateTime.getMinutes()}`;
 
   return (
-    <div className="flex flex-col px-8 py-8 lg:py-6 bg-secondary flex-1 gap-5 md:min-w-[45%] lg:min-w-[25%]">
+    <div className="flex flex-col px-8 py-8 lg:py-6 bg-secondary flex-1 gap-5 md:min-w-[45%] lg:min-w-[25%] rounded-md">
       <div className="flex flex-col gap-3">
         <div className="flex flex-col items-center gap-3">
-          <div className="flex items-center w-full p-4 justify-center bg-white min-h-[140px]">
-            <Image src={partnerLogo.image} alt={partnerLogo.alt} />
+          <div className="flex items-center w-full p-4 justify-center bg-white min-h-[140px] rounded-md">
+            <Image src={partnerLogo.image} alt={partnerLogo.alt} className="max-h-[100px] object-contain" />
           </div>
           <span className="text-white tracking-wide">{title}</span>
         </div>
