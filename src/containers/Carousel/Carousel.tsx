@@ -3,6 +3,7 @@
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import CarouselItem, { CarouselItemProps } from '@/components/CarouselItem/CarouselItem';
+import useViewport from '@/hooks/useViewport';
 
 interface CarouselProps {
   /**
@@ -18,6 +19,15 @@ interface CarouselProps {
 }
 
 function CarouselContainer({ items, autoplay, hero }: CarouselProps) {
+  const { isMobileScreen } = useViewport();
+
+  function getCarouselItems() {
+    if (isMobileScreen) {
+      return items.filter(({ mobileImageSrc }) => mobileImageSrc);
+    }
+    return items;
+  }
+
   return (
     <Carousel
       autoPlay={autoplay}
@@ -28,8 +38,10 @@ function CarouselContainer({ items, autoplay, hero }: CarouselProps) {
       showThumbs={false}
       showStatus={false}
     >
-      {items.map(({ imageSrc, alt, style }) => (
-        <CarouselItem hero={hero} key={`${alt}-index`} imageSrc={imageSrc} alt={alt} style={style} />
+      {getCarouselItems().map(({
+        imageSrc, mobileImageSrc, alt, style,
+      }) => (
+        <CarouselItem hero={hero} key={`${alt}-index`} imageSrc={imageSrc} mobileImageSrc={mobileImageSrc} alt={alt} style={style} />
       ))}
     </Carousel>
   );

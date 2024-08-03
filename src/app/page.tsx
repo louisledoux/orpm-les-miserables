@@ -4,6 +4,8 @@ import heroSlider1 from '@/assets/pages/homepage/homepage-carousel/hero_slider_1
 import heroSlider2 from '@/assets/pages/homepage/homepage-carousel/hero_slider_2.jpg';
 import heroSlider3 from '@/assets/pages/homepage/homepage-carousel/hero_slider_3.jpg';
 import heroSlider4 from '@/assets/pages/homepage/homepage-carousel/hero_slider_4.jpg';
+import mobileHeroSlider1 from '@/assets/pages/homepage/homepage-carousel/mobile/mobile_hero_slider_1.jpg';
+import mobileHeroSlider2 from '@/assets/pages/homepage/homepage-carousel/mobile/mobile_hero_slider_2.jpg';
 import Section from '@/containers/Section/Section';
 import HomepageAgenda from '@/containers/HomepageAgenda/HomepageAgenda';
 import {
@@ -16,10 +18,12 @@ import RoutesPathEnum from '@/routes/Routes.enum';
 const items: CarouselItemProps[] = [
   {
     imageSrc: heroSlider1,
+    mobileImageSrc: mobileHeroSlider1,
     alt: 'Les Misérables - La culture au service de la solidarité',
   },
   {
     imageSrc: heroSlider2,
+    mobileImageSrc: mobileHeroSlider2,
     alt: 'Les Misérables - Le 111 des Arts',
   },
   {
