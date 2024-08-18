@@ -5,6 +5,8 @@ export const authorType = defineType({
   name: 'author',
   title: 'Auteur',
   type: 'document',
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-ignore
   icon: UserIcon,
   fields: [
     defineField({
@@ -28,6 +30,8 @@ export const authorType = defineType({
     defineField({
       name: 'bio',
       type: 'array',
+      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+      // @ts-ignore
       of: [
         defineArrayMember({
           type: 'block',

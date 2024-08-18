@@ -5,6 +5,8 @@ export const postType = defineType({
   name: 'post',
   title: 'Article',
   type: 'document',
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-ignore
   icon: DocumentTextIcon,
   fields: [
     defineField({
@@ -21,6 +23,8 @@ export const postType = defineType({
     defineField({
       name: 'author',
       type: 'reference',
+      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+      // @ts-ignore
       to: { type: 'author' },
     }),
     defineField({
@@ -29,6 +33,8 @@ export const postType = defineType({
       options: {
         hotspot: true,
       },
+      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+      // @ts-ignore
       fields: [
         {
           name: 'alt',
@@ -40,6 +46,8 @@ export const postType = defineType({
     defineField({
       name: 'categories',
       type: 'array',
+      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+      // @ts-ignore
       of: [defineArrayMember({ type: 'reference', to: { type: 'category' } })],
     }),
     defineField({

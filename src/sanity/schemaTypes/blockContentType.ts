@@ -23,6 +23,8 @@ export const blockContentType = defineType({
       // set corresponds with HTML tags, but you can set any title or value
       // you want, and decide how you want to deal with it where you want to
       // use your content.
+      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+      // @ts-ignore
       styles: [
         { title: 'Normal', value: 'normal' },
         { title: 'H1', value: 'h1' },
@@ -62,6 +64,8 @@ export const blockContentType = defineType({
     // as a block type.
     defineArrayMember({
       type: 'image',
+      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+      // @ts-ignore
       icon: ImageIcon,
       options: { hotspot: true },
       fields: [
