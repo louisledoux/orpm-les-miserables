@@ -11,6 +11,8 @@
     "typescript"
   ],
   "rules": {
+    "camelcase": "off",
+    "no-underscore-dangle": "off",
     "react/jsx-filename-extension": [
       1,
       {
@@ -45,6 +47,7 @@
         ]
       }
     ],
+    "import/prefer-default-export": "off",
     "no-shadow": "off",
     "no-unused-vars": "off",
     "@typescript-eslint/no-unused-vars": ["error"],

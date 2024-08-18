@@ -45,7 +45,7 @@ const navList: NavListType[] = [
       { text: 'Toutes nos dates', url: RoutesPathEnum.AGENDA },
     ],
   },
-  { text: 'Billetterie', url: '/#agenda' },
+  { text: 'Blog', url: RoutesPathEnum.BLOG },
 ];
 
 function Nav() {
@@ -55,14 +55,18 @@ function Nav() {
 
   return (
     <>
-      <div className={isScrolling ? 'h-[70px]' : ''} />
-      <nav className={`bg-secondary z-10 ${isScrolling ? 'fixed top-0 w-full' : ''}`}>
-        {isMobileScreen ? (
-          <MobileNav navList={navList} pathname={pathname} />
-        ) : (
-          <DesktopNav navList={navList} pathname={pathname} />
-        )}
-      </nav>
+      {!pathname.includes(RoutesPathEnum.STUDIO) ? (
+        <>
+          <div className={isScrolling ? 'h-[70px]' : ''} />
+          <nav className={`bg-secondary z-10 ${isScrolling ? 'fixed top-0 w-full' : ''}`}>
+            {isMobileScreen ? (
+              <MobileNav navList={navList} pathname={pathname} />
+            ) : (
+              <DesktopNav navList={navList} pathname={pathname} />
+            )}
+          </nav>
+        </>
+      ) : <></>}
     </>
   );
 }

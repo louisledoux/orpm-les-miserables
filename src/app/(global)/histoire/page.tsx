@@ -8,7 +8,7 @@ import {
   aProposAlternativeSection, histoireAlternativeSection, StructureAlternativeSection,
 } from '@/assets/pages/histoire/histoireSection';
 
-const amithenFont = localFont({ src: '../../assets/font/amithen.ttf' });
+const amithenFont = localFont({ src: '../../../assets/font/amithen.ttf' });
 
 export const metadata: Metadata = {
   title: "L'histoire des Misérables",
