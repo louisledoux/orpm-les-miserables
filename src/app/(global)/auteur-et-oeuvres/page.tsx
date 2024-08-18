@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   },
 };
 
-const amithenFont = localFont({ src: '../../assets/font/amithen.ttf' });
+const amithenFont = localFont({ src: '../../../assets/font/amithen.ttf' });
 
 export default function AuteurEtOeuvresPage() {
   return (

@@ -9,7 +9,7 @@ import precedentsSpectaclesCarouselData1 from '@/assets/pages/precedentsSpectacl
 import precedentsSpectaclesCarouselData2 from '@/assets/pages/precedentsSpectacles/precedentsSpectaclesCarouselData2';
 import precedentsSpectaclesCarouselData3 from '@/assets/pages/precedentsSpectacles/precedentsSpectaclesCarouselData3';
 
-const amithenFont = localFont({ src: '../../assets/font/amithen.ttf' });
+const amithenFont = localFont({ src: '../../../assets/font/amithen.ttf' });
 
 export const metadata: Metadata = {
   title: 'Nos précédents spectacles',

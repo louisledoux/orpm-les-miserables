@@ -28,7 +28,10 @@ interface NavItemProps {
 function NavItem({
   text, url, pathname, dropdown, externalLink,
 }: NavItemProps) {
-  const isActive = pathname === url;
+  const isActive = pathname === url
+    || (url.includes(RoutesPathEnum.BLOG)
+      && url !== RoutesPathEnum.HOMEPAGE
+      && pathname.includes(RoutesPathEnum.BLOG));
 
   return (
     <>

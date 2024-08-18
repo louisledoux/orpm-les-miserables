@@ -15,6 +15,8 @@ enum RoutesPathEnum {
     JOUONS = '/jouons',
     SHOWCASES = '/showcases',
     AGENDA = '/agenda',
+    STUDIO = '/studio',
+    BLOG = '/blog',
 }
 
 export default RoutesPathEnum;
