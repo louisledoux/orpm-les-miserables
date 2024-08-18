@@ -10,13 +10,13 @@ const { Title } = Typography;
 
 export function Posts({ posts }: { posts: POSTS_QUERYResult }) {
   return (
-    <div className="flex flex-col items-center mx-auto mt-16 w-2/3">
+    <div className="flex flex-col items-center mx-auto mt-16 w-4/5 md:w-2/3">
       <Title level={1} className="mb-8 lg:mb-16">Blog</Title>
       <ul className="container mx-auto grid grid-cols-1 divide-y divide-blue-100 mb-16">
         {posts.map((post) => (
           <li key={post._id}>
             <Link
-              className="flex items-center gap-10 p-4 hover:bg-neutral-50 text-secondary hover:text-primary transition"
+              className="flex flex-col md:flex-row items-center gap-10 p-4 bg-neutral-50 text-secondary hover:text-primary transition"
               href={`${RoutesPathEnum.BLOG}/${post?.slug?.current}`}
             >
               {post?.mainImage?.asset?._ref && (
