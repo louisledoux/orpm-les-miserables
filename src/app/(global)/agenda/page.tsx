@@ -23,7 +23,8 @@ export default function AgendaPage() {
           className="w-full h-full object-cover"
         />
       </div>
-      <div className="lg:mb-120px mb-60px">
+      <div id="dates" className="lg:mb-120px mb-60px" />
+      <div>
         <Typography.Title level={1} className="lg:mb-60px">
           Nos dates
         </Typography.Title>
