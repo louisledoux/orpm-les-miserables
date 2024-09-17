@@ -4,6 +4,7 @@ import heroSlider1 from '@/assets/pages/homepage/homepage-carousel/hero_slider_1
 import heroSlider2 from '@/assets/pages/homepage/homepage-carousel/hero_slider_2.jpg';
 import heroSlider3 from '@/assets/pages/homepage/homepage-carousel/hero_slider_3.jpg';
 import heroSlider4 from '@/assets/pages/homepage/homepage-carousel/hero_slider_4.jpg';
+import heroSlider5 from '@/assets/pages/homepage/homepage-carousel/hero_slider_5.jpg';
 import mobileHeroSlider1 from '@/assets/pages/homepage/homepage-carousel/mobile/mobile_hero_slider_1.jpg';
 import mobileHeroSlider2 from '@/assets/pages/homepage/homepage-carousel/mobile/mobile_hero_slider_2.jpg';
 import Section from '@/containers/Section/Section';
@@ -33,6 +34,10 @@ const items: CarouselItemProps[] = [
   {
     imageSrc: heroSlider4,
     alt: 'Les Misérables - La Pommeraie',
+  },
+  {
+    imageSrc: heroSlider5,
+    alt: 'Les Misérables - Les Restos du Coeur',
   },
 ];
 
