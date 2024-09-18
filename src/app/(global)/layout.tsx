@@ -25,6 +25,7 @@ export const metadata: Metadata = {
   },
   description: 'Venez découvrir la prochaine comédie musicale de l\'Orchestre Régional du Pévèle Mélantois : Les Misérables, d\'après l\'oeuvre de Victor Hugo !',
   keywords: ['ORPM', 'Spectacle', 'Comédie musicale', 'Les Misérables'],
+  applicationName: 'ORPM Spectacles - Les Misérables',
 };
 export default function GlobalLayout({
   children,
