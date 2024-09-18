@@ -5,7 +5,7 @@ export default function robots(): MetadataRoute.Robots {
     rules: {
       userAgent: '*',
       allow: '/',
-      disallow: '/private/',
+      disallow: '/studio/',
     },
     sitemap: 'https://orpm-les-miserables.fr/sitemap.xml',
   };
