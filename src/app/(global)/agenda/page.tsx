@@ -27,7 +27,7 @@ export default function AgendaPage() {
         <Typography.Title level={1} className="lg:mb-60px">
           Nos dates
         </Typography.Title>
-        <div className="mx-6 lg:mx-8">
+        <div className="mx-6 mb-60px lg:mx-8">
           <Agenda />
         </div>
       </div>

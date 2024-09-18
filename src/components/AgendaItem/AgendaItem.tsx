@@ -78,7 +78,7 @@ function AgendaItem({
   const hour = `${dateTime.getHours()}h${dateTime.getMinutes() === 0 ? '00' : dateTime.getMinutes()}`;
 
   return (
-    <div className="flex flex-col px-8 py-8 lg:py-6 bg-secondary flex-1 gap-5 md:min-w-[45%] lg:min-w-[25%] rounded-md">
+    <div className="flex flex-col px-8 py-8 lg:py-6 bg-secondary flex-1 gap-5 md:min-w-[45%] lg:min-w-[25%] lg:max-w-[25%] rounded-md">
       <div className="flex flex-col gap-3">
         <div className="flex flex-col items-center gap-3">
           <div className="flex items-center w-full p-4 justify-center bg-white min-h-[140px] rounded-md">
