@@ -17,7 +17,7 @@ function Agenda() {
   }, []);
 
   return (
-    <div className="flex flex-col md:flex-row gap-12 lg:gap-24 flex-wrap">
+    <div className="flex flex-col md:flex-row gap-12 lg:gap-24 justify-center flex-wrap">
       {datesData.map(({
         location, dateTime, partner, reservationLink, title,
       }) => (
