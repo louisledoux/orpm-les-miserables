@@ -8,7 +8,6 @@ export const aProposAlternativeSection: SectionData = {
   pages: [{
     title: 'Le contexte',
     paragraphs: [
-      'Nous nous sommes lancés le défi de vous transporter dans les rues de Paris en 1832, à l\'époque des barricades, et de vous faire revivre les mélodies les plus célèbres de cette comédie musicale, revisitées pour séduire le public d\'aujourd\'hui.',
       'Les Misérables est un roman qui se déroule en France au XIXe siècle, en pleine révolution industrielle et sociale. ll couvre la période allant des années 1815 à 1832, et se concentre principalement sur les vies de Jean Valjean, Fantine et leurs amis et ennemis.',
       'Les thèmes principaux abordés dans le roman, tels que la lutte pour les droits des pauvres, des opprimés mais aussi des femmes, la justice sociale, la rédemption, et l\'injustice sociale ont eu un impact significatif sur la société.',
       'Les Misérables est considéré comme l\'un des livres les plus importants de la littérature française, et son héritage est toujours vivant aujourd\'hui.',
