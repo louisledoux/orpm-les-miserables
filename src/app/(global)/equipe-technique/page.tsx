@@ -32,18 +32,18 @@ export default function LaTroupePage() {
           <Typography.Paragraph className="lg:!text-22 !text-base mb-30px lg:mb-60px text-center">
             Sans staff technique le projet ne peut être monté.
             Leur rôle est de s&apos;occuper de toute la logistique autour du spectacle.
-            Après plusieurs années de comédies musicales, nous savons que le staff
-            technique est tout aussi primordial que la troupe. Derrière chaque petit détail
-            se cache une logistique millimétrée où rien ne doit être laissé au hasard.
+            Nous savons que le staff technique est tout aussi primordial que la troupe.
+            Derrière chaque petit détail se cache une logistique millimétrée
+            où rien ne doit être laissé au hasard.
           </Typography.Paragraph>
           <Typography.Paragraph className="lg:!text-22 !text-base text-center">
             En plus des membres talentueux, une troupe doit également comprendre des techniciens
             qualifiés. Un ingénieur du son et un éclairagiste sont essentiels pour assurer un
-            spectacle fluide et professionnel. De même, un technicien pour gérer les accessoires
+            spectacle fluide. De même, un technicien pour gérer les accessoires
             et le décor est nécessaire pour créer un environnement scénique approprié.
-            Une équipe de production compétente qui comprend des régisseurs, des costumiers et
+            Une équipe compétente qui comprend des régisseurs, des costumiers et
             des maquilleurs est également essentielle pour le succès
-            d&apos;un projet de comédie musicale.
+            d&apos;un projet de spectacle musicale.
           </Typography.Paragraph>
         </div>
         <div>

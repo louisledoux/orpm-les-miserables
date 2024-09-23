@@ -7,9 +7,9 @@ export const aProposSection: SectionData = {
   pages: [{
     title: 'A propos',
     paragraphs: [
-      'Les Misérables est une comédie musicale basée sur le roman éponyme de Victor Hugo. La comédie musicale a été créée en 1980 par Claude-Michel Schönberg et Alain Boublil, dans une mise en scène de Robert Hossein. Elle a été ensuite présentée pour la première fois à Londres en 1985.',
-      'Elle a été jouée dans de nombreux pays à travers le monde et a été traduite dans plusieurs langues. Elle revient à Paris en 1991 au théâtre Mogador et s\'exporte à Montréal et reçoit un accueil enthousiaste du public et de la critique. Le spectacle a depuis traversé le monde entier, Belgique, Suisse, Allemagne, Australie, Etats-Unis, Quebec, etc.',
-      'La comédie musicale est connue pour ses chansons épiques et mémorables, telles que « J\'avais rêvé », « Mon histoire » et « Comme un homme». Elle a remporté de nombreux prix et est considérée comme l\'une des comédies musicales les plus populaires et les plus appréciées de tous les temps.',
+      'Les Misérables est une comédie musicale basée sur le roman éponyme de Victor Hugo. Une première version a été créée en 1980, puis présentée pour la première fois à Londres en 1985.',
+      'Elle a été jouée ensuite dans de nombreux pays à travers le monde et traduite dans plusieurs langues. Elle revient à Paris en 1991 au théâtre Mogador et s\'exporte à Montréal et reçoit un accueil enthousiaste du public et de la critique. Le spectacle a depuis traversé le monde entier, Belgique, Suisse, Allemagne, Australie, Etats-Unis, Quebec, etc.',
+      'La comédie musicale originelle est connue pour ses chansons épiques et mémorables, telles que « J\'avais rêvé », « Mon histoire » et « Comme un homme». Elle a remporté de nombreux prix et est considérée comme l\'une des comédies musicales les plus populaires et les plus appréciées de tous les temps.',
     ],
   }],
   image: {
@@ -39,6 +39,6 @@ export const sceneClefsAlternativeSection: SectionData = {
   }],
   image: {
     image: scenesClefs,
-    alt: 'Les Miserables ORPM',
+    alt: 'Les scènes clés - Les Miserables "C\'est la faute à Voltaire" ORPM',
   },
 };

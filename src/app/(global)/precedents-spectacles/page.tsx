@@ -57,7 +57,7 @@ export default function PrecedentsSpectaclesPage() {
         </div>
         <div className={`${amithenFont.className} mb-60px lg:mb-120px text-center text-4xl lg:text-h2 text-primary bg-secondary lg:px-120px px-20px lg:py-60px py-30px`}>
           Nous sommes fiers de partager ces aventures,
-          et nous sommes impatients de vous accueillir à nos représentations des Misérables !
+          et nous sommes impatients de vous accueillir lors de nos représentations !
         </div>
         <div className="mb-30px lg:mb-60px lg:px-120px px-20px">
           <Carousel items={precedentsSpectaclesCarouselData1} autoplay />

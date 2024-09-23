@@ -8,8 +8,8 @@ export const newsSection: SectionData = {
   pages: [{
     title: 'Edito',
     paragraphs: [
-      'Bienvenue sur le site officiel "Les Misérables". Face aux défis sociaux actuels, notre spectacle devient un moteur de changement et de solidarité.',
-      'La culture a le pouvoir de nous rassembler et de nous motiver à agir. Notre version "Les Misérables" fait plus que divertir; elle soutient activement des causes importantes. Chaque billet vendu contribue à des projets locaux contre la pauvreté et pour la santé.',
+      'Bienvenue sur le site officiel "Les Misérables - C\'est la faute à Voltaire!". Face aux défis sociaux actuels, notre spectacle devient un moteur de changement et de solidarité.',
+      'La culture a le pouvoir de nous rassembler et de nous motiver à agir. Notre version fait plus que divertir; elle soutient activement des causes importantes. Chaque billet vendu contribue à des projets locaux contre la pauvreté et pour la santé.',
       'Nous croyons que chacun peut impacter le monde positivement, à l\'image de Jean Valjean. Au-delà du théâtre, nous lançons cette initiative pour promouvoir la solidarité. Ensemble, nous pouvons changer les choses.',
       'Visitez notre site pour découvrir nos spectacles. Rejoignez-nous pour une soirée où art et générosité se rencontrent. Votre participation est un engagement pour un monde plus uni et solidaire.',
       'Nous espérons vous voir bientôt pour vivre ensemble cette expérience mémorable.',

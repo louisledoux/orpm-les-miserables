@@ -21,10 +21,10 @@ export const metadata: Metadata = {
       template: '%s | ORPM Spectacles - Les Misérables',
       default: 'ORPM Spectacles - Les Misérables',
     },
-    description: 'Venez découvrir la prochaine comédie musicale de l\'Orchestre Régional du Pévèle Mélantois : Les Misérables, d\'après l\'oeuvre de Victor Hugo !',
+    description: 'Venez découvrir la prochaine comédie musicale de l\'Orchestre Régional du Pévèle Mélantois : Les Misérables - C\'est la faute à Voltaire!, d\'après l\'oeuvre de Victor Hugo !',
   },
-  description: 'Venez découvrir la prochaine comédie musicale de l\'Orchestre Régional du Pévèle Mélantois : Les Misérables, d\'après l\'oeuvre de Victor Hugo !',
-  keywords: ['ORPM', 'Spectacle', 'Comédie musicale', 'Les Misérables'],
+  description: 'Venez découvrir la prochaine comédie musicale de l\'Orchestre Régional du Pévèle Mélantois : Les Misérables - C\'est la faute à Voltaire!, d\'après l\'oeuvre de Victor Hugo !',
+  keywords: ['ORPM', 'Spectacle', 'Comédie musicale', 'Les Misérables', 'Voltaire'],
   applicationName: 'ORPM Spectacles - Les Misérables',
 };
 export default function GlobalLayout({

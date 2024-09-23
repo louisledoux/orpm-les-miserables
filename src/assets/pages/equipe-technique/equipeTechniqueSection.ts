@@ -9,7 +9,7 @@ export const equipeTechnique2Section: SectionData = {
     paragraphs: [
       'Moi, c\'est Bernard Boitel. Je suis bénévole de l\'association depuis environ 1984.',
       'Depuis toutes ces années, mon rôle dans l\'ORPM n\'a fait qu\'accroître jusqu\'à ma nomination en tant que vice-président depuis l\'an dernier.',
-      'Tous les projets ont été une nouvelle aventure. «Les Misérables» seront également passionnants et à coup sûr un merveilleux challenge au niveau des décors.',
+      'Tous les projets ont été une nouvelle aventure. Ce spectacle sera également passionnant et à coup sûr un merveilleux challenge au niveau des décors.',
       'Aimant le bricolage naturellement, je me suis proposé pour la préparation de ces décors et la coordination de l\'équipe en charge de ceux-ci',
     ],
   }],
