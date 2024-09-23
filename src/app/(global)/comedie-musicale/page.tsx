@@ -34,8 +34,9 @@ export default function ComedieMusicale() {
       <div className="mb-60px text-center lg:px-120px px-20px">
         <Typography.Paragraph className="mb-2 !text-base lg:!text-22">
           Nous nous sommes lancé le défi de vous transporter dans les rues de Paris en 1832,
-          à l&apos;époque des barricades, et de vous faire revivre les mélodies les plus célèbres
-          de cette comédie musicale, revisitées pour séduire le public d&apos;aujourd&apos;hui.
+          à l&apos;époque des barricades,
+          et de vous faire découvrir des mélodies inédites en comédie musicale,
+          spécialement créées pour séduire le public d&apos;aujourd&apos;hui.
         </Typography.Paragraph>
       </div>
       <Section

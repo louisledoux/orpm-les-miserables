@@ -32,9 +32,9 @@ export default function ShowcasesPage() {
       </div>
       <div className="mb-30px lg:mb-60px text-center text-22 font-light lg:px-120px px-20px">
         Découvrez les photos de nos précédents showcases. Ils sont l&apos;occasion
-        pour nous de vous présenter des extraits de notre spectacle en cours de création,
+        pour nous de vous présenter des extraits de notre spectacle original en cours de création,
         et de vous faire découvrir les talents de nos artistes.
-        Le dernier en date s&apos;est déroulé à Lambersart le 06 avril 2024.
+        Le dernier en date s&apos;est déroulé à Wattignies le 20 septembre 2024.
       </div>
       <div className="mb-30px lg:mb-60px lg:px-120px px-20px">
         <Carousel items={showcasesCarouselData} autoplay />

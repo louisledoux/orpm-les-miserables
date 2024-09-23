@@ -11,7 +11,8 @@ function SupportSection() {
       <div className="flex flex-col items-center bg-fadePrimary pt-30px px-20px pb-44 lg:pt-60px lg:px-64 lg:pb-80">
         <Title className="mb-30px lg:mb-8" level={2} color="secondary">Soutenez-nous !</Title>
         <Paragraph className="font-normal text-center text-secondary">
-          Vous êtes fan de la comédie musicale &quot;Les Misérables&quot; ? Nous aussi !
+          {/* eslint-disable-next-line max-len */}
+          Vous êtes fan de la comédie musicale &quot;Les Misérables&quot; - C&apos;est la faute à Voltaire!&quot; ? Nous aussi !
           <br />
           <br />
           Soutenez-nous pour promouvoir l&apos;art et la culture, tout en

@@ -52,17 +52,6 @@ export default function Home() {
         <Section
           pages={newsSection.pages}
           image={newsSection.image}
-          extra={{
-            firstLink: {
-              text: 'Télécharger le dossier de presse',
-              url: '/dossierpressemiserables0524.pdf',
-              newTab: true,
-            },
-            secondLink: {
-              text: 'Découvrir',
-              url: '/',
-            },
-          }}
           adjustImage={false}
         />
       </div>
