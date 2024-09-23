@@ -39,12 +39,14 @@ export default function HistoireMiserables() {
           nous vous invitons à nous rejoindre pour une aventure encore plus captivante :
         </Typography.Paragraph>
         <Typography.Paragraph className="mb-4 font-medium !text-22 lg:!text-2xl text-primary">
-          Les Misérables d&apos;après l&apos;oeuvre de Victor Hugo !
+          &quot;Les Misérables - C&apos;est la faute à Voltaire!&quot;
+          d&apos;après l&apos;oeuvre de Victor Hugo !
         </Typography.Paragraph>
         <Typography.Paragraph className="!text-base lg:!text-22">
-          Nous nous sommes lancés le défi de vous transporter dans les rues de Paris en 1832,
-          à l&apos;époque des barricades, et de vous faire revivre les mélodies les plus célèbres
-          de cette comédie musicale, revisitées pour séduire le public d&apos;aujourd&apos;hui.
+          Nous nous sommes lancé le défi de vous transporter dans les rues de Paris en 1832,
+          à l&apos;époque des barricades,
+          et de vous faire découvrir des mélodies inédites en comédie musicale,
+          spécialement créées pour séduire le public d&apos;aujourd&apos;hui.
         </Typography.Paragraph>
       </div>
       <AlternativeSection
