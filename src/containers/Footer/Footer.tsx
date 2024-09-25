@@ -12,7 +12,7 @@ const footerLinks: FooterLink[] = [
   { text: 'Auteur et œuvres', url: RoutesPathEnum.AUTEUR_ET_OEUVRES },
   { text: 'L\'histoire', url: RoutesPathEnum.HISTOIRE },
   { text: 'Les personnages', url: RoutesPathEnum.PERSONNAGES },
-  { text: 'La comédie musicale', url: RoutesPathEnum.COMEDIE_MUSICALE },
+  { text: 'Le spectacle musicale', url: RoutesPathEnum.COMEDIE_MUSICALE },
   { text: 'Jouons !', url: '/#jouons' },
   { text: 'L\'orchestre', url: RoutesPathEnum.ORCHESTRE },
   { text: 'L\'équipe artistique', url: RoutesPathEnum.EQUIPE_ARTISTIQUE },

@@ -12,7 +12,7 @@ function SupportSection() {
         <Title className="mb-30px lg:mb-8" level={2} color="secondary">Soutenez-nous !</Title>
         <Paragraph className="font-normal text-center text-secondary">
           {/* eslint-disable-next-line max-len */}
-          Vous êtes fan de la comédie musicale &quot;Les Misérables&quot; - C&apos;est la faute à Voltaire!&quot; ? Nous aussi !
+          Vous êtes fan du spectacle musical &quot;Les Misérables&quot; - C&apos;est la faute à Voltaire!&quot; ? Nous aussi !
           <br />
           <br />
           Soutenez-nous pour promouvoir l&apos;art et la culture, tout en
