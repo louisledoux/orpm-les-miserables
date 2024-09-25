@@ -26,7 +26,7 @@ export const showcasesSection: SectionData = {
   pages: [{
     title: 'Showcases',
     paragraphs: [
-      'Avant le spectacle musicale à venir, ce sont aussi des showcases qui sont organisés pour vous faire découvrir l\'univers des Misérables.',
+      'Avant le spectacle musical à venir, ce sont aussi des showcases qui sont organisés pour vous faire découvrir l\'univers des Misérables.',
       'Ces événements vous permettront de vous plonger dans l\'histoire des Misérables et de découvrir les artistes qui participent à la comédie musicale.',
       'Vous pourrez également découvrir les coulisses du spectacle musical et les différentes étapes de sa création.',
       'Retrouvez sans plus attendre les photos des showcases passés !',
