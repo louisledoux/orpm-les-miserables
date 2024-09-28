@@ -6,7 +6,6 @@ import Typography from '@/components/Typography/Typography';
 import Carousel from '@/containers/Carousel/Carousel';
 import {
   lambersartShowcaseCarouselData,
-  wattigniesShowcaseCarouselData,
 } from '@/assets/pages/showcases/showcasesCarouselData';
 import Button from '@/components/Button/Button';
 
@@ -38,10 +37,6 @@ export default function ShowcasesPage() {
         pour nous de vous présenter des extraits de notre spectacle original en cours de création,
         et de vous faire découvrir les talents de nos artistes.
         Le dernier en date s&apos;est déroulé à Wattignies le 20 septembre 2024.
-      </div>
-      <div className="flex flex-col items-center gap-2 mb-30px lg:mb-[60px] lg:px-120px px-20px">
-        <Carousel items={wattigniesShowcaseCarouselData} autoplay />
-        <span className="italic font-light">Showcase de Wattignies - 20 septembre 2024</span>
       </div>
       <div className="flex flex-col items-center gap-2 mb-30px lg:mb-60px lg:px-120px px-20px">
         <Carousel items={lambersartShowcaseCarouselData} autoplay />
