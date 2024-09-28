@@ -28,13 +28,6 @@ function CarouselContainer({ items, autoplay, hero }: CarouselProps) {
     return items;
   }
 
-  function showIndicators() {
-    if (items.length < 10) {
-      return true;
-    }
-    return !isMobileScreen;
-  }
-
   return (
     <Carousel
       autoPlay={autoplay}
@@ -42,7 +35,6 @@ function CarouselContainer({ items, autoplay, hero }: CarouselProps) {
       interval={5000}
       transitionTime={1000}
       showArrows
-      showIndicators={showIndicators()}
       showThumbs={false}
       showStatus={false}
     >
