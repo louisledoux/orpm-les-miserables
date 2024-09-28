@@ -40,15 +40,6 @@ import wattignies15 from '@/assets/pages/showcases/images/wattigniesCarousel/wat
 import wattignies16 from '@/assets/pages/showcases/images/wattigniesCarousel/wattignies16.jpg';
 import wattignies17 from '@/assets/pages/showcases/images/wattigniesCarousel/wattignies17.jpg';
 import wattignies18 from '@/assets/pages/showcases/images/wattigniesCarousel/wattignies18.jpg';
-import wattignies19 from '@/assets/pages/showcases/images/wattigniesCarousel/wattignies19.jpg';
-import wattignies20 from '@/assets/pages/showcases/images/wattigniesCarousel/wattignies20.jpg';
-import wattignies21 from '@/assets/pages/showcases/images/wattigniesCarousel/wattignies21.jpg';
-import wattignies22 from '@/assets/pages/showcases/images/wattigniesCarousel/wattignies22.jpg';
-import wattignies23 from '@/assets/pages/showcases/images/wattigniesCarousel/wattignies23.jpg';
-import wattignies24 from '@/assets/pages/showcases/images/wattigniesCarousel/wattignies24.jpg';
-import wattignies25 from '@/assets/pages/showcases/images/wattigniesCarousel/wattignies25.jpg';
-import wattignies26 from '@/assets/pages/showcases/images/wattigniesCarousel/wattignies26.jpg';
-import wattignies27 from '@/assets/pages/showcases/images/wattigniesCarousel/wattignies27.jpg';
 
 const lambersartShowcaseCarouselData: Array<CarouselItemProps> = [
   {
@@ -251,51 +242,6 @@ const wattigniesShowcaseCarouselData: Array<CarouselItemProps> = [
   },
   {
     imageSrc: wattignies18,
-    alt: 'Showcase ORPM Wattignies',
-    style: { objectPosition: 'center' },
-  },
-  {
-    imageSrc: wattignies19,
-    alt: 'Showcase ORPM Wattignies',
-    style: { objectPosition: 'center' },
-  },
-  {
-    imageSrc: wattignies20,
-    alt: 'Showcase ORPM Wattignies',
-    style: { objectPosition: 'center' },
-  },
-  {
-    imageSrc: wattignies21,
-    alt: 'Showcase ORPM Wattignies',
-    style: { objectPosition: 'center' },
-  },
-  {
-    imageSrc: wattignies22,
-    alt: 'Showcase ORPM Wattignies',
-    style: { objectPosition: 'center' },
-  },
-  {
-    imageSrc: wattignies23,
-    alt: 'Showcase ORPM Wattignies',
-    style: { objectPosition: 'center' },
-  },
-  {
-    imageSrc: wattignies24,
-    alt: 'Showcase ORPM Wattignies',
-    style: { objectPosition: 'center' },
-  },
-  {
-    imageSrc: wattignies25,
-    alt: 'Showcase ORPM Wattignies',
-    style: { objectPosition: '50% 0%' },
-  },
-  {
-    imageSrc: wattignies26,
-    alt: 'Showcase ORPM Wattignies',
-    style: { objectPosition: 'center' },
-  },
-  {
-    imageSrc: wattignies27,
     alt: 'Showcase ORPM Wattignies',
     style: { objectPosition: 'center' },
   },

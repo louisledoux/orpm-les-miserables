@@ -5,7 +5,7 @@ import React from 'react';
 import Typography from '@/components/Typography/Typography';
 import Carousel from '@/containers/Carousel/Carousel';
 import {
-  lambersartShowcaseCarouselData,
+  // lambersartShowcaseCarouselData,
   wattigniesShowcaseCarouselData,
 } from '@/assets/pages/showcases/showcasesCarouselData';
 import Button from '@/components/Button/Button';
@@ -39,14 +39,15 @@ export default function ShowcasesPage() {
         et de vous faire découvrir les talents de nos artistes.
         Le dernier en date s&apos;est déroulé à Wattignies le 20 septembre 2024.
       </div>
-      <div className="flex flex-colitems-center gap-2 mb-30px lg:mb-[60px] lg:px-120px px-20px">
+      <div className="flex flex-col items-center gap-2 mb-30px lg:mb-[60px] lg:px-120px px-20px">
         <Carousel items={wattigniesShowcaseCarouselData} autoplay />
-        <span className="italic font-light">Showcasede Wattignies - 20 septembre 2024</span>
+        <span className="italic font-light">Showcase de Wattignies - 20 septembre 2024</span>
       </div>
-      <div className="flex flex-col items-center gap-2 mb-30px lg:mb-60px lg:px-120px px-20px">
-        <Carousel items={lambersartShowcaseCarouselData} autoplay />
-        <span className="italic font-light">Showcase de Lambersart - 06 avril 2024</span>
-      </div>
+      {/* <div className="flex flex-col items-center gap-2 mb-30px lg:mb-60px
+      lg:px-120px px-20px"> */}
+      {/*   <Carousel items={lambersartShowcaseCarouselData} autoplay /> */}
+      {/*   <span className="italic font-light">Showcase de Lambersart - 06 avril 2024</span> */}
+      {/* </div> */}
       <div className="flex justify-center mb-60px lg:mb-120px px-20px">
         <Button type="secondary" url="/#agenda" title="Nos prochaines dates" />
       </div>
