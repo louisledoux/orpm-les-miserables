@@ -49,25 +49,6 @@ import wattignies24 from '@/assets/pages/showcases/images/wattigniesCarousel/wat
 import wattignies25 from '@/assets/pages/showcases/images/wattigniesCarousel/wattignies25.jpg';
 import wattignies26 from '@/assets/pages/showcases/images/wattigniesCarousel/wattignies26.jpg';
 import wattignies27 from '@/assets/pages/showcases/images/wattigniesCarousel/wattignies27.jpg';
-import wattignies28 from '@/assets/pages/showcases/images/wattigniesCarousel/wattignies28.jpg';
-import wattignies29 from '@/assets/pages/showcases/images/wattigniesCarousel/wattignies29.jpg';
-import wattignies30 from '@/assets/pages/showcases/images/wattigniesCarousel/wattignies30.jpg';
-import wattignies31 from '@/assets/pages/showcases/images/wattigniesCarousel/wattignies31.jpg';
-import wattignies32 from '@/assets/pages/showcases/images/wattigniesCarousel/wattignies32.jpg';
-import wattignies33 from '@/assets/pages/showcases/images/wattigniesCarousel/wattignies33.jpg';
-import wattignies34 from '@/assets/pages/showcases/images/wattigniesCarousel/wattignies34.jpg';
-import wattignies35 from '@/assets/pages/showcases/images/wattigniesCarousel/wattignies35.jpg';
-import wattignies36 from '@/assets/pages/showcases/images/wattigniesCarousel/wattignies36.jpg';
-import wattignies37 from '@/assets/pages/showcases/images/wattigniesCarousel/wattignies37.jpg';
-import wattignies38 from '@/assets/pages/showcases/images/wattigniesCarousel/wattignies38.jpg';
-import wattignies39 from '@/assets/pages/showcases/images/wattigniesCarousel/wattignies39.jpg';
-import wattignies40 from '@/assets/pages/showcases/images/wattigniesCarousel/wattignies40.jpg';
-import wattignies41 from '@/assets/pages/showcases/images/wattigniesCarousel/wattignies41.jpg';
-import wattignies42 from '@/assets/pages/showcases/images/wattigniesCarousel/wattignies42.jpg';
-import wattignies43 from '@/assets/pages/showcases/images/wattigniesCarousel/wattignies43.jpg';
-import wattignies44 from '@/assets/pages/showcases/images/wattigniesCarousel/wattignies44.jpg';
-import wattignies45 from '@/assets/pages/showcases/images/wattigniesCarousel/wattignies45.jpg';
-import wattignies46 from '@/assets/pages/showcases/images/wattigniesCarousel/wattignies46.jpg';
 
 const lambersartShowcaseCarouselData: Array<CarouselItemProps> = [
   {
@@ -315,101 +296,6 @@ const wattigniesShowcaseCarouselData: Array<CarouselItemProps> = [
   },
   {
     imageSrc: wattignies27,
-    alt: 'Showcase ORPM Wattignies',
-    style: { objectPosition: 'center' },
-  },
-  {
-    imageSrc: wattignies28,
-    alt: 'Showcase ORPM Wattignies',
-    style: { objectPosition: 'center' },
-  },
-  {
-    imageSrc: wattignies29,
-    alt: 'Showcase ORPM Wattignies',
-    style: { objectPosition: 'center' },
-  },
-  {
-    imageSrc: wattignies30,
-    alt: 'Showcase ORPM Wattignies',
-    style: { objectPosition: '50% 10%' },
-  },
-  {
-    imageSrc: wattignies31,
-    alt: 'Showcase ORPM Wattignies',
-    style: { objectPosition: 'center' },
-  },
-  {
-    imageSrc: wattignies32,
-    alt: 'Showcase ORPM Wattignies',
-    style: { objectPosition: 'center' },
-  },
-  {
-    imageSrc: wattignies33,
-    alt: 'Showcase ORPM Wattignies',
-    style: { objectPosition: 'center' },
-  },
-  {
-    imageSrc: wattignies34,
-    alt: 'Showcase ORPM Wattignies',
-    style: { objectPosition: 'center' },
-  },
-  {
-    imageSrc: wattignies35,
-    alt: 'Showcase ORPM Wattignies',
-    style: { objectPosition: 'center' },
-  },
-  {
-    imageSrc: wattignies36,
-    alt: 'Showcase ORPM Wattignies',
-    style: { objectPosition: 'center' },
-  },
-  {
-    imageSrc: wattignies37,
-    alt: 'Showcase ORPM Wattignies',
-    style: { objectPosition: 'center' },
-  },
-  {
-    imageSrc: wattignies38,
-    alt: 'Showcase ORPM Wattignies',
-    style: { objectPosition: 'center' },
-  },
-  {
-    imageSrc: wattignies39,
-    alt: 'Showcase ORPM Wattignies',
-    style: { objectPosition: 'center' },
-  },
-  {
-    imageSrc: wattignies40,
-    alt: 'Showcase ORPM Wattignies',
-    style: { objectPosition: 'center' },
-  },
-  {
-    imageSrc: wattignies41,
-    alt: 'Showcase ORPM Wattignies',
-    style: { objectPosition: 'center' },
-  },
-  {
-    imageSrc: wattignies42,
-    alt: 'Showcase ORPM Wattignies',
-    style: { objectPosition: 'center' },
-  },
-  {
-    imageSrc: wattignies43,
-    alt: 'Showcase ORPM Wattignies',
-    style: { objectPosition: 'center' },
-  },
-  {
-    imageSrc: wattignies44,
-    alt: 'Showcase ORPM Wattignies',
-    style: { objectPosition: '50% 5%' },
-  },
-  {
-    imageSrc: wattignies45,
-    alt: 'Showcase ORPM Wattignies',
-    style: { objectPosition: 'center' },
-  },
-  {
-    imageSrc: wattignies46,
     alt: 'Showcase ORPM Wattignies',
     style: { objectPosition: 'center' },
   },
