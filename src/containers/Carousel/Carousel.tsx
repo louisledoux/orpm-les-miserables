@@ -21,13 +21,6 @@ interface CarouselProps {
 function CarouselContainer({ items, autoplay, hero }: CarouselProps) {
   const { isMobileScreen } = useViewport();
 
-  function getCarouselItems() {
-    if (isMobileScreen && hero) {
-      return items.filter(({ mobileImageSrc }) => mobileImageSrc);
-    }
-    return items;
-  }
-
   function showIndicators() {
     if (items.length < 10) {
       return true;
@@ -46,10 +39,10 @@ function CarouselContainer({ items, autoplay, hero }: CarouselProps) {
       showThumbs={false}
       showStatus={false}
     >
-      {getCarouselItems().map(({
-        imageSrc, mobileImageSrc, alt, style,
+      {items.map(({
+        imageSrc, alt, style,
       }) => (
-        <CarouselItem hero={hero} key={`${alt}-index`} imageSrc={imageSrc} mobileImageSrc={mobileImageSrc} alt={alt} style={style} />
+        <CarouselItem hero={hero} key={`${alt}-index`} imageSrc={imageSrc} alt={alt} style={style} />
       ))}
     </Carousel>
   );
