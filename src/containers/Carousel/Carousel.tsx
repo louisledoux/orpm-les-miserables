@@ -22,10 +22,17 @@ function CarouselContainer({ items, autoplay, hero }: CarouselProps) {
   const { isMobileScreen } = useViewport();
 
   function getCarouselItems() {
-    if (isMobileScreen) {
+    if (isMobileScreen && hero) {
       return items.filter(({ mobileImageSrc }) => mobileImageSrc);
     }
     return items;
+  }
+
+  function showIndicators() {
+    if (items.length < 10) {
+      return true;
+    }
+    return !isMobileScreen;
   }
 
   return (
@@ -35,6 +42,7 @@ function CarouselContainer({ items, autoplay, hero }: CarouselProps) {
       interval={5000}
       transitionTime={1000}
       showArrows
+      showIndicators={showIndicators()}
       showThumbs={false}
       showStatus={false}
     >
