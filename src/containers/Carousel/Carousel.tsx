@@ -22,7 +22,7 @@ function CarouselContainer({ items, autoplay, hero }: CarouselProps) {
   const { isMobileScreen } = useViewport();
 
   function getCarouselItems() {
-    if (isMobileScreen && hero) {
+    if (isMobileScreen) {
       return items.filter(({ mobileImageSrc }) => mobileImageSrc);
     }
     return items;
