@@ -21,12 +21,12 @@ interface CarouselProps {
 function CarouselContainer({ items, autoplay, hero }: CarouselProps) {
   const { isMobileScreen } = useViewport();
 
-  // function getCarouselItems() {
-  //   if (isMobileScreen && hero) {
-  //     return items.filter(({ mobileImageSrc }) => mobileImageSrc);
-  //   }
-  //   return items;
-  // }
+  function getCarouselItems() {
+    if (isMobileScreen && hero) {
+      return items.filter(({ mobileImageSrc }) => mobileImageSrc);
+    }
+    return items;
+  }
 
   function showIndicators() {
     if (items.length < 10) {
@@ -46,7 +46,7 @@ function CarouselContainer({ items, autoplay, hero }: CarouselProps) {
       showThumbs={false}
       showStatus={false}
     >
-      {items.map(({
+      {getCarouselItems().map(({
         imageSrc, mobileImageSrc, alt, style,
       }) => (
         <CarouselItem hero={hero} key={`${alt}-index`} imageSrc={imageSrc} mobileImageSrc={mobileImageSrc} alt={alt} style={style} />

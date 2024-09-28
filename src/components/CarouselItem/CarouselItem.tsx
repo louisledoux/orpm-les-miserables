@@ -22,7 +22,7 @@ function CarouselItem({
       <Image
         style={style}
         className={`w-full ${hero ? 'lg:h-carousel h-headerImage lg:object-hero-desktop object-hero-mobile' : 'h-353px lg:h-full lg:max-h-[700px]'} object-cover`}
-        src={isMobileScreen ? mobileImageSrc || imageSrc : imageSrc}
+        src={isMobileScreen && hero ? mobileImageSrc || imageSrc : imageSrc}
         alt={alt}
       />
     </div>
