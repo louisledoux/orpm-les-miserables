@@ -22,7 +22,7 @@ function CarouselContainer({ items, autoplay, hero }: CarouselProps) {
   const { isMobileScreen } = useViewport();
 
   function getCarouselItems() {
-    if (isMobileScreen) {
+    if (isMobileScreen && hero) {
       return items.filter(({ mobileImageSrc }) => mobileImageSrc);
     }
     return items;
@@ -46,7 +46,7 @@ function CarouselContainer({ items, autoplay, hero }: CarouselProps) {
       showThumbs={false}
       showStatus={false}
     >
-      {getCarouselItems().map(({
+      {items.map(({
         imageSrc, mobileImageSrc, alt, style,
       }) => (
         <CarouselItem hero={hero} key={`${alt}-index`} imageSrc={imageSrc} mobileImageSrc={mobileImageSrc} alt={alt} style={style} />
