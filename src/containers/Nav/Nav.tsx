@@ -39,7 +39,7 @@ const navList: NavListType[] = [
     ],
   },
   {
-    text: 'Agenda',
+    text: 'Billetterie',
     url: '#',
     dropdown: [
       { text: 'Toutes nos dates', url: RoutesPathEnum.AGENDA },
