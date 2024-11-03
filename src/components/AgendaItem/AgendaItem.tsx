@@ -77,6 +77,10 @@ function AgendaItem({
   const year = dateTime.getFullYear();
   const hour = `${dateTime.getHours()}h${dateTime.getMinutes() === 0 ? '00' : dateTime.getMinutes()}`;
 
+  function getReservationText(): string {
+    return reservationLink?.startsWith('mailto:') ? 'Réserver par mail' : 'Réserver';
+  }
+
   return (
     <div className="flex flex-col px-8 py-8 lg:py-6 bg-secondary flex-1 gap-5 md:min-w-[45%] lg:min-w-[25%] lg:max-w-[33%] rounded-md">
       <div className="flex flex-col gap-3">
@@ -84,7 +88,7 @@ function AgendaItem({
           <div className="flex items-center w-full p-4 justify-center bg-white min-h-[140px] rounded-md">
             <Image src={partnerLogo.image} alt={partnerLogo.alt} className="max-h-[100px] object-contain" />
           </div>
-          <span className="text-white tracking-wide">{title}</span>
+          <span className="text-white text-center tracking-wide">{title}</span>
         </div>
         <div className="flex justify-center items-center text-primary gap-2 text-xl font-light">
           <Icon icon={['fas', 'location-dot']} />
@@ -110,7 +114,7 @@ function AgendaItem({
             externalUrl
             url={reservationLink}
             disabled={!hasReservationLink}
-            title={hasReservationLink ? 'Réserver' : 'Réservation à venir'}
+            title={hasReservationLink ? getReservationText() : 'Réservation à venir'}
             size="small"
           />
         </div>
