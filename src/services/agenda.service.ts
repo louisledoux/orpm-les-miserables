@@ -13,7 +13,8 @@ type FirebaseDateData = {
 };
 
 function getReservationLinkFromString(description: string): string {
-  const reservationLinkMatch = description.match(/^(https?:\/\/\S+)/g);
+  const reservationLinkMatch = description.match(/^(https?:\/\/\S+)/g)
+    || description.match(/^(mailto?:\S+)/g);
   return reservationLinkMatch ? reservationLinkMatch[0] : '#';
 }
 
