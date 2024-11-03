@@ -88,7 +88,7 @@ function AgendaItem({
           <div className="flex items-center w-full p-4 justify-center bg-white min-h-[140px] rounded-md">
             <Image src={partnerLogo.image} alt={partnerLogo.alt} className="max-h-[100px] object-contain" />
           </div>
-          <span className="text-white tracking-wide">{title}</span>
+          <span className="text-white text-center tracking-wide">{title}</span>
         </div>
         <div className="flex justify-center items-center text-primary gap-2 text-xl font-light">
           <Icon icon={['fas', 'location-dot']} />
