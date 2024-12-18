@@ -14,7 +14,7 @@ type FirebaseDateData = {
 
 function getReservationLinkFromString(description: string): string {
   const reservationLinkMatch = description.match(/^(https?:\/\/\S+)/g)
-    || description.match(/^(mailto?:\S+)/g);
+    || description.match(/^(mailto?:\S+)/g) || description.match(/^(Complet)/g);
   return reservationLinkMatch ? reservationLinkMatch[0] : '#';
 }
 
