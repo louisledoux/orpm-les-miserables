@@ -72,13 +72,21 @@ function AgendaItem({
   const hasReservationLink = reservationLink !== '#';
   const partnerLogo = getPartnerLogo(partner);
 
+  const reservationDisabled = reservationLink?.startsWith('Complet') || !hasReservationLink;
+
   const day = dateTime.getDate();
   const month = dateTime.toLocaleString('fr-FR', { month: 'short' });
   const year = dateTime.getFullYear();
   const hour = `${dateTime.getHours()}h${dateTime.getMinutes() === 0 ? '00' : dateTime.getMinutes()}`;
 
   function getReservationText(): string {
-    return reservationLink?.startsWith('mailto:') ? 'Réserver par mail' : 'Réserver';
+    if (reservationLink?.startsWith('mailto:')) {
+      return 'Réserver par mail';
+    }
+    if (reservationLink?.startsWith('Complet')) {
+      return 'Complet !';
+    }
+    return 'Réserver';
   }
 
   return (
@@ -113,7 +121,7 @@ function AgendaItem({
           <Button
             externalUrl
             url={reservationLink}
-            disabled={!hasReservationLink}
+            disabled={reservationDisabled}
             title={hasReservationLink ? getReservationText() : 'Réservation à venir'}
             size="small"
           />
