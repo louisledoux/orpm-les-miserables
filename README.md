@@ -1,10 +1,10 @@
 # Les Misérables - ORPM Website
 
-This is the official website for the ORPM (Orchestre et Réalisations de Productions Musicales) production of Les Misérables. Built with modern web technologies, this website serves as a comprehensive platform for audiences, cast members, and supporters to engage with our musical theater production.
+This is the official website for the ORPM (Orchestre Régional du Pévèle Mélantois) production of "Les Misérables - C'est la faute à Voltaire !". Built with modern web technologies, this website serves as a comprehensive platform for audiences, cast members, and supporters to engage with our show.
 
 ## Features
 
-- **Show Information**: Detailed information about the Les Misérables musical production
+- **Show Information**: Detailed information about "Les Misérables - C'est la faute à Voltaire"
 - **Cast & Crew**: Profiles of our talented performers, artistic team, and technical crew
 - **Orchestra**: Information about our musical ensemble
 - **Performance Schedule**: Upcoming shows and events
