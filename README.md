@@ -1,34 +1,60 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Les Misérables - ORPM Website
 
-## Getting Started
+This is the official website for the ORPM (Orchestre et Réalisations de Productions Musicales) production of Les Misérables. Built with modern web technologies, this website serves as a comprehensive platform for audiences, cast members, and supporters to engage with our musical theater production.
 
-First, run the development server:
+## Features
+
+- **Show Information**: Detailed information about the Les Misérables musical production
+- **Cast & Crew**: Profiles of our talented performers, artistic team, and technical crew
+- **Orchestra**: Information about our musical ensemble
+- **Performance Schedule**: Upcoming shows and events
+- **Media Gallery**: Photos and content from previous performances and showcases
+- **Blog**: Latest news and updates about the production
+- **Contact Information**: Ways to get in touch with the production team
+
+## Technical Stack
+
+- **Frontend Framework**: [Next.js](https://nextjs.org/)
+- **Content Management**: [Sanity CMS](https://www.sanity.io/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **UI Components**: Custom components with [Storybook](https://storybook.js.org/)
+- **Analytics**: [Vercel Analytics](https://vercel.com/analytics)
+
+## Development
+
+First, install the dependencies:
+
+```bash
+npm install
+```
+
+Then, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Content Management
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+The website content is managed through Sanity Studio. To access the CMS:
 
-## Learn More
+1. Run the development server
+2. Navigate to [http://localhost:3000/studio](http://localhost:3000/studio)
 
-To learn more about Next.js, take a look at the following resources:
+### Storybook
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+To view and develop UI components in isolation:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```bash
+npm run storybook
+```
 
-## Deploy on Vercel
+## Deployment
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The site is optimized for deployment on [Vercel](https://vercel.com). For detailed deployment instructions, refer to our [deployment documentation](https://nextjs.org/docs/deployment).
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## License
+
+All rights reserved. This project and its contents are proprietary to ORPM.
