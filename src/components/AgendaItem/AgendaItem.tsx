@@ -65,9 +65,13 @@ export type AgendaItemProps = {
    * Event title
    */
   title: string,
+  /**
+   * Whether this is a past date
+   */
+  isPast?: boolean,
 }
 function AgendaItem({
-  location, dateTime, partner, reservationLink, title,
+  location, dateTime, partner, reservationLink, title, isPast = false,
 }: AgendaItemProps) {
   const hasReservationLink = reservationLink !== '#';
   const partnerLogo = getPartnerLogo(partner);
@@ -90,7 +94,7 @@ function AgendaItem({
   }
 
   return (
-    <div className="flex flex-col px-8 py-8 lg:py-6 bg-secondary flex-1 gap-5 md:min-w-[45%] lg:min-w-[25%] lg:max-w-[33%] rounded-md">
+    <div className={`flex flex-col px-8 py-8 lg:py-6 bg-secondary flex-1 gap-5 md:min-w-[45%] lg:min-w-[25%] lg:max-w-[33%] rounded-md ${isPast ? 'opacity-75' : ''}`}>
       <div className="flex flex-col gap-3">
         <div className="flex flex-col items-center gap-3">
           <div className="flex items-center w-full p-4 justify-center bg-white min-h-[140px] rounded-md">
@@ -117,15 +121,17 @@ function AgendaItem({
             <Paragraph className="text-xl">{hour}</Paragraph>
           </div>
         </div>
-        <div className="flex justify-center items-center">
-          <Button
-            externalUrl
-            url={reservationLink}
-            disabled={reservationDisabled}
-            title={hasReservationLink ? getReservationText() : 'Réservation à venir'}
-            size="small"
-          />
-        </div>
+        {!isPast && (
+          <div className="flex justify-center items-center">
+            <Button
+              externalUrl
+              url={reservationLink}
+              disabled={reservationDisabled}
+              title={hasReservationLink ? getReservationText() : 'Réservation à venir'}
+              size="small"
+            />
+          </div>
+        )}
       </div>
     </div>
   );
