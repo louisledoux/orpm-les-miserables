@@ -91,7 +91,7 @@ const MembersList: React.FC<MembersListProps> = ({ title, members, type }) => {
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-40px">
                 {createVerticalColumns(members).map((column, colIndex) => (
                   // eslint-disable-next-line react/no-array-index-key
-                  <ul key={`${colIndex}-columns`} className="space-y-20px">
+                  <ul key={`${colIndex}-columns`} className="space-y-20px mt-4 first:mt-0 md:even:mt-0 lg:mt-0">
                     {column.map((member) => (
                       <li key={`${member.lastName + member.firstName}2`} className="text-gray-600">
                         <div>
