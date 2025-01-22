@@ -8,6 +8,12 @@ import laTroupeSection from '@/assets/pages/laTroupe/laTroupeSections';
 import RoutesPathEnum from '@/routes/Routes.enum';
 import Carousel from '@/containers/Carousel/Carousel';
 import laTroupeCarouselData from '@/assets/pages/laTroupe/laTroupeCarouselData';
+import MembersList from '@/components/MembersList/MembersList';
+import {
+  troupeMembers,
+  orchestraMembers,
+  staffMembers,
+} from '@/assets/pages/laTroupe/troupeData';
 
 export const metadata: Metadata = {
   title: 'La troupe',
@@ -28,9 +34,7 @@ export default function LaTroupePage() {
         />
       </div>
       <div className="lg:mb-120px mb-60px">
-        <Typography.Title level={1}>
-          La troupe
-        </Typography.Title>
+        <Typography.Title level={1}>La troupe</Typography.Title>
         <div className="lg:px-40px">
           <Section
             pages={laTroupeSection.pages}
@@ -49,6 +53,19 @@ export default function LaTroupePage() {
         </div>
         <div className="lg:px-120px px-20px lg:mb-120px mb-60px">
           <Carousel items={laTroupeCarouselData} autoplay />
+        </div>
+        <div className="lg:px-120px px-20px">
+          <MembersList
+            title="La troupe"
+            members={troupeMembers}
+            type="troupe"
+          />
+          <MembersList
+            title="L'orchestre"
+            members={orchestraMembers}
+            type="orchestra"
+          />
+          <MembersList title="Le staff" members={staffMembers} type="staff" />
         </div>
       </div>
     </>
