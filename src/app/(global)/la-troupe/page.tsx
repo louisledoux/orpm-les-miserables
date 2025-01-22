@@ -28,9 +28,7 @@ export default function LaTroupePage() {
         />
       </div>
       <div className="lg:mb-120px mb-60px">
-        <Typography.Title level={1}>
-          La troupe
-        </Typography.Title>
+        <Typography.Title level={1}>La troupe</Typography.Title>
         <div className="lg:px-40px">
           <Section
             pages={laTroupeSection.pages}
