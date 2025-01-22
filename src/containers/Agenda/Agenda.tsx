@@ -42,9 +42,11 @@ function Agenda() {
       </section>
 
       {pastDates.length > 0 && (
-        <section>
-          <h2 className="text-3xl font-bold mb-8 text-center">Dates passées</h2>
-          <div className="flex flex-col md:flex-row gap-12 lg:gap-24 justify-center flex-wrap">
+        <>
+          <hr className="w-full" />
+          <section>
+            <h2 className="text-3xl font-bold mb-8 text-center">Dates passées</h2>
+            <div className="flex flex-col md:flex-row gap-12 lg:gap-24 justify-center flex-wrap">
             {pastDates.map(({
               location, dateTime, partner, reservationLink, title,
             }) => (
@@ -58,8 +60,9 @@ function Agenda() {
                 isPast
               />
             ))}
-          </div>
-        </section>
+            </div>
+          </section>
+        </>
       )}
     </div>
   );
