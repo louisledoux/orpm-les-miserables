@@ -88,5 +88,20 @@ function getAgendaDatesFromFirebase(): Promise<Array<AgendaItemProps>> {
     });
 }
 
+function getPastDatesFromFirebase(): Promise<Array<AgendaItemProps>> {
+  return getDocs(collection(db, 'pastDates'))
+    .then((querySnapshot) => {
+      const dates: Array<AgendaItemProps> = [];
+      querySnapshot.forEach((doc) => {
+        const formattedData = convertFirebaseDateDataToAgendaItemProps(
+          doc.data() as FirebaseDateData,
+        );
+        dates.push(formattedData);
+      });
+      return dates
+        .sort((a, b) => a.dateTime.getTime() - b.dateTime.getTime());
+    });
+}
+
 // eslint-disable-next-line import/prefer-default-export
-export { getHomepageDatesFromFirebase, getAgendaDatesFromFirebase };
+export { getHomepageDatesFromFirebase, getAgendaDatesFromFirebase, getPastDatesFromFirebase };
