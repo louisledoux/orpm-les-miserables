@@ -25,13 +25,15 @@ export default function MentionsLegalesPage() {
         />
       </div>
       <div className="lg:mb-60px mb-30px">
-        <Title level={1}>
-          Mentions légales
-        </Title>
+        <Title level={1}>Mentions légales</Title>
         <div className="px-20px lg:px-120px mb-60px">
           <div className="flex flex-col gap-2">
-            <h2 className="text-primary text-xl font-semibold mb-2">Orchestre Régional du Pévèle Mélantois</h2>
-            <Paragraph>Siège social - 3 Rue du Général de Gaulle - 59551 Tourmignies</Paragraph>
+            <h2 className="text-primary text-xl font-semibold mb-2">
+              Orchestre Régional du Pévèle Mélantois
+            </h2>
+            <Paragraph>
+              Siège social - 3 Rue du Général de Gaulle - 59551 Tourmignies
+            </Paragraph>
             <Paragraph>SIRET : 381 946 540 00030</Paragraph>
             <Paragraph>
               <Link
@@ -43,10 +45,14 @@ export default function MentionsLegalesPage() {
             </Paragraph>
           </div>
           <div>
-            <Title level={3} className="mt-12 mb-8">Responsable de la publication</Title>
+            <Title level={3} className="mt-12 mb-8">
+              Responsable de la publication
+            </Title>
             <Paragraph>Thierry Olivier</Paragraph>
           </div>
-          <Title level={3} className="mt-12 mb-8">Hébergeur</Title>
+          <Title level={3} className="mt-12 mb-8">
+            Hébergeur
+          </Title>
           <div className="flex flex-col gap-2">
             <Paragraph>
               <Link
@@ -68,7 +74,9 @@ export default function MentionsLegalesPage() {
               </Link>
             </Paragraph>
           </div>
-          <Title level={3} className="mt-12 mb-8">Conception et réalisation</Title>
+          <Title level={3} className="mt-12 mb-8">
+            Conception et réalisation
+          </Title>
           <div className="flex flex-col gap-2">
             <Paragraph>
               <Link
@@ -80,8 +88,11 @@ export default function MentionsLegalesPage() {
                 Louis Ledoux
               </Link>
             </Paragraph>
+            <Paragraph>Pauline Ledoux</Paragraph>
           </div>
-          <Title level={3} className="mt-12 mb-8">Propriété intellectuelle</Title>
+          <Title level={3} className="mt-12 mb-8">
+            Propriété intellectuelle
+          </Title>
           <Paragraph className="flex flex-col gap-2">
             <strong>Photos de la troupe :</strong>
             <span>Elise Lecocq</span>
