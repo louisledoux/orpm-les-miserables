@@ -1,15 +1,15 @@
-import { Metadata } from "next";
-import Typography from "@/components/Typography/Typography";
-import Image from "next/image";
-import orchestre from "@/assets/pages/orchestre/images/aproposorchestre.jpg";
-import Link from "next/link";
+import { Metadata } from 'next';
+import Typography from '@/components/Typography/Typography';
+import Image from 'next/image';
+import orchestre from '@/assets/pages/orchestre/images/aproposorchestre.jpg';
+import Link from 'next/link';
 
 const { Title, Paragraph } = Typography;
 
 export const metadata: Metadata = {
-  title: "Mentions légales",
+  title: 'Mentions légales',
   openGraph: {
-    title: "Mentions légales",
+    title: 'Mentions légales',
   },
 };
 
@@ -20,7 +20,7 @@ export default function MentionsLegalesPage() {
         <Image
           src={orchestre}
           alt="L'orchestre ORPM en concert"
-          style={{ objectPosition: "50% 80%" }}
+          style={{ objectPosition: '50% 80%' }}
           className="w-full h-full object-cover"
         />
       </div>
