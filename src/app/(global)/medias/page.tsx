@@ -22,7 +22,7 @@ export default function MediasPage() {
           <Paragraph>
             <Link
               className="underline underline-offset-2 hover:text-primary transition ease-in-out duration-150"
-              href="/dossierpressemiserables0923.pdf"
+              href="/dossierpressemiserables0524.pdf"
               target="_blank"
             >
               Dossier de presse
