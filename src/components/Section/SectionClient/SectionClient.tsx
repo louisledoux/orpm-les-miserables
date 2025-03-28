@@ -1,8 +1,8 @@
 'use client';
 
-import Image from 'next/image';
 import Typography from '@/components/Typography/Typography';
 import { SectionImageType, SectionPageType } from '@/types/Section.type';
+import Image from 'next/image';
 import {
   MutableRefObject, useEffect, useRef, useState,
 } from 'react';
@@ -38,11 +38,9 @@ function SectionClient({
     if (!observedDiv.current) return;
 
     const resizeObserver = new ResizeObserver(() => {
-      if (observedDiv?.current?.offsetHeight !== divHeight && adjustImage) {
+      if (observedDiv?.current?.offsetHeight !== divHeight) {
         if (window.matchMedia('(min-width: 1024px)').matches) {
           setDivHeight(observedDiv?.current?.offsetHeight);
-        } else {
-          setDivHeight(353);
         }
       }
     });
@@ -58,7 +56,7 @@ function SectionClient({
   return (
     <div className={`flex justify-between items-center ${reverse ? 'lg:flex-row-reverse' : 'lg:flex-row'} ${reverse ? 'flex-col-reverse' : 'flex-col-reverse'}`}>
       <div style={{ height: divHeight }} className="lg:max-w-inSection w-full">
-        <Image className="object-cover h-full max-h-fit" src={image.image} alt={image.alt} style={image.style} />
+        <Image className={`h-full max-h-fit ${adjustImage ? 'object-cover' : 'object-scale-down'}`} src={image.image} alt={image.alt} style={image.style} />
       </div>
       {pages.map((page) => (
         <div
@@ -70,11 +68,10 @@ function SectionClient({
           <Title className="lg:mb-60px mb-30px text-center" level={2}>{page.title}</Title>
           {page.paragraphs.map((paragraph) => (
             <Paragraph
-              className="mb-20px lg:mb-30px text-justify font-light text-baseMobile lg:text-base"
+              className="mb-20px lg:mb-30px text-justify font-light text-baseMobile lg:text-base whitespace-pre-line"
               key={`${paragraph}-${page.title}`}
-            >
-              {paragraph}
-            </Paragraph>
+              dangerouslySetInnerHTML={{ __html: paragraph }}
+            />
           ))}
         </div>
       ))}

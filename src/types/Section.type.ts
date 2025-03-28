@@ -3,6 +3,9 @@ import React from 'react';
 
 export type SectionPageType = {
   title?: string,
+  /**
+   * Array of paragraph strings that can contain HTML markup
+   */
   paragraphs: string[],
   reverse?: boolean,
   style? : React.CSSProperties,

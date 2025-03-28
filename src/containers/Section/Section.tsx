@@ -1,6 +1,6 @@
-import { SectionImageType, SectionPageType } from '@/types/Section.type';
 import CallToAction, { CallToActionProps } from '@/components/Section/CallToAction/CallToAction';
 import SectionClient from '@/components/Section/SectionClient/SectionClient';
+import { SectionImageType, SectionPageType } from '@/types/Section.type';
 
 interface SectionProps {
   /**

@@ -1,12 +1,12 @@
 'use client';
 
-import RoutesPathEnum from '@/routes/Routes.enum';
-import { usePathname } from 'next/navigation';
-import NavListType from '@/types/Nav.type';
 import DesktopNav from '@/components/Nav/DesktopNav';
+import MobileNav from '@/components/Nav/MobileNav';
 import useScroll from '@/hooks/useScroll';
 import useViewport from '@/hooks/useViewport';
-import MobileNav from '@/components/Nav/MobileNav';
+import RoutesPathEnum from '@/routes/Routes.enum';
+import NavListType from '@/types/Nav.type';
+import { usePathname } from 'next/navigation';
 
 const navList: NavListType[] = [
   { text: 'Accueil', url: RoutesPathEnum.HOMEPAGE },
@@ -20,6 +20,7 @@ const navList: NavListType[] = [
       { text: 'La comédie musicale', url: RoutesPathEnum.COMEDIE_MUSICALE },
       { text: 'Auteur et oeuvres', url: RoutesPathEnum.AUTEUR_ET_OEUVRES },
       { text: 'Nos showcases', url: RoutesPathEnum.SHOWCASES },
+      { text: 'Galerie photo', url: RoutesPathEnum.GALERIE },
     ],
   },
   {

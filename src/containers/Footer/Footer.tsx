@@ -1,5 +1,5 @@
-import Link from 'next/link';
 import RoutesPathEnum from '@/routes/Routes.enum';
+import Link from 'next/link';
 
 type FooterLink = {
   text: string,
@@ -13,7 +13,7 @@ const footerLinks: FooterLink[] = [
   { text: 'L\'histoire', url: RoutesPathEnum.HISTOIRE },
   { text: 'Les personnages', url: RoutesPathEnum.PERSONNAGES },
   { text: 'Le spectacle musicale', url: RoutesPathEnum.COMEDIE_MUSICALE },
-  { text: 'Jouons !', url: '/#jouons' },
+  { text: 'Les membres de la troupe', url: RoutesPathEnum.MEMBRES },
   { text: 'L\'orchestre', url: RoutesPathEnum.ORCHESTRE },
   { text: 'L\'équipe artistique', url: RoutesPathEnum.EQUIPE_ARTISTIQUE },
   { text: 'L\'équipe technique', url: RoutesPathEnum.EQUIPE_TECHNIQUE },
