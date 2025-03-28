@@ -1,18 +1,16 @@
-import { SectionData } from '@/types/Section.type';
 import newsImage from '@/assets/pages/homepage/images/newsImage.jpg';
 import onJoueImage from '@/assets/pages/homepage/images/onJoueImage.jpg';
 import showcaseImage from '@/assets/pages/homepage/images/showcaseImage.jpg';
+import { SectionData } from '@/types/Section.type';
 
 export const newsSection: SectionData = {
   key: 'Section News',
   pages: [{
-    title: 'Edito',
     paragraphs: [
-      'Bienvenue sur le site officiel "Les Misérables - C\'est la faute à Voltaire!". Face aux défis sociaux actuels, notre spectacle devient un moteur de changement et de solidarité.',
-      'La culture a le pouvoir de nous rassembler et de nous motiver à agir. Notre version fait plus que divertir; elle soutient activement des causes importantes. Chaque billet vendu contribue à des projets locaux contre la pauvreté et pour la santé.',
-      'Nous croyons que chacun peut impacter le monde positivement, à l\'image de Jean Valjean. Au-delà du théâtre, nous lançons cette initiative pour promouvoir la solidarité. Ensemble, nous pouvons changer les choses.',
-      'Visitez notre site pour découvrir nos spectacles. Rejoignez-nous pour une soirée où art et générosité se rencontrent. Votre participation est un engagement pour un monde plus uni et solidaire.',
-      'Nous espérons vous voir bientôt pour vivre ensemble cette expérience mémorable.',
+      'Bienvenue sur le site officiel <strong>"Les Misérables - C\'est la faute à Voltaire!"</strong>.',
+      'Rejoignez-nous pour un spectacle qui inspire le changement et la solidarité. La culture a le pouvoir de nous rassembler et de nous motiver.',
+      'Notre version met en lumière des causes importantes, contribuant à des projets contre la pauvreté et pour la santé. Ensemble, changeons les choses et impactons positivement le monde, à l\'image de Jean Valjean.',
+      'Découvrez nos spectacles et engagez-vous pour un monde plus uni et solidaire. Nous espérons vous voir bientôt pour vivre ensemble cette expérience mémorable.',
     ],
   }],
   image: {

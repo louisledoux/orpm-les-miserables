@@ -1,10 +1,12 @@
-import React from 'react';
 import localFont from 'next/font/local';
+import React from 'react';
 
 const amithenFont = localFont({ src: '../../assets/font/amithen.ttf' });
 
 interface Props {
-  children: React.ReactNode,
+  children?: React.ReactNode,
+  // eslint-disable-next-line react/no-unused-prop-types
+  dangerouslySetInnerHTML?: { __html: string },
   // eslint-disable-next-line react/no-unused-prop-types
   className?: string,
 }
@@ -69,9 +71,16 @@ function Title({
 }
 Typography.Title = Title;
 
-function Paragraph({ children, className = '' }: Props) {
+function Paragraph({ children, className = '', dangerouslySetInnerHTML }: Props) {
   return (
-    <p className={`whitespace-pre-line font-light text-baseMobile lg:text-base ${className}`}>{children}</p>
+    <>
+      {dangerouslySetInnerHTML ? (
+        // eslint-disable-next-line react/no-danger
+        <p className={`whitespace-pre-line font-light text-baseMobile lg:text-base ${className}`} dangerouslySetInnerHTML={dangerouslySetInnerHTML} />
+      ) : (
+        <p className={`whitespace-pre-line font-light text-baseMobile lg:text-base ${className}`}>{children}</p>
+      )}
+    </>
   );
 }
 Typography.Paragraph = Paragraph;

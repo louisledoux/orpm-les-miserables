@@ -1,13 +1,13 @@
-import { Metadata } from 'next';
-import Image from 'next/image';
 import showcaseLambersart from '@/assets/pages/showcases/images/showcaseLambersart.jpg';
-import React from 'react';
-import Typography from '@/components/Typography/Typography';
-import Carousel from '@/containers/Carousel/Carousel';
 import {
   lambersartShowcaseCarouselData,
 } from '@/assets/pages/showcases/showcasesCarouselData';
 import Button from '@/components/Button/Button';
+import Typography from '@/components/Typography/Typography';
+import Carousel from '@/containers/Carousel/Carousel';
+import RoutesPathEnum from '@/routes/Routes.enum';
+import { Metadata } from 'next';
+import Image from 'next/image';
 
 export const metadata: Metadata = {
   title: 'Nos showcases',
@@ -43,7 +43,7 @@ export default function ShowcasesPage() {
         <span className="italic font-light">Showcase de Lambersart - 06 avril 2024</span>
       </div>
       <div className="flex justify-center mb-60px lg:mb-120px px-20px">
-        <Button type="secondary" url="/#agenda" title="Nos prochaines dates" />
+        <Button type="secondary" url={RoutesPathEnum.AGENDA} title="Nos prochaines dates" />
       </div>
     </>
   );

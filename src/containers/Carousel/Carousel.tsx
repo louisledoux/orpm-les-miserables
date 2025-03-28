@@ -1,9 +1,9 @@
 'use client';
 
-import { Carousel } from 'react-responsive-carousel';
-import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import CarouselItem, { CarouselItemProps } from '@/components/CarouselItem/CarouselItem';
 import useViewport from '@/hooks/useViewport';
+import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 interface CarouselProps {
   /**
@@ -16,9 +16,12 @@ interface CarouselProps {
    */
   autoplay?: boolean,
   hero?: boolean,
+  className?: string,
 }
 
-function CarouselContainer({ items, autoplay, hero }: CarouselProps) {
+function CarouselContainer({
+  items, autoplay, hero, className,
+}: CarouselProps) {
   const { isMobileScreen } = useViewport();
 
   function getCarouselItems() {
@@ -45,6 +48,7 @@ function CarouselContainer({ items, autoplay, hero }: CarouselProps) {
       showIndicators={showIndicators()}
       showThumbs={false}
       showStatus={false}
+      className={className}
     >
       {getCarouselItems().map(({
         imageSrc, mobileImageSrc, alt, style,

@@ -1,12 +1,12 @@
-import { Metadata } from 'next';
-import Typography from '@/components/Typography/Typography';
-import Image from 'next/image';
-import AlternativeSection from '@/containers/AlternativeSection/AlternativeSection';
-import Section from '@/containers/Section/Section';
-import mainComedie from '@/assets/pages/comedie-musicale/images/mainComedie.jpg';
 import {
   aProposSection, sceneClefsAlternativeSection,
 } from '@/assets/pages/comedie-musicale/comedieMusicaleSection';
+import mainComedie from '@/assets/pages/comedie-musicale/images/mainComedie.jpg';
+import Typography from '@/components/Typography/Typography';
+import AlternativeSection from '@/containers/AlternativeSection/AlternativeSection';
+import Section from '@/containers/Section/Section';
+import { Metadata } from 'next';
+import Image from 'next/image';
 
 export const metadata: Metadata = {
   title: 'La comédie musicale',
@@ -22,7 +22,7 @@ export default function ComedieMusicale() {
         <Image
           src={mainComedie}
           alt="Cosette les Miserables ORPM"
-          style={{ objectPosition: '50% 35%' }}
+          style={{ objectPosition: '50% 5%' }}
           className="w-full h-full object-cover"
         />
       </div>
