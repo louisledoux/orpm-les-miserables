@@ -1,12 +1,13 @@
-import Image, { StaticImageData } from 'next/image';
-import les111DesArts from '@/assets/images/partners/les111DesArts_logo.png';
 import asp from '@/assets/images/partners/asp_logo.jpg';
 import laPommeraie from '@/assets/images/partners/laPommeraie_logo.png';
+import les111DesArts from '@/assets/images/partners/les111DesArts_logo.png';
 import lesRestosDuCoeur from '@/assets/images/partners/lesRestosDuCoeur_logo.svg';
+import auGrandCoeur from '@/assets/images/partners/marquette_au_grand_coeur_logo.JPG';
 import orpm from '@/assets/logo.svg';
+import Button from '@/components/Button/Button';
 import Icon from '@/components/Icon/Icon';
 import Typography from '@/components/Typography/Typography';
-import Button from '@/components/Button/Button';
+import Image, { StaticImageData } from 'next/image';
 
 const { Paragraph } = Typography;
 
@@ -35,6 +36,11 @@ function getPartnerLogo(partner: string): PartnerLogoType {
       return {
         image: lesRestosDuCoeur,
         alt: 'Logo Les Restos du Coeur',
+      };
+    case 'Au Grand Coeur':
+      return {
+        image: auGrandCoeur,
+        alt: 'Logo Au Grand Coeur',
       };
     default:
       return {
